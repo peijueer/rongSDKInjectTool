@@ -16,17 +16,24 @@ package com.rong.bean;
  * 
  */
 public class ChannelBean {
+	private String channelId;
 	private String channelName;
-	private String channelSmaliPath;
 
 	public ChannelBean() {
 
 	}
 
-	public ChannelBean(String channelName, String channelSmaliPath) {
-		super();
+	public ChannelBean(String channelId, String channelName) {
+		this.channelId = channelId;
 		this.channelName = channelName;
-		this.channelSmaliPath = channelSmaliPath;
+	}
+
+	public String getChannelId() {
+		return channelId;
+	}
+
+	public void setChannelId(String channelId) {
+		this.channelId = channelId;
 	}
 
 	public String getChannelName() {
@@ -35,13 +42,5 @@ public class ChannelBean {
 
 	public void setChannelName(String channelName) {
 		this.channelName = channelName;
-	}
-
-	public String getChannelSmaliPath() {
-		return channelSmaliPath;
-	}
-
-	public void setChannelSmaliPath(String channelSmaliPath) {
-		this.channelSmaliPath = channelSmaliPath;
 	}
 }
