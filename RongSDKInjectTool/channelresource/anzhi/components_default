@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 横竖屏显示方式可修改下面Activity的android:screenOrientation属性，其它属性切记不要修改！ -->
+        <activity
+            android:name="com.anzhi.sdk.middle.manage.AgencyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/anzhi_sdk_style"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="rongsdk"
+                    android:scheme="anzhipaysdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ipaynow.qqpay.plugin.ipview.QQPayAndNotifyView"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.anzhi.market.ui.CorpBitmapActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+        <service
+            android:name="com.anzhi.sdk.middle.manage.DaemonService"
+            android:exported="false" />
+        <service
+            android:name="com.anzhi.sdk.middle.manage.PushService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="com.anzhi.sdk.middle.manage.AnzhiReceiver"
+            android:exported="false" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter android:priority="1000" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|smallestScreenSize|locale|screenLayout"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.HPaySdkActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/hpay_dialog_style" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.web.HPayWebActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/hpay_custom_confim_dialog" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.web.HPayWebFullActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.pay.demo.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <receiver android:name="com.anzhi.sdk.middle.manage.CommReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="ANZHIUSERCENTE_VERSIONS"
+            android:value="4.0" />
+</manifest>

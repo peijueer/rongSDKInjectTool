@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/hpay_bg" android:visibility="visible" android:layout_width="310.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/hpay_content" android:layout_width="310.0dip" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="3.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/hpay_cancel_wz_color" android:gravity="center" android:id="@id/hpay_negativeButton" android:background="@color/hpay_bg_color" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:background="@color/hpay_line_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="18.0sp" android:textColor="@color/hpay_ok_wz_color" android:gravity="center" android:id="@id/hpay_positiveButton" android:background="@color/hpay_bg_color" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

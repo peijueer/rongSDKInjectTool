@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="azuc_find_new_version">检测到新版本</string>
+    <string name="azuc_find_new_version_game">[%s]-发新版啦</string>
+    <string name="azuc_updata_content">安智用户中心有版本可以更新了，大小为%s，请下载更新</string>
+</resources>

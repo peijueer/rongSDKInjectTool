@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iqiyigame.plugin.GameProxyActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iqiyigame.plugin.GameProxyFragmentActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iqiyi.sdk.platform.PermissionCheckActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.unionpay.uppay.PayActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <service android:name="com.iqiyigame.plugin.GamePluginUpdateService"/>
+        <service android:name="com.iqiyi.sdk.platform.GamePushAdsService"/>
+        <service android:name="com.iqiyigame.plugin.GameProxyService"/>
+</manifest>

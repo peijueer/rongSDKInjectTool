@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="pps_push_ads" id="0x7f020002" />
+    <public type="string" name="ppsgame_init_error" id="0x7f05000b" />
+    <public type="string" name="ppsgame_plugin_loading" id="0x7f05000c" />
+    <public type="string" name="ppsgame_plugin_space_error" id="0x7f05000d" />
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/hpay_ll_dd_layout" android:background="@drawable/hpay_bg" android:layout_width="310.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/hpay_title_color" android:gravity="center|left" android:id="@id/hpay_dd_tv_tgs" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/hpay_title_color" android:ellipsize="end" android:gravity="center|left" android:id="@id/hpay_dd_tv_tgs_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/hpay_title_color" android:gravity="center|left" android:id="@id/hpay_dd_tv_submit_goods" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/hpay_title_color" android:ellipsize="end" android:gravity="center|left" android:id="@id/hpay_dd_tv_submit_goodscontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/hpay_title_color" android:gravity="center|left" android:id="@id/hpay_dd_tv_submit_payprice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/hpay_title_color" android:ellipsize="end" android:gravity="center|left" android:id="@id/hpay_dd_tv_submit_paypricecontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/hpay_wxts_color" android:autoLink="phone" android:id="@id/hpay_tv_context_dd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+    <ImageView android:background="@color/hpay_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="3.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/hpay_cancel_wz_color" android:gravity="center" android:id="@id/hpay_btn_cancel_dd" android:background="@color/hpay_bg_color" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:background="@color/hpay_line_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="18.0sp" android:textColor="@color/hpay_ok_wz_color" android:gravity="center" android:id="@id/hpay_btn_ok_dd" android:background="@color/hpay_bg_color" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
