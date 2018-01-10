@@ -64,11 +64,11 @@ public class Dom4jUtils {
 			
 			String finalPackage = srcPackage;
 			if (srcPackage.endsWith(CHANNELDEFAULT)) {
-				finalPackage = srcPackage.substring(srcPackage.length() - 3) + channelBean.getChannelName();
-			} else if (srcPackage.endsWith("." + channelBean.getChannelName())) {
+				finalPackage = srcPackage.substring(srcPackage.length() - 3) + channelBean.getChannelId();
+			} else if (srcPackage.endsWith("." + channelBean.getChannelId())) {
 				finalPackage = srcPackage;
 			}else{
-				finalPackage = srcPackage + "." + channelBean.getChannelName();
+				finalPackage = srcPackage + "." + channelBean.getChannelId();
 			}
 
 			rootElement.attribute(PACKAGE).setValue(finalPackage);
@@ -179,7 +179,7 @@ public class Dom4jUtils {
 	public static void modifyPublic(String filePath, ChannelBean channelBean) {
 		SAXReader reader = new SAXReader();
 		try {
-			Document document = reader.read(new File(filePath + "/" + channelBean.getChannelName() + "_" + PUBLICXML));
+			Document document = reader.read(new File(filePath + "/" + channelBean.getChannelId() + "_" + PUBLICXML));
 			Element rootElement = document.getRootElement();
 
 			Document publicDocument = reader.read(new File(filePath + "/" + PUBLICXML));
@@ -308,7 +308,7 @@ public class Dom4jUtils {
 				}
 			}
 
-			FileWriter writer = new FileWriter(new File(filePath + "/" + channelBean.getChannelName() + "_" + PUBLICXML));
+			FileWriter writer = new FileWriter(new File(filePath + "/" + channelBean.getChannelId() + "_" + PUBLICXML));
 			document.write(writer);
 			writer.flush();
 			writer.close();

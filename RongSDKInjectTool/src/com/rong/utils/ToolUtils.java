@@ -34,6 +34,7 @@ public class ToolUtils {
 
 	public static String ROOTPATH = new File("").getAbsolutePath();
 	private static String smaliTempPath = ROOTPATH + "/smaliTemp";
+	public static int gameOrientation = 2;
 
 	public static void unPackAPk(String apkPath) {
 		String cmd = "java -jar " + ROOTPATH + "/tools/apktool_2004.jar d -f \"" + apkPath + "\" -o \"" + smaliTempPath + "\"";
@@ -47,7 +48,7 @@ public class ToolUtils {
 	}
 
 	public static void pack(ChannelBean channelBean) {
-		String cmd = "java -jar " + ROOTPATH + "/tools/apktool_2004.jar b \"" + smaliTempPath + "(" + channelBean.getChannelName() + ")" + "\"";
+		String cmd = "java -jar " + ROOTPATH + "/tools/apktool_2004.jar b \"" + smaliTempPath + "(" + channelBean.getChannelId() + ")" + "\"";
 		System.out.println("pack cmd--->" + cmd);
 		try {
 			OS.exec(cmd, "utf-8");
@@ -58,7 +59,12 @@ public class ToolUtils {
 	}
 
 	public static void sign(ChannelBean channelBean, String apkName) {
-		String cmd = "jarsigner -verbose  -keystore " + ROOTPATH + "/tools/online.keystore -storepass muzhiwan520 -keypass muzhiwan520 -signedjar " + ROOTPATH + "/" + apkName + "(" + channelBean.getChannelName() + ").apk " + ROOTPATH + "/smaliTemp(" + channelBean.getChannelName() + ")/dist/" + apkName + ".apk" + " mzwonline -digestalg SHA1 -sigalg SHA1withRSA";
+		String apkFile = ROOTPATH + "/" + apkName;
+		File file = new File(apkFile);
+		if (!file.exists()) {
+			file.mkdirs();
+		}
+		String cmd = "jarsigner -verbose  -keystore " + ROOTPATH + "/tools/online.keystore -storepass muzhiwan520 -keypass muzhiwan520 -signedjar " + apkFile + "/" + apkName + "(" + channelBean.getChannelId() + ").apk " + ROOTPATH + "/smaliTemp(" + channelBean.getChannelId() + ")/dist/" + apkName + ".apk" + " mzwonline -digestalg SHA1 -sigalg SHA1withRSA -tsa http://timestamp.digicert.com";
 		System.out.println("sign cmd--->" + cmd);
 		try {
 			OS.exec(cmd, "utf-8");
@@ -66,6 +72,8 @@ public class ToolUtils {
 		} catch (Throwable localThrowable) {
 			System.out.println("签名出错了");
 		}
+		// FileUtils.rmdir(ROOTPATH + "/smaliTemp(" + channelBean.getChannelId()
+		// + ")");
 	}
 
 	/**
@@ -79,7 +87,7 @@ public class ToolUtils {
 	 * @throws
 	 */
 	public static void copySrcForChannel(ChannelBean channelBean) {
-		FileUtils.dirsCopy(smaliTempPath, smaliTempPath + "(" + channelBean.getChannelName() + ")");
+		FileUtils.dirsCopy(smaliTempPath, smaliTempPath + "(" + channelBean.getChannelId() + ")");
 	}
 
 	public static void copyChannelResourceForSrc(ChannelBean channelBean) {
@@ -91,8 +99,12 @@ public class ToolUtils {
 	}
 
 	public static void modifyFileForChannel(ChannelBean channelBean) {
-		modifyAndroidManifest(channelBean);
-		modifyPublic(channelBean);
+		if (channelBean.getChannelId().equals("mzw")) {
+			changePackageName(channelBean);
+		} else {
+			modifyAndroidManifest(channelBean);
+			modifyPublic(channelBean);
+		}
 	}
 
 	public static void copyResourceForChannel(String channelBeanName, String type) {
@@ -109,23 +121,23 @@ public class ToolUtils {
 	 * @throws
 	 */
 	public static void copyAssets(ChannelBean channelBean) {
-		copyResourceForChannel(channelBean.getChannelName(), DIR_ASSETS);
+		copyResourceForChannel(channelBean.getChannelId(), DIR_ASSETS);
 	}
 
 	public static void copyLibs(ChannelBean channelBean) {
-		copyResourceForChannel(channelBean.getChannelName(), DIR_LIB);
+		copyResourceForChannel(channelBean.getChannelId(), DIR_LIB);
 	}
 
 	public static void copyRes(ChannelBean channelBean) {
-		copyResourceForChannel(channelBean.getChannelName(), DIR_RES);
+		copyResourceForChannel(channelBean.getChannelId(), DIR_RES);
 	}
 
 	public static void copySmali(ChannelBean channelBean) {
-		copyResourceForChannel(channelBean.getChannelName(), DIR_SMALI);
+		copyResourceForChannel(channelBean.getChannelId(), DIR_SMALI);
 	}
 
 	public static void copyUnknown(ChannelBean channelBean) {
-		copyResourceForChannel(channelBean.getChannelName(), DIR_UNKNOWN);
+		copyResourceForChannel(channelBean.getChannelId(), DIR_UNKNOWN);
 	}
 
 	public static void modifyAndroidManifest(ChannelBean channelBean) {
@@ -135,19 +147,19 @@ public class ToolUtils {
 	}
 
 	public static void changePackageName(ChannelBean channelBean) {
-		Dom4jUtils.changePackageName(smaliTempPath + "(" + channelBean.getChannelName() + ")/" + ANDROIDMANIFEST, channelBean);
+		Dom4jUtils.changePackageName(smaliTempPath + "(" + channelBean.getChannelId() + ")/" + ANDROIDMANIFEST, channelBean);
 	}
 
 	public static void addPermission(ChannelBean channelBean) {
-		Dom4jUtils.addPermission(smaliTempPath + "(" + channelBean.getChannelName() + ")/" + ANDROIDMANIFEST, ROOTPATH + "/channelresource/" + channelBean.getChannelName() + "/" + USESPERMISSION, channelBean);
+		Dom4jUtils.addPermission(smaliTempPath + "(" + channelBean.getChannelId() + ")/" + ANDROIDMANIFEST, ROOTPATH + "/channelresource/" + channelBean.getChannelId() + "/" + USESPERMISSION, channelBean);
 	}
 
 	public static void addComponents(ChannelBean channelBean) {
-		Dom4jUtils.addComponents(smaliTempPath + "(" + channelBean.getChannelName() + ")/" + ANDROIDMANIFEST, ROOTPATH + "/channelresource/" + channelBean.getChannelName() + "/" + COMPONENTSLANDSCAPE, channelBean);
+		Dom4jUtils.addComponents(smaliTempPath + "(" + channelBean.getChannelId() + ")/" + ANDROIDMANIFEST, ROOTPATH + "/channelresource/" + channelBean.getChannelId() + "/" + COMPONENTSLANDSCAPE, channelBean);
 	}
 
 	public static void modifyPublic(ChannelBean channelBean) {
-		Dom4jUtils.modifyPublic(smaliTempPath + "(" + channelBean.getChannelName() + ")/" + DIR_RES_VALUES, channelBean);
+		Dom4jUtils.modifyPublic(smaliTempPath + "(" + channelBean.getChannelId() + ")/" + DIR_RES_VALUES, channelBean);
 	}
 
 }

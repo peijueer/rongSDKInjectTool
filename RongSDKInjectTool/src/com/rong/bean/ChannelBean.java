@@ -18,6 +18,7 @@ package com.rong.bean;
 public class ChannelBean {
 	private String channelId;
 	private String channelName;
+	private boolean isSelect;
 
 	public ChannelBean() {
 
@@ -43,4 +44,13 @@ public class ChannelBean {
 	public void setChannelName(String channelName) {
 		this.channelName = channelName;
 	}
+
+	public boolean isSelect() {
+		return isSelect;
+	}
+
+	public void setSelect(boolean isSelect) {
+		this.isSelect = isSelect;
+	}
+
 }
