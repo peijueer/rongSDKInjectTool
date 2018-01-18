@@ -112,10 +112,11 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 	JLabel orientLabel = new JLabel("游戏方向：");
 	JRadioButton landRadioButton = new JRadioButton("横屏", true);
 	JRadioButton portRadioButton = new JRadioButton("竖屏");
+	private boolean isLand = true;
 	ButtonGroup radioButtonGroup = new ButtonGroup();
 	JTextArea channelChosedText = new JTextArea();
 	JButton packButton = new JButton("开始打包");
-	JTextArea logText = new JTextArea();
+	JTextArea logTextArea = new JTextArea();
 
 	public void show() {
 		clearCache();
@@ -265,11 +266,11 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 
 		row_six_y = row_five_y + ROW_FIVE_HIGHT + 5;
 		row_six_hight = FRAME_HIGHT - row_six_y - 35;
-		logText.setBounds(LOGTEXT_X, row_six_y, LOGTEXT_WIDTH, row_six_hight);
-		logText.setEditable(false);
-		panel.add(logText);
+		logTextArea.setBounds(LOGTEXT_X, row_six_y, LOGTEXT_WIDTH, row_six_hight);
+		logTextArea.setEditable(false);
+		panel.add(logTextArea);
 
-		LogPrintStream logPrintStream = new LogPrintStream(System.out, logText);
+		LogPrintStream logPrintStream = new LogPrintStream(System.out, logTextArea);
 		System.setOut(logPrintStream);
 		System.setErr(logPrintStream);
 	}
@@ -298,11 +299,11 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 		} else if (e.getSource() == choseAllCheckBoxs) {
 			checkBoxOpt(choseAllCheckBoxs.isSelected());
 		} else if (e.getSource() == landRadioButton) {
-			ToolUtils.gameOrientation = 2;
-			System.out.println(ToolUtils.gameOrientation);
+			isLand = true;
+			System.out.println("当前选择了横屏");
 		} else if (e.getSource() == portRadioButton) {
-			ToolUtils.gameOrientation = 1;
-			System.out.println(ToolUtils.gameOrientation);
+			isLand = false;
+			System.out.println("当前选择了竖屏");
 		} else if (e.getSource() == packButton) {
 			chosedChannelsList.clear();
 			for (ChannelBean channelBean : allChannelsList) {
@@ -320,35 +321,45 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 				JOptionPane.showMessageDialog(null, "请勾选子渠道！");
 				return;
 			}
-			System.out.println("准备执行反编译命令");
-			ToolUtils.unPackAPk(apkPathText.getText());
-			try {
-				Thread.sleep(8000);
-			} catch (Exception exception) {
-			}
 
-			for (ChannelBean channelBean : chosedChannelsList) {
-				System.out.println("当前子渠道为：" + channelBean.getChannelName());
-				System.out.println("准备拷贝反编译文件...");
-				ToolUtils.copySrcForChannel(channelBean);
-				System.out.println("完成反编译文件的拷贝...");
-				System.out.println("准备拷贝子渠道资源文件...");
-				ToolUtils.copyChannelResourceForSrc(channelBean);
-				System.out.println("完成子渠道资源文件的拷贝...");
-				System.out.println("准备修改相关文件...");
-				ToolUtils.modifyFileForChannel(channelBean);
-				System.out.println("完成相关文件修改...");
-				System.out.println("准备回编译...");
-				ToolUtils.pack(channelBean);
-				System.out.println("完成回编译...");
-				System.out.println("准备对文件进行签名....");
-				try {
-					Thread.sleep(10000);
-				} catch (Exception exception) {
-				}
-				ToolUtils.sign(channelBean, apkName);
-				System.out.println("完成文件签名...");
-			}
+			new Thread() {
+				public void run() {
+					logTextArea.setText("" + apkName);
+					System.out.println("准备执行反编译命令");
+					ToolUtils.unPackAPk(apkPathText.getText());
+					try {
+						Thread.sleep(8000);
+					} catch (Exception exception) {
+					}
+
+					for (ChannelBean channelBean : chosedChannelsList) {
+						System.out.println("当前子渠道为：" + channelBean.getChannelName());
+						System.out.println("准备拷贝反编译文件...");
+						ToolUtils.copySrcForChannel(channelBean);
+						System.out.println("完成反编译文件的拷贝...");
+						System.out.println("准备拷贝子渠道资源文件...");
+						ToolUtils.copyChannelResourceForSrc(channelBean);
+						System.out.println("完成子渠道资源文件的拷贝...");
+						System.out.println("准备替换启屏文件....");
+						ToolUtils.replaceSplash(isLand, channelBean);
+						System.out.println("启屏文件替换完成....");
+						System.out.println("准备修改相关文件...");
+						ToolUtils.modifyFileForChannel(isLand, channelBean);
+						System.out.println("完成相关文件修改...");
+						System.out.println("准备回编译...");
+						ToolUtils.pack(channelBean);
+						System.out.println("完成回编译...");
+						System.out.println("准备对文件进行签名....");
+						try {
+							Thread.sleep(10000);
+						} catch (Exception exception) {
+						}
+						ToolUtils.sign(channelBean, apkName);
+						System.out.println("完成文件签名...");
+					}
+				};
+			}.start();
+
 		}
 	}
 

@@ -34,7 +34,6 @@ public class LogPrintStream extends PrintStream {
 	public void write(byte[] buff, int off, int len) {
 		final String message = new String(buff, off, len);
 		SwingUtilities.invokeLater(new Runnable() {
-
 			@Override
 			public void run() {
 				stringBuffer.append(message);

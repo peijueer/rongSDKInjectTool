@@ -31,10 +31,12 @@ public class ToolUtils {
 	public static final String USESPERMISSION = "uses-permission";
 	public static final String COMPONENTSLANDSCAPE = "components_landscape";
 	public static final String COMPONENTSDEFAULT = "components_default";
+	public static final String SPLASH_LAND = "res/drawable/splash_land.png";
+	public static final String SPLASH_PROT = "res/drawable/splash_prot.png";
+	public static final String SPLASH_DEST = "res/drawable/splash.png";
 
 	public static String ROOTPATH = new File("").getAbsolutePath();
 	private static String smaliTempPath = ROOTPATH + "/smaliTemp";
-	public static int gameOrientation = 2;
 
 	public static void unPackAPk(String apkPath) {
 		String cmd = "java -jar " + ROOTPATH + "/tools/apktool_2004.jar d -f \"" + apkPath + "\" -o \"" + smaliTempPath + "\"";
@@ -64,7 +66,7 @@ public class ToolUtils {
 		if (!file.exists()) {
 			file.mkdirs();
 		}
-		String cmd = "jarsigner -verbose  -keystore " + ROOTPATH + "/tools/online.keystore -storepass muzhiwan520 -keypass muzhiwan520 -signedjar " + apkFile + "/" + apkName + "(" + channelBean.getChannelId() + ").apk " + ROOTPATH + "/smaliTemp(" + channelBean.getChannelId() + ")/dist/" + apkName + ".apk" + " mzwonline -digestalg SHA1 -sigalg SHA1withRSA -tsa http://timestamp.digicert.com";
+		String cmd = "jarsigner -verbose  -keystore " + ROOTPATH + "/tools/online.keystore -storepass muzhiwan520 -keypass muzhiwan520 -signedjar " + apkFile + "/" + apkName + "_" + channelBean.getChannelId() + ".apk " + ROOTPATH + "/smaliTemp(" + channelBean.getChannelId() + ")/dist/" + apkName + ".apk" + " mzwonline -digestalg SHA1 -sigalg SHA1withRSA -tsa http://timestamp.digicert.com";
 		System.out.println("sign cmd--->" + cmd);
 		try {
 			OS.exec(cmd, "utf-8");
@@ -72,8 +74,6 @@ public class ToolUtils {
 		} catch (Throwable localThrowable) {
 			System.out.println("签名出错了");
 		}
-		// FileUtils.rmdir(ROOTPATH + "/smaliTemp(" + channelBean.getChannelId()
-		// + ")");
 	}
 
 	/**
@@ -98,17 +98,21 @@ public class ToolUtils {
 		copyUnknown(channelBean);
 	}
 
-	public static void modifyFileForChannel(ChannelBean channelBean) {
+	public static void replaceSplash(boolean isLand, ChannelBean channelBean) {
+		FileUtils.fileCopy(ROOTPATH + "/channelresource/" + channelBean.getChannelId() + "/" + (isLand ? SPLASH_LAND : SPLASH_PROT), smaliTempPath + "(" + channelBean.getChannelId() + ")" + "/" + SPLASH_DEST);
+	}
+
+	public static void modifyFileForChannel(boolean isLand, ChannelBean channelBean) {
 		if (channelBean.getChannelId().equals("mzw")) {
 			changePackageName(channelBean);
 		} else {
-			modifyAndroidManifest(channelBean);
+			modifyAndroidManifest(isLand, channelBean);
 			modifyPublic(channelBean);
 		}
 	}
 
-	public static void copyResourceForChannel(String channelBeanName, String type) {
-		FileUtils.dirsCopy(ROOTPATH + "/channelresource/" + channelBeanName + "/" + type, smaliTempPath + "(" + channelBeanName + ")" + "/" + type);
+	public static void copyResourceForChannel(String channelBeanId, String type) {
+		FileUtils.dirsCopy(ROOTPATH + "/channelresource/" + channelBeanId + "/" + type, smaliTempPath + "(" + channelBeanId + ")" + "/" + type);
 	}
 
 	/**
@@ -140,10 +144,10 @@ public class ToolUtils {
 		copyResourceForChannel(channelBean.getChannelId(), DIR_UNKNOWN);
 	}
 
-	public static void modifyAndroidManifest(ChannelBean channelBean) {
+	public static void modifyAndroidManifest(boolean isLand, ChannelBean channelBean) {
 		changePackageName(channelBean);
 		addPermission(channelBean);
-		addComponents(channelBean);
+		addComponents(isLand, channelBean);
 	}
 
 	public static void changePackageName(ChannelBean channelBean) {
@@ -154,8 +158,8 @@ public class ToolUtils {
 		Dom4jUtils.addPermission(smaliTempPath + "(" + channelBean.getChannelId() + ")/" + ANDROIDMANIFEST, ROOTPATH + "/channelresource/" + channelBean.getChannelId() + "/" + USESPERMISSION, channelBean);
 	}
 
-	public static void addComponents(ChannelBean channelBean) {
-		Dom4jUtils.addComponents(smaliTempPath + "(" + channelBean.getChannelId() + ")/" + ANDROIDMANIFEST, ROOTPATH + "/channelresource/" + channelBean.getChannelId() + "/" + COMPONENTSLANDSCAPE, channelBean);
+	public static void addComponents(boolean isLand, ChannelBean channelBean) {
+		Dom4jUtils.addComponents(smaliTempPath + "(" + channelBean.getChannelId() + ")/" + ANDROIDMANIFEST, ROOTPATH + "/channelresource/" + channelBean.getChannelId() + "/" + (isLand ? COMPONENTSLANDSCAPE : COMPONENTSDEFAULT), channelBean);
 	}
 
 	public static void modifyPublic(ChannelBean channelBean) {

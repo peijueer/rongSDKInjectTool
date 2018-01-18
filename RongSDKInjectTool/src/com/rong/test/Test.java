@@ -31,7 +31,7 @@ public class Test {
 
 		ToolUtils.copySrcForChannel(channelBean);
 		ToolUtils.copyChannelResourceForSrc(channelBean);
-		ToolUtils.modifyFileForChannel(channelBean);
+		ToolUtils.modifyFileForChannel(true, channelBean);
 		ToolUtils.pack(channelBean);
 		try {
 			Thread.sleep(10000);
