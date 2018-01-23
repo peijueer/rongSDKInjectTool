@@ -38,6 +38,7 @@ public class LogPrintStream extends PrintStream {
 			public void run() {
 				stringBuffer.append(message);
 				jTextComponent.setText(stringBuffer.toString());
+				jTextComponent.setCaretPosition(jTextComponent.getDocument().getLength());
 			}
 		});
 	}

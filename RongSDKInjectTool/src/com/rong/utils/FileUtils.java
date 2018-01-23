@@ -44,7 +44,7 @@ public class FileUtils {
 			des.mkdirs();
 		}
 		for (File file : fs) {
-			System.out.println("file------->" + file.getAbsolutePath());
+			System.out.println("copy file------->" + file.getAbsolutePath());
 			if (file.isFile()) {
 				fileCopy(file.getPath(), des + "\\" + file.getName()); // 调用文件拷贝的方法
 			} else if (file.isDirectory()) {
@@ -68,6 +68,14 @@ public class FileUtils {
 		File srcFile = new File(fileSrc);
 		File destFile = new File(fileDes);
 		try {
+			if (!srcFile.exists()) {
+				srcFile.createNewFile();
+			}
+
+			if (!destFile.exists()) {
+				destFile.getParentFile().mkdirs();
+				destFile.createNewFile();
+			}
 			InputStream in = new FileInputStream(srcFile);
 			OutputStream out = new FileOutputStream(destFile);
 			byte[] bytes = new byte[1024];

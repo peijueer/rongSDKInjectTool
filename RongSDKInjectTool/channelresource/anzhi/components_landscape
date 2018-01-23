@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 横竖屏显示方式可修改下面Activity的android:screenOrientation属性，其它属性切记不要修改！ -->
+<activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.anzhi.sdk.middle.manage.AgencyActivity" android:screenOrientation="landscape" android:theme="@style/anzhi_sdk_style" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.anzhi.test" android:scheme="anzhipaysdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.ipaynow.qqpay.plugin.ipview.QQPayAndNotifyView" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.anzhi.market.ui.CorpBitmapActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.anzhi.sdk.middle.manage.DaemonService"/>
+        <service android:exported="false" android:name="com.anzhi.sdk.middle.manage.PushService"/>
+        <receiver android:exported="false" android:name="com.anzhi.sdk.middle.manage.AnzhiReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent"/>
+        <uses-library android:name="org.simalliance.openmobileapi" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.unionpay.uppay.PayActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.arcsoft.hpay100.HPaySdkActivity" android:screenOrientation="landscape" android:theme="@style/hpay_dialog_style"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.arcsoft.hpay100.web.HPayWebActivity" android:screenOrientation="landscape" android:theme="@style/hpay_custom_confim_dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.arcsoft.hpay100.web.HPayWebFullActivity" android:screenOrientation="landscape"/>
+        <receiver android:name="com.anzhi.sdk.middle.manage.CommReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="ANZHIUSERCENTE_VERSIONS" android:value="4.0.3"/>
+</manifest>

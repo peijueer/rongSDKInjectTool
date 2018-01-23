@@ -31,9 +31,9 @@ public class ToolUtils {
 	public static final String USESPERMISSION = "uses-permission";
 	public static final String COMPONENTSLANDSCAPE = "components_landscape";
 	public static final String COMPONENTSDEFAULT = "components_default";
-	public static final String SPLASH_LAND = "res/drawable/splash_land.png";
-	public static final String SPLASH_PROT = "res/drawable/splash_prot.png";
-	public static final String SPLASH_DEST = "res/drawable/splash.png";
+	public static final String SPLASH_LAND = "splash_land.png";
+	public static final String SPLASH_PROT = "splash_prot.png";
+	public static final String SPLASH_DEST = "res/drawable-hdpi/splash.png";
 
 	public static String ROOTPATH = new File("").getAbsolutePath();
 	private static String smaliTempPath = ROOTPATH + "/smaliTemp";
@@ -99,13 +99,17 @@ public class ToolUtils {
 	}
 
 	public static void replaceSplash(boolean isLand, ChannelBean channelBean) {
-		FileUtils.fileCopy(ROOTPATH + "/channelresource/" + channelBean.getChannelId() + "/" + (isLand ? SPLASH_LAND : SPLASH_PROT), smaliTempPath + "(" + channelBean.getChannelId() + ")" + "/" + SPLASH_DEST);
+		String srcFilePath = ROOTPATH + "/channelresource/" + channelBean.getChannelId() + "/" + (isLand ? SPLASH_LAND : SPLASH_PROT);
+		String destFilePath = smaliTempPath + "(" + channelBean.getChannelId() + ")" + "/" + SPLASH_DEST;
+		System.out.println("srcFilePath-->" + srcFilePath + ";destFilePath-->" + destFilePath);
+		FileUtils.fileCopy(srcFilePath, destFilePath);
 	}
 
 	public static void modifyFileForChannel(boolean isLand, ChannelBean channelBean) {
 		if (channelBean.getChannelId().equals("mzw")) {
 			changePackageName(channelBean);
 		} else {
+			replaceSplash(isLand, channelBean);
 			modifyAndroidManifest(isLand, channelBean);
 			modifyPublic(channelBean);
 		}

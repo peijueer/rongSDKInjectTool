@@ -33,6 +33,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -116,10 +117,10 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 	ButtonGroup radioButtonGroup = new ButtonGroup();
 	JTextArea channelChosedText = new JTextArea();
 	JButton packButton = new JButton("开始打包");
+	JScrollPane logJScrollPane = null;
 	JTextArea logTextArea = new JTextArea();
 
 	public void show() {
-		clearCache();
 		initChannels();
 		mainFrame.setSize(FRAME_WIDTH, FRAME_HIGHT);
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -138,8 +139,7 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 
 	/**
 	 * @Title: clearCache
-	 * @Description: TODO(这里用一句话描述这个方法的作用)
-	 * @param 设定文件
+	 * @Description: 清理上次打包产生的缓存内容
 	 * @return void 返回类型
 	 * @throws
 	 */
@@ -148,7 +148,7 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 		File[] files = rootFile.listFiles();
 		for (File file : files) {
 			if (file.getName().contains(cacheFileName)) {
-				System.out.println(file.getName());
+				System.out.println("正在清理缓存文件：" + file.getName());
 				FileUtils.rmdir(file);
 			}
 		}
@@ -266,9 +266,11 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 
 		row_six_y = row_five_y + ROW_FIVE_HIGHT + 5;
 		row_six_hight = FRAME_HIGHT - row_six_y - 35;
-		logTextArea.setBounds(LOGTEXT_X, row_six_y, LOGTEXT_WIDTH, row_six_hight);
-		logTextArea.setEditable(false);
-		panel.add(logTextArea);
+		logJScrollPane = new JScrollPane();
+		logJScrollPane.setBounds(LOGTEXT_X, row_six_y, LOGTEXT_WIDTH, row_six_hight);
+		logJScrollPane.setViewportView(logTextArea);
+		logJScrollPane.setAutoscrolls(true);
+		panel.add(logJScrollPane);
 
 		LogPrintStream logPrintStream = new LogPrintStream(System.out, logTextArea);
 		System.setOut(logPrintStream);
@@ -305,6 +307,8 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 			isLand = false;
 			System.out.println("当前选择了竖屏");
 		} else if (e.getSource() == packButton) {
+			packButton.setEnabled(false);
+			clearCache();
 			chosedChannelsList.clear();
 			for (ChannelBean channelBean : allChannelsList) {
 				if (channelBean.isSelect()) {
@@ -314,11 +318,13 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 
 			if ("".equals(apkPathText.getText())) {
 				JOptionPane.showMessageDialog(null, "请选择apk！");
+				packButton.setEnabled(true);
 				return;
 			}
 
 			if (chosedChannelsList.size() < 0) {
 				JOptionPane.showMessageDialog(null, "请勾选子渠道！");
+				packButton.setEnabled(true);
 				return;
 			}
 
@@ -328,35 +334,46 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 					System.out.println("准备执行反编译命令");
 					ToolUtils.unPackAPk(apkPathText.getText());
 					try {
-						Thread.sleep(8000);
+						Thread.sleep(10000);
 					} catch (Exception exception) {
 					}
 
 					for (ChannelBean channelBean : chosedChannelsList) {
 						System.out.println("当前子渠道为：" + channelBean.getChannelName());
+
 						System.out.println("准备拷贝反编译文件...");
 						ToolUtils.copySrcForChannel(channelBean);
 						System.out.println("完成反编译文件的拷贝...");
+
 						System.out.println("准备拷贝子渠道资源文件...");
 						ToolUtils.copyChannelResourceForSrc(channelBean);
 						System.out.println("完成子渠道资源文件的拷贝...");
-						System.out.println("准备替换启屏文件....");
-						ToolUtils.replaceSplash(isLand, channelBean);
-						System.out.println("启屏文件替换完成....");
+
 						System.out.println("准备修改相关文件...");
 						ToolUtils.modifyFileForChannel(isLand, channelBean);
 						System.out.println("完成相关文件修改...");
-						System.out.println("准备回编译...");
-						ToolUtils.pack(channelBean);
-						System.out.println("完成回编译...");
-						System.out.println("准备对文件进行签名....");
+
 						try {
 							Thread.sleep(10000);
 						} catch (Exception exception) {
 						}
+
+						System.out.println("准备回编译...");
+						ToolUtils.pack(channelBean);
+						System.out.println("完成回编译...");
+
+						try {
+							Thread.sleep(20000);
+						} catch (Exception exception) {
+						}
+
+						System.out.println("准备对文件进行签名....");
 						ToolUtils.sign(channelBean, apkName);
 						System.out.println("完成文件签名...");
 					}
+
+					System.out.println("所有渠道包打包完成...");
+					packButton.setEnabled(true);
 				};
 			}.start();
 
