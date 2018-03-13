@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 <!-- 横竖屏显示方式可修改下面Activity的android:screenOrientation属性，其它属性切记不要修改！ -->
-<activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.anzhi.sdk.middle.manage.AgencyActivity"android:theme="@style/anzhi_sdk_style" android:windowSoftInputMode="adjustNothing">
+<activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.anzhi.sdk.middle.manage.AgencyActivity" android:theme="@style/anzhi_sdk_style" android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/zq_sdk_shape_white_bg_radius" android:paddingTop="58.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="12.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff1b1b1b" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="46.0dip" android:paddingTop="13.0dip" android:paddingRight="46.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="14.0dip" android:progress="0" android:progressDrawable="@drawable/zq_sdk_progressbar_color" style="?android:attr/progressBarStyleHorizontal" />
+                </LinearLayout>
+                <com.zqhy.sdk.ui.NumberProgressView android:id="@id/tv_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:layout_marginRight="44.0dip" android:layout_marginBottom="30.0dip" app:progress_current="0" app:progress_max="100" app:progress_unreached_color="#00ffffff" app:progress_reached_color="#00ffffff" app:progress_text_size="15.0sp" app:progress_text_color="#ff1b1b1b" />
+            </LinearLayout>
+            <View android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TableRow android:background="@drawable/zq_sdk_shape_bg_dlg_no_app_bottom" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                <Button android:textSize="18.0sp" android:textColor="#ff999999" android:id="@id/btnCancel" android:background="#00ffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+                <View android:background="#ffe9e9e9" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <Button android:textSize="18.0sp" android:textColor="#fff16a08" android:id="@id/btnDownload" android:background="#00ffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="后台下载" android:layout_weight="1.0" />
+            </TableRow>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/ivIcon" android:background="@drawable/zq_sdk_shape_bg_radius_12dp" android:padding="6.0dip" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_centerHorizontal="true" />
+</RelativeLayout>

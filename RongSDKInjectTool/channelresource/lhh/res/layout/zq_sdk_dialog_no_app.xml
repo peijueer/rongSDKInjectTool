@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zq_sdk_shape_bg_radius_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/zq_sdk_shape_bg_dlg_no_app_title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="立即安装" />
+    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="#ff666666" android:padding="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="         此操作需在乐嗨嗨游戏APP内进行，请立即安装。" />
+    <View android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TableRow android:background="@drawable/zq_sdk_shape_bg_dlg_no_app_bottom" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <Button android:textSize="18.0sp" android:textColor="#ff999999" android:id="@id/btnCancel" android:background="#00ffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="#ffe9e9e9" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textSize="18.0sp" android:textColor="#fff16a08" android:id="@id/btnDownload" android:background="#00ffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="安装" android:layout_weight="1.0" />
+    </TableRow>
+</LinearLayout>

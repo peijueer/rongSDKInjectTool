@@ -45,6 +45,7 @@ public class Dom4jUtils {
 	public static final String RAW = "raw";
 	public static final String COLOR = "color";
 	public static final String DIMEN = "dimen";
+	public static final String XML = "xml";
 	public static final String CHANNELDEFAULT = ".mzw";
 
 	/**
@@ -61,13 +62,13 @@ public class Dom4jUtils {
 			Document document = reader.read(new File(mainFestPath));
 			Element rootElement = document.getRootElement();
 			String srcPackage = rootElement.attribute(PACKAGE).getValue();
-			
+
 			String finalPackage = srcPackage;
 			if (srcPackage.endsWith(CHANNELDEFAULT)) {
 				finalPackage = srcPackage.substring(srcPackage.length() - 3) + channelBean.getChannelId();
 			} else if (srcPackage.endsWith("." + channelBean.getChannelId())) {
 				finalPackage = srcPackage;
-			}else{
+			} else {
 				finalPackage = srcPackage + "." + channelBean.getChannelId();
 			}
 
@@ -194,6 +195,7 @@ public class Dom4jUtils {
 			List<Element> publicColorElements = new ArrayList<Element>();
 			List<Element> publicIdElements = new ArrayList<Element>();
 			List<Element> publicDimenElements = new ArrayList<Element>();
+			List<Element> publicXmlElements = new ArrayList<Element>();
 
 			for (Element publicElement : publicElements) {
 				if (DRAWABLE.equals(publicElement.attribute(TYPE).getValue())) {
@@ -214,6 +216,8 @@ public class Dom4jUtils {
 					publicIdElements.add(publicElement);
 				} else if (DIMEN.equals(publicElement.attribute(TYPE).getValue())) {
 					publicDimenElements.add(publicElement);
+				} else if (XML.equals(publicElement.attribute(TYPE).getValue())) {
+					publicXmlElements.add(publicElement);
 				}
 			}
 
@@ -226,6 +230,7 @@ public class Dom4jUtils {
 			int colorMaxId = getMaxIdValue(publicColorElements);
 			int idMaxId = getMaxIdValue(publicIdElements);
 			int dimenMaxId = getMaxIdValue(publicDimenElements);
+			int xmlMaxId = getMaxIdValue(publicXmlElements);
 
 			int maxId = getMaxIdValue(publicIdElements);
 
@@ -238,6 +243,7 @@ public class Dom4jUtils {
 			System.out.println("colorMaxId-->" + Integer.toHexString(colorMaxId));
 			System.out.println("idMaxId-->" + Integer.toHexString(idMaxId));
 			System.out.println("dimenMaxId-->" + Integer.toHexString(dimenMaxId));
+			System.out.println("xmlMaxId-->" + Integer.toHexString(xmlMaxId));
 			System.out.println("maxId-->" + Integer.toHexString(maxId));
 
 			List<Element> channelElements = rootElement.elements();
@@ -305,6 +311,13 @@ public class Dom4jUtils {
 					}
 					element.attribute(ID).setValue("0x" + Integer.toHexString(dimenMaxId + 1));
 					dimenMaxId = dimenMaxId + 1;
+				} else if (XML.equals(element.attribute(TYPE).getValue())) {
+					if (xmlMaxId == 0) {
+						xmlMaxId = maxId + 16 * 16 * 16 * 16;
+						maxId = maxId + 16 * 16 * 16 * 16;
+					}
+					element.attribute(ID).setValue("0x" + Integer.toHexString(xmlMaxId + 1));
+					xmlMaxId = xmlMaxId + 1;
 				}
 			}
 

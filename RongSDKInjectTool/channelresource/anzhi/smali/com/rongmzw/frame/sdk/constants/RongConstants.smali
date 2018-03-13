@@ -6,6 +6,8 @@
 # static fields
 .field public static final BIND:I = 0x1
 
+.field public static final MULTIVERSION:I = 0x3e8
+
 .field public static final NOBIND:I = 0x0
 
 .field public static final RONG_SPF_KEY_BINDURL:Ljava/lang/String; = "bindurl"
@@ -23,6 +25,8 @@
 .field public static final RONG_USERDATA_PATH_ROOT:Ljava/lang/String; = "userdata"
 
 .field public static final RONG_USER_PATH_ROOT:Ljava/lang/String; = "user"
+
+.field public static final SIGNERRORCODE:I = 0x186be
 
 .field public static final SUCCESSCODE:I = 0xc8
 

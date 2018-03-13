@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/rongmzw/frame/sdk/api/RongSdkController$2;
 
     .prologue
-    .line 158
+    .line 179
     iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$2$1;->this$1:Lcom/rongmzw/frame/sdk/api/RongSdkController$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,9 +43,9 @@
     .param p2, "s"    # Ljava/lang/String;
 
     .prologue
-    .line 161
+    .line 182
     invoke-static {p1, p2}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->initCallBack(ILjava/lang/String;)V
 
-    .line 162
+    .line 183
     return-void
 .end method

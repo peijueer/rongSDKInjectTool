@@ -23,7 +23,7 @@
     .locals 2
 
     .prologue
-    .line 132
+    .line 149
     new-instance v0, Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     const/4 v1, 0x0
@@ -39,17 +39,17 @@
     .locals 0
 
     .prologue
-    .line 131
+    .line 148
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic access$2500()Lcom/rongmzw/frame/sdk/api/RongSdkController;
+.method static synthetic access$2900()Lcom/rongmzw/frame/sdk/api/RongSdkController;
     .locals 1
 
     .prologue
-    .line 131
+    .line 148
     sget-object v0, Lcom/rongmzw/frame/sdk/api/RongSdkController$RongSdkControllerHolder;->INSTANCE:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     return-object v0

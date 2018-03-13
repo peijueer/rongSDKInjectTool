@@ -9,6 +9,7 @@
 package com.rong.test;
 
 import com.rong.bean.ChannelBean;
+import com.rong.utils.ConfigUtils;
 import com.rong.utils.ToolUtils;
 
 /**
@@ -20,23 +21,25 @@ import com.rong.utils.ToolUtils;
  */
 public class Test {
 	public static void main(String[] args) {
-		String apkPath = "D:/wangzhixin/RongheSDK/signer/channelmzw.apk";
-		ToolUtils.unPackAPk(apkPath);
-		try {
-			Thread.sleep(8000);
-		} catch (Exception e) {
-		}
+		// String apkPath = "C:/Users/Administrator/Desktop/qxzl.apk";
+		// ToolUtils.unPackAPk(apkPath);
+		// try {
+		// Thread.sleep(8000);
+		// } catch (Exception e) {
+		// }
+		ConfigUtils.isLand = false;
 		ChannelBean channelBean = new ChannelBean();
-		channelBean.setChannelName("iqiyi");
+		channelBean.setChannelId("anzhi");
+		channelBean.setChannelName("anzhi");
 
-		ToolUtils.copySrcForChannel(channelBean);
-		ToolUtils.copyChannelResourceForSrc(channelBean);
-		ToolUtils.modifyFileForChannel(true, channelBean);
-		ToolUtils.pack(channelBean);
-		try {
-			Thread.sleep(10000);
-		} catch (Exception e) {
-		}
-		ToolUtils.sign(channelBean, "channelmzw");
+//		ToolUtils.copySrcForChannel(channelBean);
+//		 ToolUtils.copyChannelResourceForSrc(channelBean);
+//		 ToolUtils.modifyFileForChannel(channelBean);
+//		 ToolUtils.pack(channelBean);
+		// try {
+		// Thread.sleep(10000);
+		// } catch (Exception e) {
+		// }
+		 ToolUtils.sign(channelBean, "qxzl");
 	}
 }

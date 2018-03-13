@@ -9,6 +9,7 @@
 package gui;
 
 import java.awt.Component;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.datatransfer.DataFlavor;
@@ -21,6 +22,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,6 +41,7 @@ import javax.swing.JTextField;
 
 import com.rong.bean.ChannelBean;
 import com.rong.logger.LogPrintStream;
+import com.rong.utils.ConfigUtils;
 import com.rong.utils.FileUtils;
 import com.rong.utils.ToolUtils;
 
@@ -51,8 +54,6 @@ import com.rong.utils.ToolUtils;
  */
 public class Window extends JFrame implements ActionListener, ItemListener {
 	private static final long serialVersionUID = -1189035634361220261L;
-	private static final String ROOTPATH = new File("").getAbsolutePath();
-	private static final String cacheFileName = "smaliTemp";
 	private static final int FRAME_WIDTH = 500;
 	private static final int FRAME_HIGHT = 500;
 	private static final int ROW_ONE_Y = 5;
@@ -98,8 +99,8 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 	private static final int LOGTEXT_WIDTH = 480;
 
 	private List<ChannelBean> allChannelsList = new ArrayList<ChannelBean>();
-	private List<ChannelBean> chosedChannelsList = new ArrayList<ChannelBean>();
 	private String apkName = "";
+	private long fileLength = 0;
 	JFrame mainFrame = new JFrame("融合SDK子渠道打包工具v1.0.0");
 	JPanel panel = new JPanel();
 
@@ -113,7 +114,6 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 	JLabel orientLabel = new JLabel("游戏方向：");
 	JRadioButton landRadioButton = new JRadioButton("横屏", true);
 	JRadioButton portRadioButton = new JRadioButton("竖屏");
-	private boolean isLand = true;
 	ButtonGroup radioButtonGroup = new ButtonGroup();
 	JTextArea channelChosedText = new JTextArea();
 	JButton packButton = new JButton("开始打包");
@@ -137,25 +137,8 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 		mainFrame.setVisible(true);
 	}
 
-	/**
-	 * @Title: clearCache
-	 * @Description: 清理上次打包产生的缓存内容
-	 * @return void 返回类型
-	 * @throws
-	 */
-	private void clearCache() {
-		File rootFile = new File(ROOTPATH);
-		File[] files = rootFile.listFiles();
-		for (File file : files) {
-			if (file.getName().contains(cacheFileName)) {
-				System.out.println("正在清理缓存文件：" + file.getName());
-				FileUtils.rmdir(file);
-			}
-		}
-	}
-
 	private void initChannels() {
-		String channelsMsgString = FileUtils.readFileContent(ROOTPATH + "/config/channel_config");
+		String channelsMsgString = FileUtils.readFileContent(ConfigUtils.ROOTPATH + "/config/channel_config");
 		if ("".equals(channelsMsgString)) {
 			JOptionPane.showMessageDialog(null, "请检查渠道配置文件，路径为/config/channel_config!");
 			return;
@@ -188,14 +171,18 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 					dtde.acceptDrop(DnDConstants.ACTION_COPY_OR_MOVE);
 					List<File> fileList = (List<File>) dtde.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
 					String fileName = "";
+					fileLength = 0;
 					for (File file : fileList) {
 						fileName += file.getAbsolutePath();
+						fileLength += file.length();
 					}
+					ConfigUtils.apkPath = fileName;
 					if (fileName.endsWith(".apk")) {
 						dtde.dropComplete(true);
 						fileName = fileName.replaceAll("\\\\", "/");
 						apkName = fileName.substring(fileName.lastIndexOf("/") + 1, fileName.indexOf(".apk"));
 						System.out.println(apkName);
+						ConfigUtils.apkName = apkName;
 						apkPathText.setText(fileName);
 					} else {
 						JOptionPane.showMessageDialog(null, "文件格式不正确!");
@@ -288,6 +275,11 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 	public static void main(String[] args) {
 		Window window = new Window();
 		window.show();
+		// FileUtils.dirsCopy("C:\\Users\\Administrator\\git\\rongsdkinjecttool\\RongSDKInjectTool\\smaliTemp",
+		// "C:\\Users\\Administrator\\git\\rongsdkinjecttool\\RongSDKInjectTool\\smaliTemp_anzhi");
+		// ChannelBean channelBean = new ChannelBean("anzhi", "anzhi");
+		// ToolUtils.pack(channelBean);
+		// ToolUtils.sign(channelBean, "muzhiwan-20180130160339");
 	}
 
 	@Override
@@ -301,18 +293,18 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 		} else if (e.getSource() == choseAllCheckBoxs) {
 			checkBoxOpt(choseAllCheckBoxs.isSelected());
 		} else if (e.getSource() == landRadioButton) {
-			isLand = true;
+			ConfigUtils.isLand = true;
 			System.out.println("当前选择了横屏");
 		} else if (e.getSource() == portRadioButton) {
-			isLand = false;
+			ConfigUtils.isLand = false;
 			System.out.println("当前选择了竖屏");
 		} else if (e.getSource() == packButton) {
 			packButton.setEnabled(false);
-			clearCache();
-			chosedChannelsList.clear();
+			ToolUtils.clearCache();
+			ConfigUtils.channals.clear();
 			for (ChannelBean channelBean : allChannelsList) {
 				if (channelBean.isSelect()) {
-					chosedChannelsList.add(channelBean);
+					ConfigUtils.channals.add(channelBean);
 				}
 			}
 
@@ -322,7 +314,7 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 				return;
 			}
 
-			if (chosedChannelsList.size() < 0) {
+			if (ConfigUtils.channals.size() < 0) {
 				JOptionPane.showMessageDialog(null, "请勾选子渠道！");
 				packButton.setEnabled(true);
 				return;
@@ -330,15 +322,13 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 
 			new Thread() {
 				public void run() {
+					long startTime = System.currentTimeMillis();
 					logTextArea.setText("" + apkName);
 					System.out.println("准备执行反编译命令");
 					ToolUtils.unPackAPk(apkPathText.getText());
-					try {
-						Thread.sleep(10000);
-					} catch (Exception exception) {
-					}
+					System.out.println("FileLength-->" + fileLength / 1024 / 1024 / 2);
 
-					for (ChannelBean channelBean : chosedChannelsList) {
+					for (ChannelBean channelBean : ConfigUtils.channals) {
 						System.out.println("当前子渠道为：" + channelBean.getChannelName());
 
 						System.out.println("准备拷贝反编译文件...");
@@ -350,22 +340,12 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 						System.out.println("完成子渠道资源文件的拷贝...");
 
 						System.out.println("准备修改相关文件...");
-						ToolUtils.modifyFileForChannel(isLand, channelBean);
+						ToolUtils.modifyFileForChannel(channelBean);
 						System.out.println("完成相关文件修改...");
-
-						try {
-							Thread.sleep(10000);
-						} catch (Exception exception) {
-						}
 
 						System.out.println("准备回编译...");
 						ToolUtils.pack(channelBean);
 						System.out.println("完成回编译...");
-
-						try {
-							Thread.sleep(20000);
-						} catch (Exception exception) {
-						}
 
 						System.out.println("准备对文件进行签名....");
 						ToolUtils.sign(channelBean, apkName);
@@ -374,6 +354,13 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 
 					System.out.println("所有渠道包打包完成...");
 					packButton.setEnabled(true);
+					try {
+						String alertStr = "打包完成，用时:" + (System.currentTimeMillis() - startTime) / 1000L + "秒";
+						JOptionPane.showMessageDialog(null, alertStr);
+						Desktop.getDesktop().open(new File(ConfigUtils.ROOTPATH + "/" + apkName));
+					} catch (IOException ex) {
+						ex.printStackTrace();
+					}
 				};
 			}.start();
 

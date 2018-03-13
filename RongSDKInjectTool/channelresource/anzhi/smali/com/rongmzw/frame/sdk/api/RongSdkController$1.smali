@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     .prologue
-    .line 44
+    .line 51
     iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,237 +38,204 @@
 
 # virtual methods
 .method public callBack(ILjava/lang/String;)V
-    .locals 9
+    .locals 10
     .param p1, "type"    # I
     .param p2, "result"    # Ljava/lang/String;
 
     .prologue
-    .line 47
+    .line 54
     # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$000()Ljava/lang/String;
 
-    move-result-object v6
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v8, "anzhi callback code: "
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     move-result-object v7
 
-    invoke-virtual {v7, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v8, ", result: "
+    const-string v9, "anzhi callback code: "
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v9, ", result: "
 
-    move-result-object v7
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v6, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v8
 
-    .line 48
+    invoke-virtual {v8, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 55
     packed-switch p1, :pswitch_data_0
 
-    .line 128
+    .line 145
     :goto_0
     return-void
 
-    .line 50
+    .line 57
     :pswitch_0
-    iget-object v6, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
+    iget-object v7, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->hasLoopered:Z
-    invoke-static {v6}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$100(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Z
+    invoke-static {v7}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$100(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Z
 
-    move-result v6
+    move-result v7
 
-    if-nez v6, :cond_0
+    if-nez v7, :cond_0
 
-    .line 51
+    .line 58
     invoke-static {}, Landroid/os/Looper;->prepare()V
 
-    .line 52
-    iget-object v6, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
+    .line 59
+    iget-object v7, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
     # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->hasLoopered:Z
-    invoke-static {v6, v7}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$102(Lcom/rongmzw/frame/sdk/api/RongSdkController;Z)Z
+    invoke-static {v7, v8}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$102(Lcom/rongmzw/frame/sdk/api/RongSdkController;Z)Z
 
-    .line 54
+    .line 61
     :cond_0
     invoke-static {p2}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->initSuccessCallBack(Ljava/lang/String;)V
 
-    .line 55
-    iget-object v6, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
-
-    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->anzhiSDK:Lcom/anzhi/sdk/middle/manage/AnzhiSDK;
-    invoke-static {v6}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/anzhi/sdk/middle/manage/AnzhiSDK;
-
-    move-result-object v6
-
+    .line 62
     iget-object v7, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
-    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
-    invoke-static {v7}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$200(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->anzhiSDK:Lcom/anzhi/sdk/middle/manage/AnzhiSDK;
+    invoke-static {v7}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/anzhi/sdk/middle/manage/AnzhiSDK;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Lcom/anzhi/sdk/middle/manage/AnzhiSDK;->addPop(Landroid/app/Activity;)V
+    iget-object v8, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
+
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
+    invoke-static {v8}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$200(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Lcom/anzhi/sdk/middle/manage/AnzhiSDK;->addPop(Landroid/app/Activity;)V
 
     goto :goto_0
 
-    .line 59
+    .line 66
     :pswitch_1
     :try_start_0
     new-instance v3, Lorg/json/JSONObject;
 
     invoke-direct {v3, p2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 60
+    .line 67
     .local v3, "json":Lorg/json/JSONObject;
-    const-string v6, "code"
+    const-string v7, "code"
 
-    invoke-virtual {v3, v6}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I
+    invoke-virtual {v3, v7}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I
 
-    move-result v6
+    move-result v7
 
-    const/16 v7, 0xc8
+    const/16 v8, 0xc8
 
-    if-ne v6, v7, :cond_1
+    if-ne v7, v8, :cond_1
 
-    .line 61
-    const-string v6, "cptoken"
+    .line 68
+    const-string v7, "cptoken"
 
-    invoke-virtual {v3, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v7}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 62
+    .line 69
     .local v0, "cptoken":Ljava/lang/String;
-    const-string v6, "deviceId"
+    const-string v7, "deviceId"
 
-    invoke-virtual {v3, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v7}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 63
+    .line 70
     .local v2, "deviceId":Ljava/lang/String;
-    const-string v6, "requestUrl"
+    const-string v7, "requestUrl"
 
-    invoke-virtual {v3, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 65
-    .local v4, "requestUrl":Ljava/lang/String;
-    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
-    invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$000()Ljava/lang/String;
-
-    move-result-object v6
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v8, "anzhi cptoken=="
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string v8, ";deviceId=="
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    const-string v8, ";requestUrl=="
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 66
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "{\"cptoken\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    const-string v7, "\",\"deviceId\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    const-string v7, "\",\"requestUrl\":\""
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    const-string v7, "\"}"
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3, v7}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 67
-    .local v5, "userInfo":Ljava/lang/String;
-    iget-object v6, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
+    .line 72
+    .local v5, "requestUrl":Ljava/lang/String;
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
+    invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$000()Ljava/lang/String;
 
+    move-result-object v7
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v9, "anzhi cptoken=="
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    const-string v9, ";deviceId=="
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    const-string v9, ";requestUrl=="
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 73
+    new-instance v6, Lcom/rongmzw/frame/sdk/domain/local/RongUserInfo;
+
+    invoke-direct {v6}, Lcom/rongmzw/frame/sdk/domain/local/RongUserInfo;-><init>()V
+
+    .line 74
+    .local v6, "rongUserInfo":Lcom/rongmzw/frame/sdk/domain/local/RongUserInfo;
+    invoke-virtual {v6, v0}, Lcom/rongmzw/frame/sdk/domain/local/RongUserInfo;->setCptoken(Ljava/lang/String;)V
+
+    .line 75
+    invoke-virtual {v6, v2}, Lcom/rongmzw/frame/sdk/domain/local/RongUserInfo;->setDeviceId(Ljava/lang/String;)V
+
+    .line 76
+    invoke-virtual {v6, v5}, Lcom/rongmzw/frame/sdk/domain/local/RongUserInfo;->setRequestUrl(Ljava/lang/String;)V
+
+    .line 80
     iget-object v7, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
@@ -276,35 +243,78 @@
 
     move-result-object v7
 
-    new-instance v8, Lcom/rongmzw/frame/sdk/api/RongSdkController$1$1;
+    invoke-static {v7}, Lcom/rongmzw/frame/sdk/utils/ParamUtils;->getGeneralParams(Landroid/content/Context;)Ljava/util/HashMap;
 
-    invoke-direct {v8, p0}, Lcom/rongmzw/frame/sdk/api/RongSdkController$1$1;-><init>(Lcom/rongmzw/frame/sdk/api/RongSdkController$1;)V
+    move-result-object v4
 
-    invoke-virtual {v6, v7, v5, v8}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->loginRequest(Landroid/app/Activity;Ljava/lang/String;Lcom/rongmzw/frame/sdk/callback/RongHttpCallback;)V
+    .line 81
+    .local v4, "params":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
+    const-string v7, "userinfo"
+
+    iget-object v8, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
+
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gson:Lcom/google/gson/Gson;
+    invoke-static {v8}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$500(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/google/gson/Gson;
+
+    move-result-object v8
+
+    invoke-virtual {v8, v6}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-interface {v4, v7, v8}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 82
+    const-string v7, "channelversion"
+
+    const/16 v8, 0x193
+
+    invoke-static {v8}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-interface {v4, v7, v8}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 83
+    iget-object v7, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
+
+    iget-object v8, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
+
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
+    invoke-static {v8}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$600(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
+
+    move-result-object v8
+
+    new-instance v9, Lcom/rongmzw/frame/sdk/api/RongSdkController$1$1;
+
+    invoke-direct {v9, p0}, Lcom/rongmzw/frame/sdk/api/RongSdkController$1$1;-><init>(Lcom/rongmzw/frame/sdk/api/RongSdkController$1;)V
+
+    invoke-virtual {v7, v8, v4, v9}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->loginRequest(Landroid/app/Activity;Ljava/util/Map;Lcom/rongmzw/frame/sdk/callback/RongHttpCallback;)V
 
     goto/16 :goto_0
 
-    .line 107
+    .line 124
     .end local v0    # "cptoken":Ljava/lang/String;
     .end local v2    # "deviceId":Ljava/lang/String;
     .end local v3    # "json":Lorg/json/JSONObject;
-    .end local v4    # "requestUrl":Ljava/lang/String;
-    .end local v5    # "userInfo":Ljava/lang/String;
+    .end local v4    # "params":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
+    .end local v5    # "requestUrl":Ljava/lang/String;
+    .end local v6    # "rongUserInfo":Lcom/rongmzw/frame/sdk/domain/local/RongUserInfo;
     :catch_0
-    move-exception v6
+    move-exception v7
 
     goto/16 :goto_0
 
-    .line 104
+    .line 121
     .restart local v3    # "json":Lorg/json/JSONObject;
     :cond_1
-    const-string v6, "code_desc"
+    const-string v7, "code_desc"
 
-    invoke-virtual {v3, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v7}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 105
+    .line 122
     .local v1, "desc":Ljava/lang/String;
     invoke-static {v1}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->loginFailedCallBack(Ljava/lang/String;)V
     :try_end_0
@@ -312,7 +322,7 @@
 
     goto/16 :goto_0
 
-    .line 111
+    .line 128
     .end local v1    # "desc":Ljava/lang/String;
     .end local v3    # "json":Lorg/json/JSONObject;
     :pswitch_2
@@ -320,37 +330,35 @@
 
     goto/16 :goto_0
 
-    .line 114
+    .line 131
     :pswitch_3
     invoke-static {p1, p2}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->payCallBack(ILjava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 117
+    .line 134
     :pswitch_4
     invoke-static {p1, p2}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->payCallBack(ILjava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 120
+    .line 137
     :pswitch_5
-    const-string v6, "exitgame success"
+    const-string v7, "exitgame success"
 
-    invoke-static {v6}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->exitGameSuccessCallBack(Ljava/lang/String;)V
+    invoke-static {v7}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->exitGameSuccessCallBack(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 123
+    .line 140
     :pswitch_6
-    const-string v6, "exitgame cancel"
+    const-string v7, "exitgame cancel"
 
-    invoke-static {v6}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->exitGameFailedCallBack(Ljava/lang/String;)V
+    invoke-static {v7}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->exitGameFailedCallBack(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 48
-    nop
-
+    .line 55
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1

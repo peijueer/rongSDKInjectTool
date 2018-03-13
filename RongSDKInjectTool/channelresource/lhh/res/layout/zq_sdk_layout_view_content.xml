@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_detail" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/tv_content" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="双十二活动来袭，无论在哪里，54折无论在哪里在无论在哪！" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <activity android:name="com.rongmzw.frame.sdk.activity.WebActivity" android:screenOrientation="sensorLandscape"/>
+    <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.zqhy.sdk.ui.H5WebActivity" android:screenOrientation="sensorLandscape" android:theme="@style/CY_DialogTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+    <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.zqhy.sdk.ui.HomeWebActivity" android:screenOrientation="sensorLandscape" android:theme="@style/CY_DialogTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+    <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.zqhy.sdk.ui.FloatActivity" android:screenOrientation="sensorLandscape" android:theme="@style/zq_sdk_activity_transparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+    <receiver android:name="com.zqhy.sdk.pay.wechat.AppReciver_zqhy">
+        <intent-filter>
+            <action android:name="com.zqhy.wxpay.plugin.recive"/>
+        </intent-filter>
+    </receiver>
+    <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize|stateHidden"/>
+    <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.auth.AuthActivity" android:screenOrientation="sensorLandscape"/>
+    <provider android:authorities="com.zqhy.game.demo.jardemo.file.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+        <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+    </provider>
+    <service android:name="com.lzy.okhttpserver.download.DownloadService"/>
+    <meta-data android:name="sdk_version" android:value="8.0"/>
+</manifest>
