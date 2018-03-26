@@ -54,6 +54,7 @@
     .prologue
     .line 93
     .local p1, "c":Ljava/lang/Class;, "Ljava/lang/Class<TT;>;"
+    # invokes: Lcom/google/gson/internal/UnsafeAllocator;->assertInstantiable(Ljava/lang/Class;)V
     invoke-static {p1}, Lcom/google/gson/internal/UnsafeAllocator;->access$000(Ljava/lang/Class;)V
 
     .line 94

@@ -524,12 +524,14 @@
     monitor-enter p0
 
     :try_start_0
+    # getter for: Lokhttp3/internal/DiskLruCache$Editor;->entry:Lokhttp3/internal/DiskLruCache$Entry;
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Editor;->access$2100(Lokhttp3/internal/DiskLruCache$Editor;)Lokhttp3/internal/DiskLruCache$Entry;
 
     move-result-object v2
 
     .line 529
     .local v2, "entry":Lokhttp3/internal/DiskLruCache$Entry;
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1300(Lokhttp3/internal/DiskLruCache$Entry;)Lokhttp3/internal/DiskLruCache$Editor;
 
     move-result-object v8
@@ -560,6 +562,7 @@
     if-eqz p2, :cond_4
 
     :try_start_1
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->readable:Z
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1200(Lokhttp3/internal/DiskLruCache$Entry;)Z
 
     move-result v8
@@ -576,6 +579,7 @@
     if-ge v3, v8, :cond_4
 
     .line 536
+    # getter for: Lokhttp3/internal/DiskLruCache$Editor;->written:[Z
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Editor;->access$2200(Lokhttp3/internal/DiskLruCache$Editor;)[Z
 
     move-result-object v8
@@ -616,6 +620,7 @@
     :cond_1
     iget-object v8, p0, Lokhttp3/internal/DiskLruCache;->fileSystem:Lokhttp3/internal/io/FileSystem;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->dirtyFiles:[Ljava/io/File;
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1800(Lokhttp3/internal/DiskLruCache$Entry;)[Ljava/io/File;
 
     move-result-object v9
@@ -659,6 +664,7 @@
     if-ge v3, v8, :cond_7
 
     .line 548
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->dirtyFiles:[Ljava/io/File;
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1800(Lokhttp3/internal/DiskLruCache$Entry;)[Ljava/io/File;
 
     move-result-object v8
@@ -679,6 +685,7 @@
     if-eqz v8, :cond_5
 
     .line 551
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->cleanFiles:[Ljava/io/File;
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1700(Lokhttp3/internal/DiskLruCache$Entry;)[Ljava/io/File;
 
     move-result-object v8
@@ -692,6 +699,7 @@
     invoke-interface {v8, v1, v0}, Lokhttp3/internal/io/FileSystem;->rename(Ljava/io/File;Ljava/io/File;)V
 
     .line 553
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->lengths:[J
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1600(Lokhttp3/internal/DiskLruCache$Entry;)[J
 
     move-result-object v8
@@ -708,6 +716,7 @@
 
     .line 555
     .local v4, "newLength":J
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->lengths:[J
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1600(Lokhttp3/internal/DiskLruCache$Entry;)[J
 
     move-result-object v8
@@ -753,9 +762,11 @@
     .line 564
     const/4 v8, 0x0
 
+    # setter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v2, v8}, Lokhttp3/internal/DiskLruCache$Entry;->access$1302(Lokhttp3/internal/DiskLruCache$Entry;Lokhttp3/internal/DiskLruCache$Editor;)Lokhttp3/internal/DiskLruCache$Editor;
 
     .line 565
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->readable:Z
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1200(Lokhttp3/internal/DiskLruCache$Entry;)Z
 
     move-result v8
@@ -767,6 +778,7 @@
     .line 566
     const/4 v8, 0x1
 
+    # setter for: Lokhttp3/internal/DiskLruCache$Entry;->readable:Z
     invoke-static {v2, v8}, Lokhttp3/internal/DiskLruCache$Entry;->access$1202(Lokhttp3/internal/DiskLruCache$Entry;Z)Z
 
     .line 567
@@ -785,6 +797,7 @@
     .line 568
     iget-object v8, p0, Lokhttp3/internal/DiskLruCache;->journalWriter:Lokio/BufferedSink;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->key:Ljava/lang/String;
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1900(Lokhttp3/internal/DiskLruCache$Entry;)Ljava/lang/String;
 
     move-result-object v9
@@ -815,6 +828,7 @@
 
     iput-wide v10, p0, Lokhttp3/internal/DiskLruCache;->nextSequenceNumber:J
 
+    # setter for: Lokhttp3/internal/DiskLruCache$Entry;->sequenceNumber:J
     invoke-static {v2, v8, v9}, Lokhttp3/internal/DiskLruCache$Entry;->access$2002(Lokhttp3/internal/DiskLruCache$Entry;J)J
 
     .line 580
@@ -853,6 +867,7 @@
     :cond_a
     iget-object v8, p0, Lokhttp3/internal/DiskLruCache;->lruEntries:Ljava/util/LinkedHashMap;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->key:Ljava/lang/String;
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1900(Lokhttp3/internal/DiskLruCache$Entry;)Ljava/lang/String;
 
     move-result-object v9
@@ -875,6 +890,7 @@
     .line 577
     iget-object v8, p0, Lokhttp3/internal/DiskLruCache;->journalWriter:Lokio/BufferedSink;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->key:Ljava/lang/String;
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache$Entry;->access$1900(Lokhttp3/internal/DiskLruCache$Entry;)Ljava/lang/String;
 
     move-result-object v9
@@ -1024,6 +1040,7 @@
     if-eqz v1, :cond_0
 
     .line 462
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->sequenceNumber:J
     invoke-static {v1}, Lokhttp3/internal/DiskLruCache$Entry;->access$2000(Lokhttp3/internal/DiskLruCache$Entry;)J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1046,6 +1063,7 @@
     if-eqz v1, :cond_2
 
     :try_start_1
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v1}, Lokhttp3/internal/DiskLruCache$Entry;->access$1300(Lokhttp3/internal/DiskLruCache$Entry;)Lokhttp3/internal/DiskLruCache$Editor;
 
     move-result-object v2
@@ -1146,6 +1164,7 @@
 
     .line 491
     .local v0, "editor":Lokhttp3/internal/DiskLruCache$Editor;
+    # setter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v1, v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1302(Lokhttp3/internal/DiskLruCache$Entry;Lokhttp3/internal/DiskLruCache$Editor;)Lokhttp3/internal/DiskLruCache$Editor;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -1270,6 +1289,7 @@
 
     .line 365
     .local v0, "entry":Lokhttp3/internal/DiskLruCache$Entry;
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1300(Lokhttp3/internal/DiskLruCache$Entry;)Lokhttp3/internal/DiskLruCache$Editor;
 
     move-result-object v3
@@ -1288,6 +1308,7 @@
     .line 367
     iget-wide v4, p0, Lokhttp3/internal/DiskLruCache;->size:J
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->lengths:[J
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1600(Lokhttp3/internal/DiskLruCache$Entry;)[J
 
     move-result-object v3
@@ -1308,6 +1329,7 @@
     :cond_1
     const/4 v3, 0x0
 
+    # setter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v0, v3}, Lokhttp3/internal/DiskLruCache$Entry;->access$1302(Lokhttp3/internal/DiskLruCache$Entry;Lokhttp3/internal/DiskLruCache$Editor;)Lokhttp3/internal/DiskLruCache$Editor;
 
     .line 371
@@ -1322,6 +1344,7 @@
     .line 372
     iget-object v3, p0, Lokhttp3/internal/DiskLruCache;->fileSystem:Lokhttp3/internal/io/FileSystem;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->cleanFiles:[Ljava/io/File;
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1700(Lokhttp3/internal/DiskLruCache$Entry;)[Ljava/io/File;
 
     move-result-object v4
@@ -1333,6 +1356,7 @@
     .line 373
     iget-object v3, p0, Lokhttp3/internal/DiskLruCache;->fileSystem:Lokhttp3/internal/io/FileSystem;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->dirtyFiles:[Ljava/io/File;
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1800(Lokhttp3/internal/DiskLruCache$Entry;)[Ljava/io/File;
 
     move-result-object v4
@@ -1788,12 +1812,15 @@
     .local v4, "parts":[Ljava/lang/String;
     const/4 v6, 0x1
 
+    # setter for: Lokhttp3/internal/DiskLruCache$Entry;->readable:Z
     invoke-static {v0, v6}, Lokhttp3/internal/DiskLruCache$Entry;->access$1202(Lokhttp3/internal/DiskLruCache$Entry;Z)Z
 
     .line 346
+    # setter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v0, v8}, Lokhttp3/internal/DiskLruCache$Entry;->access$1302(Lokhttp3/internal/DiskLruCache$Entry;Lokhttp3/internal/DiskLruCache$Editor;)Lokhttp3/internal/DiskLruCache$Editor;
 
     .line 347
+    # invokes: Lokhttp3/internal/DiskLruCache$Entry;->setLengths([Ljava/lang/String;)V
     invoke-static {v0, v4}, Lokhttp3/internal/DiskLruCache$Entry;->access$1400(Lokhttp3/internal/DiskLruCache$Entry;[Ljava/lang/String;)V
 
     goto :goto_0
@@ -1824,6 +1851,7 @@
 
     invoke-direct {v6, p0, v0, v8}, Lokhttp3/internal/DiskLruCache$Editor;-><init>(Lokhttp3/internal/DiskLruCache;Lokhttp3/internal/DiskLruCache$Entry;Lokhttp3/internal/DiskLruCache$1;)V
 
+    # setter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v0, v6}, Lokhttp3/internal/DiskLruCache$Entry;->access$1302(Lokhttp3/internal/DiskLruCache$Entry;Lokhttp3/internal/DiskLruCache$Editor;)Lokhttp3/internal/DiskLruCache$Editor;
 
     goto :goto_0
@@ -1994,6 +2022,7 @@
 
     .line 398
     .local v0, "entry":Lokhttp3/internal/DiskLruCache$Entry;
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1300(Lokhttp3/internal/DiskLruCache$Entry;)Lokhttp3/internal/DiskLruCache$Editor;
 
     move-result-object v3
@@ -2012,6 +2041,7 @@
     invoke-interface {v3, v4}, Lokio/BufferedSink;->writeByte(I)Lokio/BufferedSink;
 
     .line 400
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->key:Ljava/lang/String;
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1900(Lokhttp3/internal/DiskLruCache$Entry;)Ljava/lang/String;
 
     move-result-object v3
@@ -2064,6 +2094,7 @@
     invoke-interface {v3, v4}, Lokio/BufferedSink;->writeByte(I)Lokio/BufferedSink;
 
     .line 404
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->key:Ljava/lang/String;
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1900(Lokhttp3/internal/DiskLruCache$Entry;)Ljava/lang/String;
 
     move-result-object v3
@@ -2161,6 +2192,7 @@
 
     .prologue
     .line 616
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Entry;->access$1300(Lokhttp3/internal/DiskLruCache$Entry;)Lokhttp3/internal/DiskLruCache$Editor;
 
     move-result-object v1
@@ -2168,6 +2200,7 @@
     if-eqz v1, :cond_0
 
     .line 617
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Entry;->access$1300(Lokhttp3/internal/DiskLruCache$Entry;)Lokhttp3/internal/DiskLruCache$Editor;
 
     move-result-object v1
@@ -2187,6 +2220,7 @@
     .line 621
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache;->fileSystem:Lokhttp3/internal/io/FileSystem;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->cleanFiles:[Ljava/io/File;
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Entry;->access$1700(Lokhttp3/internal/DiskLruCache$Entry;)[Ljava/io/File;
 
     move-result-object v2
@@ -2198,6 +2232,7 @@
     .line 622
     iget-wide v2, p0, Lokhttp3/internal/DiskLruCache;->size:J
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->lengths:[J
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Entry;->access$1600(Lokhttp3/internal/DiskLruCache$Entry;)[J
 
     move-result-object v1
@@ -2209,6 +2244,7 @@
     iput-wide v2, p0, Lokhttp3/internal/DiskLruCache;->size:J
 
     .line 623
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->lengths:[J
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Entry;->access$1600(Lokhttp3/internal/DiskLruCache$Entry;)[J
 
     move-result-object v1
@@ -2245,6 +2281,7 @@
 
     move-result-object v1
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->key:Ljava/lang/String;
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Entry;->access$1900(Lokhttp3/internal/DiskLruCache$Entry;)Ljava/lang/String;
 
     move-result-object v2
@@ -2260,6 +2297,7 @@
     .line 628
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache;->lruEntries:Ljava/util/LinkedHashMap;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->key:Ljava/lang/String;
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache$Entry;->access$1900(Lokhttp3/internal/DiskLruCache$Entry;)Ljava/lang/String;
 
     move-result-object v2
@@ -2467,6 +2505,7 @@
 
     .line 665
     .local v0, "entry":Lokhttp3/internal/DiskLruCache$Entry;
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1300(Lokhttp3/internal/DiskLruCache$Entry;)Lokhttp3/internal/DiskLruCache$Editor;
 
     move-result-object v4
@@ -2474,6 +2513,7 @@
     if-eqz v4, :cond_2
 
     .line 666
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->currentEditor:Lokhttp3/internal/DiskLruCache$Editor;
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1300(Lokhttp3/internal/DiskLruCache$Entry;)Lokhttp3/internal/DiskLruCache$Editor;
 
     move-result-object v4
@@ -2727,6 +2767,7 @@
     .local v0, "entry":Lokhttp3/internal/DiskLruCache$Entry;
     if-eqz v0, :cond_0
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Entry;->readable:Z
     invoke-static {v0}, Lokhttp3/internal/DiskLruCache$Entry;->access$1200(Lokhttp3/internal/DiskLruCache$Entry;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

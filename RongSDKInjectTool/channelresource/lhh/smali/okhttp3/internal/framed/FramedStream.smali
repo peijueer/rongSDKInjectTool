@@ -203,11 +203,13 @@
     .line 85
     iget-object v0, p0, Lokhttp3/internal/framed/FramedStream;->source:Lokhttp3/internal/framed/FramedStream$FramedDataSource;
 
+    # setter for: Lokhttp3/internal/framed/FramedStream$FramedDataSource;->finished:Z
     invoke-static {v0, p4}, Lokhttp3/internal/framed/FramedStream$FramedDataSource;->access$102(Lokhttp3/internal/framed/FramedStream$FramedDataSource;Z)Z
 
     .line 86
     iget-object v0, p0, Lokhttp3/internal/framed/FramedStream;->sink:Lokhttp3/internal/framed/FramedStream$FramedDataSink;
 
+    # setter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->finished:Z
     invoke-static {v0, p3}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$202(Lokhttp3/internal/framed/FramedStream$FramedDataSink;Z)Z
 
     .line 87
@@ -354,6 +356,7 @@
     :try_start_0
     iget-object v2, p0, Lokhttp3/internal/framed/FramedStream;->source:Lokhttp3/internal/framed/FramedStream$FramedDataSource;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSource;->finished:Z
     invoke-static {v2}, Lokhttp3/internal/framed/FramedStream$FramedDataSource;->access$100(Lokhttp3/internal/framed/FramedStream$FramedDataSource;)Z
 
     move-result v2
@@ -362,6 +365,7 @@
 
     iget-object v2, p0, Lokhttp3/internal/framed/FramedStream;->source:Lokhttp3/internal/framed/FramedStream$FramedDataSource;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSource;->closed:Z
     invoke-static {v2}, Lokhttp3/internal/framed/FramedStream$FramedDataSource;->access$300(Lokhttp3/internal/framed/FramedStream$FramedDataSource;)Z
 
     move-result v2
@@ -370,6 +374,7 @@
 
     iget-object v2, p0, Lokhttp3/internal/framed/FramedStream;->sink:Lokhttp3/internal/framed/FramedStream$FramedDataSink;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->finished:Z
     invoke-static {v2}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$200(Lokhttp3/internal/framed/FramedStream$FramedDataSink;)Z
 
     move-result v2
@@ -378,6 +383,7 @@
 
     iget-object v2, p0, Lokhttp3/internal/framed/FramedStream;->sink:Lokhttp3/internal/framed/FramedStream$FramedDataSink;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->closed:Z
     invoke-static {v2}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$400(Lokhttp3/internal/framed/FramedStream$FramedDataSink;)Z
 
     move-result v2
@@ -460,6 +466,7 @@
     .line 569
     iget-object v0, p0, Lokhttp3/internal/framed/FramedStream;->sink:Lokhttp3/internal/framed/FramedStream$FramedDataSink;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->closed:Z
     invoke-static {v0}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$400(Lokhttp3/internal/framed/FramedStream$FramedDataSink;)Z
 
     move-result v0
@@ -479,6 +486,7 @@
     :cond_0
     iget-object v0, p0, Lokhttp3/internal/framed/FramedStream;->sink:Lokhttp3/internal/framed/FramedStream$FramedDataSink;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->finished:Z
     invoke-static {v0}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$200(Lokhttp3/internal/framed/FramedStream$FramedDataSink;)Z
 
     move-result v0
@@ -559,6 +567,7 @@
     :cond_1
     iget-object v1, p0, Lokhttp3/internal/framed/FramedStream;->source:Lokhttp3/internal/framed/FramedStream$FramedDataSource;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSource;->finished:Z
     invoke-static {v1}, Lokhttp3/internal/framed/FramedStream$FramedDataSource;->access$100(Lokhttp3/internal/framed/FramedStream$FramedDataSource;)Z
 
     move-result v1
@@ -567,6 +576,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/framed/FramedStream;->sink:Lokhttp3/internal/framed/FramedStream$FramedDataSink;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->finished:Z
     invoke-static {v1}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$200(Lokhttp3/internal/framed/FramedStream$FramedDataSink;)Z
 
     move-result v1
@@ -1029,6 +1039,7 @@
     :try_start_1
     iget-object v1, p0, Lokhttp3/internal/framed/FramedStream;->source:Lokhttp3/internal/framed/FramedStream$FramedDataSource;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSource;->finished:Z
     invoke-static {v1}, Lokhttp3/internal/framed/FramedStream$FramedDataSource;->access$100(Lokhttp3/internal/framed/FramedStream$FramedDataSource;)Z
 
     move-result v1
@@ -1037,6 +1048,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/framed/FramedStream;->source:Lokhttp3/internal/framed/FramedStream$FramedDataSource;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSource;->closed:Z
     invoke-static {v1}, Lokhttp3/internal/framed/FramedStream$FramedDataSource;->access$300(Lokhttp3/internal/framed/FramedStream$FramedDataSource;)Z
 
     move-result v1
@@ -1047,6 +1059,7 @@
     iget-object v1, p0, Lokhttp3/internal/framed/FramedStream;->sink:Lokhttp3/internal/framed/FramedStream$FramedDataSink;
 
     .line 110
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->finished:Z
     invoke-static {v1}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$200(Lokhttp3/internal/framed/FramedStream$FramedDataSink;)Z
 
     move-result v1
@@ -1055,6 +1068,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/framed/FramedStream;->sink:Lokhttp3/internal/framed/FramedStream$FramedDataSink;
 
+    # getter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->closed:Z
     invoke-static {v1}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$400(Lokhttp3/internal/framed/FramedStream$FramedDataSink;)Z
 
     move-result v1
@@ -1164,6 +1178,7 @@
 
     const/4 v2, 0x1
 
+    # setter for: Lokhttp3/internal/framed/FramedStream$FramedDataSource;->finished:Z
     invoke-static {v1, v2}, Lokhttp3/internal/framed/FramedStream$FramedDataSource;->access$102(Lokhttp3/internal/framed/FramedStream$FramedDataSource;Z)Z
 
     .line 293
@@ -1495,6 +1510,7 @@
 
     const/4 v2, 0x1
 
+    # setter for: Lokhttp3/internal/framed/FramedStream$FramedDataSink;->finished:Z
     invoke-static {v1, v2}, Lokhttp3/internal/framed/FramedStream$FramedDataSink;->access$202(Lokhttp3/internal/framed/FramedStream$FramedDataSink;Z)Z
 
     .line 175

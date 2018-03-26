@@ -49,6 +49,7 @@
     .line 59
     iget-object v0, p0, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener$1;->this$0:Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;
 
+    # getter for: Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->mainActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->access$000(Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;)Landroid/app/Activity;
 
     move-result-object v0

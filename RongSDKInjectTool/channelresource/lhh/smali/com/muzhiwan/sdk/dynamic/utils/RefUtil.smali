@@ -189,10 +189,8 @@
 
     move-result-object v0
 
-    .line 19
     goto :goto_0
 
-    .line 30
     :cond_2
     invoke-virtual {v0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 

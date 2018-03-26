@@ -94,6 +94,7 @@
     const/4 v4, 0x0
 
     .line 76
+    # getter for: Lcom/rongmzw/frame/sdk/utils/HttpUtils;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/utils/HttpUtils;->access$000()Ljava/lang/String;
 
     move-result-object v1
@@ -123,6 +124,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 77
+    # getter for: Lcom/rongmzw/frame/sdk/utils/HttpUtils;->gson:Lcom/google/gson/Gson;
     invoke-static {}, Lcom/rongmzw/frame/sdk/utils/HttpUtils;->access$100()Lcom/google/gson/Gson;
 
     move-result-object v1
@@ -153,6 +155,7 @@
     if-ne v1, v2, :cond_0
 
     .line 80
+    # setter for: Lcom/rongmzw/frame/sdk/utils/HttpUtils;->loginRequestTimes:I
     invoke-static {v4}, Lcom/rongmzw/frame/sdk/utils/HttpUtils;->access$302(I)I
 
     .line 81
@@ -180,6 +183,7 @@
 
     if-ne v1, v2, :cond_1
 
+    # getter for: Lcom/rongmzw/frame/sdk/utils/HttpUtils;->loginRequestTimes:I
     invoke-static {}, Lcom/rongmzw/frame/sdk/utils/HttpUtils;->access$300()I
 
     move-result v1
@@ -199,6 +203,7 @@
 
     .line 85
     :cond_1
+    # setter for: Lcom/rongmzw/frame/sdk/utils/HttpUtils;->loginRequestTimes:I
     invoke-static {v4}, Lcom/rongmzw/frame/sdk/utils/HttpUtils;->access$302(I)I
 
     .line 86

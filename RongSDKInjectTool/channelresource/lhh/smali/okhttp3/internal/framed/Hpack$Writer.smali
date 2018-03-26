@@ -115,6 +115,7 @@
 
     .line 382
     .local v1, "name":Lokio/ByteString;
+    # getter for: Lokhttp3/internal/framed/Hpack;->NAME_TO_FIRST_INDEX:Ljava/util/Map;
     invoke-static {}, Lokhttp3/internal/framed/Hpack;->access$200()Ljava/util/Map;
 
     move-result-object v4

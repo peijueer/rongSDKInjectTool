@@ -45,6 +45,7 @@
 
     const/4 v1, 0x0
 
+    # setter for: Landroid/support/v4/widget/ContentLoadingProgressBar;->mPostedHide:Z
     invoke-static {v0, v1}, Landroid/support/v4/widget/ContentLoadingProgressBar;->access$002(Landroid/support/v4/widget/ContentLoadingProgressBar;Z)Z
 
     .line 47
@@ -52,6 +53,7 @@
 
     const-wide/16 v2, -0x1
 
+    # setter for: Landroid/support/v4/widget/ContentLoadingProgressBar;->mStartTime:J
     invoke-static {v0, v2, v3}, Landroid/support/v4/widget/ContentLoadingProgressBar;->access$102(Landroid/support/v4/widget/ContentLoadingProgressBar;J)J
 
     .line 48

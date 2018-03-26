@@ -59,6 +59,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 111
+    # getter for: Lokhttp3/Request;->url:Lokhttp3/HttpUrl;
     invoke-static {p1}, Lokhttp3/Request;->access$600(Lokhttp3/Request;)Lokhttp3/HttpUrl;
 
     move-result-object v0
@@ -66,6 +67,7 @@
     iput-object v0, p0, Lokhttp3/Request$Builder;->url:Lokhttp3/HttpUrl;
 
     .line 112
+    # getter for: Lokhttp3/Request;->method:Ljava/lang/String;
     invoke-static {p1}, Lokhttp3/Request;->access$700(Lokhttp3/Request;)Ljava/lang/String;
 
     move-result-object v0
@@ -73,6 +75,7 @@
     iput-object v0, p0, Lokhttp3/Request$Builder;->method:Ljava/lang/String;
 
     .line 113
+    # getter for: Lokhttp3/Request;->body:Lokhttp3/RequestBody;
     invoke-static {p1}, Lokhttp3/Request;->access$800(Lokhttp3/Request;)Lokhttp3/RequestBody;
 
     move-result-object v0
@@ -80,6 +83,7 @@
     iput-object v0, p0, Lokhttp3/Request$Builder;->body:Lokhttp3/RequestBody;
 
     .line 114
+    # getter for: Lokhttp3/Request;->tag:Ljava/lang/Object;
     invoke-static {p1}, Lokhttp3/Request;->access$900(Lokhttp3/Request;)Ljava/lang/Object;
 
     move-result-object v0
@@ -87,6 +91,7 @@
     iput-object v0, p0, Lokhttp3/Request$Builder;->tag:Ljava/lang/Object;
 
     .line 115
+    # getter for: Lokhttp3/Request;->headers:Lokhttp3/Headers;
     invoke-static {p1}, Lokhttp3/Request;->access$1000(Lokhttp3/Request;)Lokhttp3/Headers;
 
     move-result-object v0

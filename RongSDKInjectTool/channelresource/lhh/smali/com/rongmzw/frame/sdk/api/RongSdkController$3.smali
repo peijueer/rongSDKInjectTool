@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     .prologue
-    .line 157
+    .line 156
     iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$3;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     invoke-direct {p0}, Lcom/muzhiwan/sdk/core/callback/MzwPayCallback;-><init>()V
@@ -40,13 +40,13 @@
     .param p2, "mzwOrder"    # Lcom/muzhiwan/sdk/service/MzwOrder;
 
     .prologue
-    .line 160
+    .line 159
     invoke-virtual {p2}, Lcom/muzhiwan/sdk/service/MzwOrder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {p1, v0}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->payCallBack(ILjava/lang/String;)V
 
-    .line 161
+    .line 160
     return-void
 .end method

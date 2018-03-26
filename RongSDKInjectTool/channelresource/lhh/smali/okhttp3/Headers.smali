@@ -25,10 +25,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 53
+    # getter for: Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
     invoke-static {p1}, Lokhttp3/Headers$Builder;->access$000(Lokhttp3/Headers$Builder;)Ljava/util/List;
 
     move-result-object v0
 
+    # getter for: Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
     invoke-static {p1}, Lokhttp3/Headers$Builder;->access$000(Lokhttp3/Headers$Builder;)Ljava/util/List;
 
     move-result-object v1
@@ -673,6 +675,7 @@
 
     .line 114
     .local v0, "result":Lokhttp3/Headers$Builder;
+    # getter for: Lokhttp3/Headers$Builder;->namesAndValues:Ljava/util/List;
     invoke-static {v0}, Lokhttp3/Headers$Builder;->access$000(Lokhttp3/Headers$Builder;)Ljava/util/List;
 
     move-result-object v1

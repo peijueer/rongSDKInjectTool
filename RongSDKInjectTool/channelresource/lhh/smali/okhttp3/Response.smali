@@ -52,6 +52,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 59
+    # getter for: Lokhttp3/Response$Builder;->request:Lokhttp3/Request;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$000(Lokhttp3/Response$Builder;)Lokhttp3/Request;
 
     move-result-object v0
@@ -59,6 +60,7 @@
     iput-object v0, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
 
     .line 60
+    # getter for: Lokhttp3/Response$Builder;->protocol:Lokhttp3/Protocol;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$100(Lokhttp3/Response$Builder;)Lokhttp3/Protocol;
 
     move-result-object v0
@@ -66,6 +68,7 @@
     iput-object v0, p0, Lokhttp3/Response;->protocol:Lokhttp3/Protocol;
 
     .line 61
+    # getter for: Lokhttp3/Response$Builder;->code:I
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$200(Lokhttp3/Response$Builder;)I
 
     move-result v0
@@ -73,6 +76,7 @@
     iput v0, p0, Lokhttp3/Response;->code:I
 
     .line 62
+    # getter for: Lokhttp3/Response$Builder;->message:Ljava/lang/String;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$300(Lokhttp3/Response$Builder;)Ljava/lang/String;
 
     move-result-object v0
@@ -80,6 +84,7 @@
     iput-object v0, p0, Lokhttp3/Response;->message:Ljava/lang/String;
 
     .line 63
+    # getter for: Lokhttp3/Response$Builder;->handshake:Lokhttp3/Handshake;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$400(Lokhttp3/Response$Builder;)Lokhttp3/Handshake;
 
     move-result-object v0
@@ -87,6 +92,7 @@
     iput-object v0, p0, Lokhttp3/Response;->handshake:Lokhttp3/Handshake;
 
     .line 64
+    # getter for: Lokhttp3/Response$Builder;->headers:Lokhttp3/Headers$Builder;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$500(Lokhttp3/Response$Builder;)Lokhttp3/Headers$Builder;
 
     move-result-object v0
@@ -98,6 +104,7 @@
     iput-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
     .line 65
+    # getter for: Lokhttp3/Response$Builder;->body:Lokhttp3/ResponseBody;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$600(Lokhttp3/Response$Builder;)Lokhttp3/ResponseBody;
 
     move-result-object v0
@@ -105,6 +112,7 @@
     iput-object v0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
     .line 66
+    # getter for: Lokhttp3/Response$Builder;->networkResponse:Lokhttp3/Response;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$700(Lokhttp3/Response$Builder;)Lokhttp3/Response;
 
     move-result-object v0
@@ -112,6 +120,7 @@
     iput-object v0, p0, Lokhttp3/Response;->networkResponse:Lokhttp3/Response;
 
     .line 67
+    # getter for: Lokhttp3/Response$Builder;->cacheResponse:Lokhttp3/Response;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$800(Lokhttp3/Response$Builder;)Lokhttp3/Response;
 
     move-result-object v0
@@ -119,6 +128,7 @@
     iput-object v0, p0, Lokhttp3/Response;->cacheResponse:Lokhttp3/Response;
 
     .line 68
+    # getter for: Lokhttp3/Response$Builder;->priorResponse:Lokhttp3/Response;
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$900(Lokhttp3/Response$Builder;)Lokhttp3/Response;
 
     move-result-object v0
@@ -126,6 +136,7 @@
     iput-object v0, p0, Lokhttp3/Response;->priorResponse:Lokhttp3/Response;
 
     .line 69
+    # getter for: Lokhttp3/Response$Builder;->sentRequestAtMillis:J
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$1000(Lokhttp3/Response$Builder;)J
 
     move-result-wide v0
@@ -133,6 +144,7 @@
     iput-wide v0, p0, Lokhttp3/Response;->sentRequestAtMillis:J
 
     .line 70
+    # getter for: Lokhttp3/Response$Builder;->receivedResponseAtMillis:J
     invoke-static {p1}, Lokhttp3/Response$Builder;->access$1100(Lokhttp3/Response$Builder;)J
 
     move-result-wide v0

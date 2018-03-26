@@ -81,6 +81,7 @@
 
     iget-object v4, p0, Lokhttp3/RealCall$ApplicationInterceptorChain;->this$0:Lokhttp3/RealCall;
 
+    # getter for: Lokhttp3/RealCall;->client:Lokhttp3/OkHttpClient;
     invoke-static {v4}, Lokhttp3/RealCall;->access$300(Lokhttp3/RealCall;)Lokhttp3/OkHttpClient;
 
     move-result-object v4
@@ -112,6 +113,7 @@
     .local v0, "chain":Lokhttp3/Interceptor$Chain;
     iget-object v3, p0, Lokhttp3/RealCall$ApplicationInterceptorChain;->this$0:Lokhttp3/RealCall;
 
+    # getter for: Lokhttp3/RealCall;->client:Lokhttp3/OkHttpClient;
     invoke-static {v3}, Lokhttp3/RealCall;->access$300(Lokhttp3/RealCall;)Lokhttp3/OkHttpClient;
 
     move-result-object v3

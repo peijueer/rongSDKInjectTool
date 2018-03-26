@@ -75,6 +75,7 @@
 
     iget-object v4, p0, Lcom/zqhy/sdk/platform/ZqSDKApi$7;->val$apkIcon:Ljava/lang/String;
 
+    # invokes: Lcom/zqhy/sdk/platform/ZqSDKApi;->initDownloadDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v2, v3, v4}, Lcom/zqhy/sdk/platform/ZqSDKApi;->access$100(Lcom/zqhy/sdk/platform/ZqSDKApi;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 561

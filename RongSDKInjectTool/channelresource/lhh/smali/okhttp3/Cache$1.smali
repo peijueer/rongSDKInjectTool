@@ -70,6 +70,7 @@
     .line 147
     iget-object v0, p0, Lokhttp3/Cache$1;->this$0:Lokhttp3/Cache;
 
+    # invokes: Lokhttp3/Cache;->put(Lokhttp3/Response;)Lokhttp3/internal/http/CacheRequest;
     invoke-static {v0, p1}, Lokhttp3/Cache;->access$000(Lokhttp3/Cache;Lokhttp3/Response;)Lokhttp3/internal/http/CacheRequest;
 
     move-result-object v0
@@ -90,6 +91,7 @@
     .line 151
     iget-object v0, p0, Lokhttp3/Cache$1;->this$0:Lokhttp3/Cache;
 
+    # invokes: Lokhttp3/Cache;->remove(Lokhttp3/Request;)V
     invoke-static {v0, p1}, Lokhttp3/Cache;->access$100(Lokhttp3/Cache;Lokhttp3/Request;)V
 
     .line 152
@@ -103,6 +105,7 @@
     .line 159
     iget-object v0, p0, Lokhttp3/Cache$1;->this$0:Lokhttp3/Cache;
 
+    # invokes: Lokhttp3/Cache;->trackConditionalCacheHit()V
     invoke-static {v0}, Lokhttp3/Cache;->access$300(Lokhttp3/Cache;)V
 
     .line 160
@@ -117,6 +120,7 @@
     .line 163
     iget-object v0, p0, Lokhttp3/Cache$1;->this$0:Lokhttp3/Cache;
 
+    # invokes: Lokhttp3/Cache;->trackResponse(Lokhttp3/internal/http/CacheStrategy;)V
     invoke-static {v0, p1}, Lokhttp3/Cache;->access$400(Lokhttp3/Cache;Lokhttp3/internal/http/CacheStrategy;)V
 
     .line 164
@@ -137,6 +141,7 @@
     .line 155
     iget-object v0, p0, Lokhttp3/Cache$1;->this$0:Lokhttp3/Cache;
 
+    # invokes: Lokhttp3/Cache;->update(Lokhttp3/Response;Lokhttp3/Response;)V
     invoke-static {v0, p1, p2}, Lokhttp3/Cache;->access$200(Lokhttp3/Cache;Lokhttp3/Response;Lokhttp3/Response;)V
 
     .line 156

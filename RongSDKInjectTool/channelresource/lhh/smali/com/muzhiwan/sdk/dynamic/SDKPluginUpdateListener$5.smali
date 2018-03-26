@@ -44,11 +44,13 @@
     .line 107
     iget-object v0, p0, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener$5;->this$0:Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;
 
+    # invokes: Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->dismissProgressDialog()V
     invoke-static {v0}, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->access$300(Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;)V
 
     .line 108
     iget-object v0, p0, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener$5;->this$0:Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;
 
+    # getter for: Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->mainActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->access$000(Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;)Landroid/app/Activity;
 
     move-result-object v0

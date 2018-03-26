@@ -308,18 +308,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)V
-    .locals 0
-    .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
-
-    .prologue
-    .line 44
-    invoke-direct {p0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->login()V
-
-    return-void
-.end method
-
-.method static synthetic access$2402(Lcom/rongmzw/frame/sdk/api/RongSdkController;Lcom/rongmzw/frame/sdk/domain/http/PayResponse;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse;
+.method static synthetic access$2302(Lcom/rongmzw/frame/sdk/api/RongSdkController;Lcom/rongmzw/frame/sdk/domain/http/PayResponse;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse;
     .locals 0
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
     .param p1, "x1"    # Lcom/rongmzw/frame/sdk/domain/http/PayResponse;
@@ -331,7 +320,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$2500(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/google/gson/Gson;
+.method static synthetic access$2400(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/google/gson/Gson;
     .locals 1
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
@@ -342,7 +331,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2600(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse;
+.method static synthetic access$2500(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse;
     .locals 1
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
@@ -353,7 +342,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2702(Lcom/rongmzw/frame/sdk/api/RongSdkController;Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
+.method static synthetic access$2602(Lcom/rongmzw/frame/sdk/api/RongSdkController;Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
     .locals 0
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
     .param p1, "x1"    # Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
@@ -365,7 +354,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$2800(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse;
+.method static synthetic access$2700(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse;
     .locals 1
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
@@ -376,7 +365,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2900(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
+.method static synthetic access$2800(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
     .locals 1
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
@@ -385,6 +374,29 @@
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->payResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
 
     return-object v0
+.end method
+
+.method static synthetic access$2900(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Ljava/lang/String;
+    .locals 1
+    .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
+
+    .prologue
+    .line 44
+    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strServerId:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2902(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+    .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
+    .param p1, "x1"    # Ljava/lang/String;
+
+    .prologue
+    .line 44
+    iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strServerId:Ljava/lang/String;
+
+    return-object p1
 .end method
 
 .method static synthetic access$300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/google/gson/Gson;
@@ -404,7 +416,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strServerId:Ljava/lang/String;
+    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strServerName:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -416,7 +428,7 @@
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strServerId:Ljava/lang/String;
+    iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strServerName:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -427,7 +439,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strServerName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strRoleId:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -439,7 +451,7 @@
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strServerName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strRoleId:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -450,7 +462,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strRoleId:Ljava/lang/String;
+    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strRoleName:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -462,35 +474,12 @@
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strRoleId:Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method static synthetic access$3300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Ljava/lang/String;
-    .locals 1
-    .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
-
-    .prologue
-    .line 44
-    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strRoleName:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method static synthetic access$3302(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-    .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
-    .param p1, "x1"    # Ljava/lang/String;
-
-    .prologue
-    .line 44
     iput-object p1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->strRoleName:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic access$3400(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
+.method static synthetic access$3300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
     .locals 1
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
@@ -501,7 +490,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3500(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Ljava/lang/String;
+.method static synthetic access$3400(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Ljava/lang/String;
     .locals 1
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
@@ -512,7 +501,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3502(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$3402(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
     .param p1, "x1"    # Ljava/lang/String;
@@ -524,7 +513,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$3600(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Ljava/lang/String;
+.method static synthetic access$3500(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Ljava/lang/String;
     .locals 1
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
@@ -535,7 +524,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3602(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$3502(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
     .param p1, "x1"    # Ljava/lang/String;
@@ -547,13 +536,24 @@
     return-object p1
 .end method
 
-.method static synthetic access$3700(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
+.method static synthetic access$3600(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
     .locals 1
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     .prologue
     .line 44
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->payResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/PayResponse$DataBean;
+
+    return-object v0
+.end method
+
+.method static synthetic access$3700(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
+    .locals 1
+    .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
+
+    .prologue
+    .line 44
+    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
 
     return-object v0
 .end method
@@ -569,15 +569,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$3900(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
-    .locals 1
+.method static synthetic access$3900(Lcom/rongmzw/frame/sdk/api/RongSdkController;)V
+    .locals 0
     .param p0, "x0"    # Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
+    invoke-direct {p0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->login()V
 
-    return-object v0
+    return-void
 .end method
 
 .method static synthetic access$4000(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
@@ -918,6 +918,7 @@
 
     .prologue
     .line 69
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController$RongSdkControllerHolder;->INSTANCE:Lcom/rongmzw/frame/sdk/api/RongSdkController;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController$RongSdkControllerHolder;->access$100()Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
     move-result-object v0
@@ -1004,7 +1005,7 @@
 
     invoke-virtual {p0, p1, v0, v1}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->initRequest(Landroid/app/Activity;Ljava/util/Map;Lcom/rongmzw/frame/sdk/callback/RongHttpCallback;)V
 
-    .line 130
+    .line 129
     return-void
 .end method
 
@@ -1012,7 +1013,7 @@
     .locals 2
 
     .prologue
-    .line 134
+    .line 133
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     invoke-virtual {v0}, Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;->getSwitchX()I
@@ -1041,7 +1042,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 135
+    .line 134
     :cond_0
     sget-object v0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
 
@@ -1049,7 +1050,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 136
+    .line 135
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->mzwSdkController:Lcom/muzhiwan/sdk/core/MzwSdkController;
 
     new-instance v1, Lcom/rongmzw/frame/sdk/api/RongSdkController$2;
@@ -1058,11 +1059,11 @@
 
     invoke-virtual {v0, v1}, Lcom/muzhiwan/sdk/core/MzwSdkController;->doLogin(Lcom/muzhiwan/sdk/core/callback/MzwLoignCallback;)V
 
-    .line 146
+    .line 145
     :goto_0
     return-void
 
-    .line 143
+    .line 142
     :cond_1
     sget-object v0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
 
@@ -1070,7 +1071,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 144
+    .line 143
     invoke-direct {p0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->login()V
 
     goto :goto_0
@@ -1080,7 +1081,7 @@
     .locals 2
 
     .prologue
-    .line 258
+    .line 257
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     invoke-virtual {v0}, Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;->getSwitchX()I
@@ -1109,7 +1110,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 259
+    .line 258
     :cond_0
     sget-object v0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
 
@@ -1117,7 +1118,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 260
+    .line 259
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->mzwSdkController:Lcom/muzhiwan/sdk/core/MzwSdkController;
 
     invoke-virtual {v0}, Lcom/muzhiwan/sdk/core/MzwSdkController;->doLogout()V
@@ -1126,13 +1127,20 @@
     :goto_0
     return-void
 
-    .line 262
+    .line 261
     :cond_1
     sget-object v0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
 
     const-string v1, "lhh callLogout......"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 262
+    const/4 v0, 0x6
+
+    const-string v1, "switch username..."
+
+    invoke-static {v0, v1}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->loginCallBack(ILjava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -1272,7 +1280,7 @@
     .param p1, "rongMzwOrder"    # Lcom/rongmzw/frame/sdk/domain/local/RongOrder;
 
     .prologue
-    .line 150
+    .line 149
     iget-object v8, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     invoke-virtual {v8}, Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;->getSwitchX()I
@@ -1301,13 +1309,13 @@
 
     if-eqz v8, :cond_1
 
-    .line 151
+    .line 150
     :cond_0
     new-instance v1, Lcom/muzhiwan/sdk/service/MzwOrder;
 
     invoke-direct {v1}, Lcom/muzhiwan/sdk/service/MzwOrder;-><init>()V
 
-    .line 152
+    .line 151
     .local v1, "mzwOrder":Lcom/muzhiwan/sdk/service/MzwOrder;
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getProductPrice()I
 
@@ -1317,35 +1325,35 @@
 
     invoke-virtual {v1, v8, v9}, Lcom/muzhiwan/sdk/service/MzwOrder;->setMoney(D)V
 
-    .line 153
+    .line 152
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getProductDesc()Ljava/lang/String;
 
     move-result-object v8
 
     invoke-virtual {v1, v8}, Lcom/muzhiwan/sdk/service/MzwOrder;->setProductdesc(Ljava/lang/String;)V
 
-    .line 154
+    .line 153
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getProductId()Ljava/lang/String;
 
     move-result-object v8
 
     invoke-virtual {v1, v8}, Lcom/muzhiwan/sdk/service/MzwOrder;->setProductid(Ljava/lang/String;)V
 
-    .line 155
+    .line 154
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getProductName()Ljava/lang/String;
 
     move-result-object v8
 
     invoke-virtual {v1, v8}, Lcom/muzhiwan/sdk/service/MzwOrder;->setProductname(Ljava/lang/String;)V
 
-    .line 156
+    .line 155
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getExtern()Ljava/lang/String;
 
     move-result-object v8
 
     invoke-virtual {v1, v8}, Lcom/muzhiwan/sdk/service/MzwOrder;->setExtern(Ljava/lang/String;)V
 
-    .line 157
+    .line 156
     iget-object v8, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->mzwSdkController:Lcom/muzhiwan/sdk/core/MzwSdkController;
 
     new-instance v9, Lcom/rongmzw/frame/sdk/api/RongSdkController$3;
@@ -1354,12 +1362,12 @@
 
     invoke-virtual {v8, v1, v9}, Lcom/muzhiwan/sdk/core/MzwSdkController;->doPay(Lcom/muzhiwan/sdk/service/MzwOrder;Lcom/muzhiwan/sdk/core/callback/MzwPayCallback;)V
 
-    .line 245
+    .line 244
     .end local v1    # "mzwOrder":Lcom/muzhiwan/sdk/service/MzwOrder;
     :goto_0
     return-void
 
-    .line 164
+    .line 163
     :cond_1
     iget-object v8, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
@@ -1369,7 +1377,7 @@
 
     if-nez v8, :cond_2
 
-    .line 165
+    .line 164
     sget-object v8, Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -1392,52 +1400,52 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 166
+    .line 165
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getProductId()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 167
+    .line 166
     .local v4, "productId":Ljava/lang/String;
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getProductName()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 168
+    .line 167
     .local v5, "productName":Ljava/lang/String;
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getProductDesc()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 169
+    .line 168
     .local v3, "productDesc":Ljava/lang/String;
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getExtern()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 170
+    .line 169
     .local v0, "extern":Ljava/lang/String;
     invoke-virtual {p1}, Lcom/rongmzw/frame/sdk/domain/local/RongOrder;->getProductPrice()I
 
     move-result v6
 
-    .line 172
+    .line 171
     .local v6, "productPrice":I
     new-instance v7, Lcom/rongmzw/frame/sdk/domain/local/RongOrderInfo;
 
     invoke-direct {v7}, Lcom/rongmzw/frame/sdk/domain/local/RongOrderInfo;-><init>()V
 
-    .line 173
+    .line 172
     .local v7, "rongOrderInfo":Lcom/rongmzw/frame/sdk/domain/local/RongOrderInfo;
     invoke-virtual {v7, v4}, Lcom/rongmzw/frame/sdk/domain/local/RongOrderInfo;->setProductid(Ljava/lang/String;)V
 
-    .line 174
+    .line 173
     invoke-virtual {v7, v5}, Lcom/rongmzw/frame/sdk/domain/local/RongOrderInfo;->setSubject(Ljava/lang/String;)V
 
-    .line 175
+    .line 174
     invoke-virtual {v7, v3}, Lcom/rongmzw/frame/sdk/domain/local/RongOrderInfo;->setProductdesc(Ljava/lang/String;)V
 
-    .line 176
+    .line 175
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -1458,17 +1466,17 @@
 
     invoke-virtual {v7, v8}, Lcom/rongmzw/frame/sdk/domain/local/RongOrderInfo;->setAmount(Ljava/lang/String;)V
 
-    .line 177
+    .line 176
     invoke-virtual {v7, v0}, Lcom/rongmzw/frame/sdk/domain/local/RongOrderInfo;->setExtern(Ljava/lang/String;)V
 
-    .line 179
+    .line 178
     iget-object v8, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
 
     invoke-static {v8}, Lcom/rongmzw/frame/sdk/utils/ParamUtils;->getGeneralParams(Landroid/content/Context;)Ljava/util/HashMap;
 
     move-result-object v2
 
-    .line 180
+    .line 179
     .local v2, "params":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     const-string v8, "orderinfo"
 
@@ -1480,14 +1488,14 @@
 
     invoke-interface {v2, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 181
+    .line 180
     const-string v8, "channelversion"
 
     const-string v9, ""
 
     invoke-interface {v2, v8, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 182
+    .line 181
     iget-object v8, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
 
     new-instance v9, Lcom/rongmzw/frame/sdk/api/RongSdkController$4;
@@ -1498,7 +1506,7 @@
 
     goto :goto_0
 
-    .line 242
+    .line 241
     .end local v0    # "extern":Ljava/lang/String;
     .end local v2    # "params":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     .end local v3    # "productDesc":Ljava/lang/String;
@@ -1518,7 +1526,7 @@
     .locals 2
 
     .prologue
-    .line 249
+    .line 248
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     invoke-virtual {v0}, Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;->getSwitchX()I
@@ -1547,7 +1555,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 250
+    .line 249
     :cond_0
     sget-object v0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
 
@@ -1555,11 +1563,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 254
+    .line 253
     :goto_0
     return-void
 
-    .line 252
+    .line 251
     :cond_1
     sget-object v0, Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
 

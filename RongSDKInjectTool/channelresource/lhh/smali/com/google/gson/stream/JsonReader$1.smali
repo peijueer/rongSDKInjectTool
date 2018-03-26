@@ -128,6 +128,7 @@
 
     move-result-object v2
 
+    # invokes: Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
     invoke-static {p1}, Lcom/google/gson/stream/JsonReader;->access$000(Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
 
     move-result-object v3

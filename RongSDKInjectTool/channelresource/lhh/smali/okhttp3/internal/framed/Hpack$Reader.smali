@@ -298,6 +298,7 @@
     if-eqz v0, :cond_0
 
     .line 271
+    # getter for: Lokhttp3/internal/framed/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/framed/Header;
     invoke-static {}, Lokhttp3/internal/framed/Hpack;->access$000()[Lokhttp3/internal/framed/Header;
 
     move-result-object v0
@@ -313,6 +314,7 @@
     :cond_0
     iget-object v0, p0, Lokhttp3/internal/framed/Hpack$Reader;->dynamicTable:[Lokhttp3/internal/framed/Header;
 
+    # getter for: Lokhttp3/internal/framed/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/framed/Header;
     invoke-static {}, Lokhttp3/internal/framed/Hpack;->access$000()[Lokhttp3/internal/framed/Header;
 
     move-result-object v1
@@ -505,6 +507,7 @@
     .line 278
     if-ltz p1, :cond_0
 
+    # getter for: Lokhttp3/internal/framed/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/framed/Header;
     invoke-static {}, Lokhttp3/internal/framed/Hpack;->access$000()[Lokhttp3/internal/framed/Header;
 
     move-result-object v0
@@ -565,6 +568,7 @@
     if-eqz v2, :cond_0
 
     .line 228
+    # getter for: Lokhttp3/internal/framed/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/framed/Header;
     invoke-static {}, Lokhttp3/internal/framed/Hpack;->access$000()[Lokhttp3/internal/framed/Header;
 
     move-result-object v2
@@ -584,6 +588,7 @@
 
     .line 231
     :cond_0
+    # getter for: Lokhttp3/internal/framed/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/framed/Header;
     invoke-static {}, Lokhttp3/internal/framed/Hpack;->access$000()[Lokhttp3/internal/framed/Header;
 
     move-result-object v2
@@ -698,6 +703,7 @@
 
     move-result-object v2
 
+    # invokes: Lokhttp3/internal/framed/Hpack;->checkLowercase(Lokio/ByteString;)Lokio/ByteString;
     invoke-static {v2}, Lokhttp3/internal/framed/Hpack;->access$100(Lokio/ByteString;)Lokio/ByteString;
 
     move-result-object v0
@@ -771,6 +777,7 @@
 
     move-result-object v2
 
+    # invokes: Lokhttp3/internal/framed/Hpack;->checkLowercase(Lokio/ByteString;)Lokio/ByteString;
     invoke-static {v2}, Lokhttp3/internal/framed/Hpack;->access$100(Lokio/ByteString;)Lokio/ByteString;
 
     move-result-object v0

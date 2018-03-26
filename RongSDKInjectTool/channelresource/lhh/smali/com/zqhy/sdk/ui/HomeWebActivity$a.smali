@@ -46,6 +46,7 @@
     .line 423
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->isDestroyWebView:Z
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$400(Lcom/zqhy/sdk/ui/HomeWebActivity;)Z
 
     move-result v0
@@ -77,6 +78,7 @@
     .line 428
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->webView:Landroid/webkit/WebView;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$000(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/webkit/WebView;
 
     move-result-object v0
@@ -86,6 +88,7 @@
     .line 430
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->headerView:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$200(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -95,6 +98,7 @@
     .line 431
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->headerView:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$200(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -105,12 +109,14 @@
     :cond_1
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$600(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->connectTimeout:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$500(Lcom/zqhy/sdk/ui/HomeWebActivity;)Ljava/lang/Runnable;
 
     move-result-object v1
@@ -126,12 +132,14 @@
     .line 435
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$600(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->connectTimeout:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$500(Lcom/zqhy/sdk/ui/HomeWebActivity;)Ljava/lang/Runnable;
 
     move-result-object v1
@@ -141,6 +149,7 @@
     .line 436
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->webView:Landroid/webkit/WebView;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$000(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/webkit/WebView;
 
     move-result-object v0
@@ -158,6 +167,7 @@
     .line 437
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->webView:Landroid/webkit/WebView;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$000(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/webkit/WebView;
 
     move-result-object v0
@@ -167,6 +177,7 @@
     .line 438
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->headerView:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$200(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -176,6 +187,7 @@
     .line 439
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->headerView:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$200(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -192,6 +204,7 @@
     .line 444
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->flErrorPage:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$300(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -209,12 +222,14 @@
     :cond_5
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->mHandler:Landroid/os/Handler;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$600(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/os/Handler;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->connectTimeout:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$500(Lcom/zqhy/sdk/ui/HomeWebActivity;)Ljava/lang/Runnable;
 
     move-result-object v1
@@ -234,6 +249,7 @@
     .line 452
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->tvTitle:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$700(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -262,6 +278,7 @@
     .line 454
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$a;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->tvTitle:Landroid/widget/TextView;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$700(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/TextView;
 
     move-result-object v0

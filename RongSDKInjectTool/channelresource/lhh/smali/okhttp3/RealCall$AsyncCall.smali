@@ -107,6 +107,7 @@
 
     iget-boolean v4, p0, Lokhttp3/RealCall$AsyncCall;->forWebSocket:Z
 
+    # invokes: Lokhttp3/RealCall;->getResponseWithInterceptorChain(Z)Lokhttp3/Response;
     invoke-static {v3, v4}, Lokhttp3/RealCall;->access$100(Lokhttp3/RealCall;Z)Lokhttp3/Response;
 
     move-result-object v1
@@ -142,6 +143,7 @@
     :goto_0
     iget-object v3, p0, Lokhttp3/RealCall$AsyncCall;->this$0:Lokhttp3/RealCall;
 
+    # getter for: Lokhttp3/RealCall;->client:Lokhttp3/OkHttpClient;
     invoke-static {v3}, Lokhttp3/RealCall;->access$300(Lokhttp3/RealCall;)Lokhttp3/OkHttpClient;
 
     move-result-object v3
@@ -204,6 +206,7 @@
 
     iget-object v6, p0, Lokhttp3/RealCall$AsyncCall;->this$0:Lokhttp3/RealCall;
 
+    # invokes: Lokhttp3/RealCall;->toLoggableString()Ljava/lang/String;
     invoke-static {v6}, Lokhttp3/RealCall;->access$200(Lokhttp3/RealCall;)Ljava/lang/String;
 
     move-result-object v6
@@ -224,6 +227,7 @@
     :goto_2
     iget-object v3, p0, Lokhttp3/RealCall$AsyncCall;->this$0:Lokhttp3/RealCall;
 
+    # getter for: Lokhttp3/RealCall;->client:Lokhttp3/OkHttpClient;
     invoke-static {v3}, Lokhttp3/RealCall;->access$300(Lokhttp3/RealCall;)Lokhttp3/OkHttpClient;
 
     move-result-object v3
@@ -256,6 +260,7 @@
 
     iget-object v4, p0, Lokhttp3/RealCall$AsyncCall;->this$0:Lokhttp3/RealCall;
 
+    # getter for: Lokhttp3/RealCall;->client:Lokhttp3/OkHttpClient;
     invoke-static {v4}, Lokhttp3/RealCall;->access$300(Lokhttp3/RealCall;)Lokhttp3/OkHttpClient;
 
     move-result-object v4

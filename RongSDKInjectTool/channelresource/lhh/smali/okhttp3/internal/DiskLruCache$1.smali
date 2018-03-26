@@ -54,6 +54,7 @@
     :try_start_0
     iget-object v5, p0, Lokhttp3/internal/DiskLruCache$1;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->initialized:Z
     invoke-static {v5}, Lokhttp3/internal/DiskLruCache;->access$000(Lokhttp3/internal/DiskLruCache;)Z
 
     move-result v5
@@ -63,6 +64,7 @@
     :goto_0
     iget-object v3, p0, Lokhttp3/internal/DiskLruCache$1;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->closed:Z
     invoke-static {v3}, Lokhttp3/internal/DiskLruCache;->access$100(Lokhttp3/internal/DiskLruCache;)Z
 
     move-result v3
@@ -91,6 +93,7 @@
     :try_start_1
     iget-object v2, p0, Lokhttp3/internal/DiskLruCache$1;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # invokes: Lokhttp3/internal/DiskLruCache;->trimToSize()V
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache;->access$200(Lokhttp3/internal/DiskLruCache;)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
@@ -101,6 +104,7 @@
     :try_start_2
     iget-object v2, p0, Lokhttp3/internal/DiskLruCache$1;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # invokes: Lokhttp3/internal/DiskLruCache;->journalRebuildRequired()Z
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache;->access$400(Lokhttp3/internal/DiskLruCache;)Z
 
     move-result v2
@@ -110,6 +114,7 @@
     .line 183
     iget-object v2, p0, Lokhttp3/internal/DiskLruCache$1;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # invokes: Lokhttp3/internal/DiskLruCache;->rebuildJournal()V
     invoke-static {v2}, Lokhttp3/internal/DiskLruCache;->access$500(Lokhttp3/internal/DiskLruCache;)V
 
     .line 184
@@ -117,6 +122,7 @@
 
     const/4 v3, 0x0
 
+    # setter for: Lokhttp3/internal/DiskLruCache;->redundantOpCount:I
     invoke-static {v2, v3}, Lokhttp3/internal/DiskLruCache;->access$602(Lokhttp3/internal/DiskLruCache;I)I
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
@@ -150,6 +156,7 @@
 
     const/4 v3, 0x1
 
+    # setter for: Lokhttp3/internal/DiskLruCache;->mostRecentTrimFailed:Z
     invoke-static {v2, v3}, Lokhttp3/internal/DiskLruCache;->access$302(Lokhttp3/internal/DiskLruCache;Z)Z
 
     goto :goto_2
@@ -165,11 +172,13 @@
 
     const/4 v3, 0x1
 
+    # setter for: Lokhttp3/internal/DiskLruCache;->mostRecentRebuildFailed:Z
     invoke-static {v2, v3}, Lokhttp3/internal/DiskLruCache;->access$702(Lokhttp3/internal/DiskLruCache;Z)Z
 
     .line 188
     iget-object v2, p0, Lokhttp3/internal/DiskLruCache$1;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->NULL_SINK:Lokio/Sink;
     invoke-static {}, Lokhttp3/internal/DiskLruCache;->access$900()Lokio/Sink;
 
     move-result-object v3
@@ -178,6 +187,7 @@
 
     move-result-object v3
 
+    # setter for: Lokhttp3/internal/DiskLruCache;->journalWriter:Lokio/BufferedSink;
     invoke-static {v2, v3}, Lokhttp3/internal/DiskLruCache;->access$802(Lokhttp3/internal/DiskLruCache;Lokio/BufferedSink;)Lokio/BufferedSink;
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0

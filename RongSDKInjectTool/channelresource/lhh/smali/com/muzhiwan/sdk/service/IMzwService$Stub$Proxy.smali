@@ -27,13 +27,13 @@
     .param p1, "remote"    # Landroid/os/IBinder;
 
     .prologue
-    .line 148
+    .line 157
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 149
+    .line 158
     iput-object p1, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    .line 150
+    .line 159
     return-void
 .end method
 
@@ -43,15 +43,15 @@
     .locals 1
 
     .prologue
-    .line 153
+    .line 162
     iget-object v0, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-object v0
 .end method
 
-.method public doExitGame(Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;)V
+.method public doExitGame(Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;)V
     .locals 5
-    .param p1, "exitGameCallBack"    # Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;
+    .param p1, "exitGameCallBack"    # Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -59,70 +59,70 @@
     .end annotation
 
     .prologue
-    .line 277
+    .line 301
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 278
+    .line 302
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 280
+    .line 304
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 281
+    .line 305
     if-eqz p1, :cond_0
 
-    invoke-interface {p1}, Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;->asBinder()Landroid/os/IBinder;
+    invoke-interface {p1}, Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;->asBinder()Landroid/os/IBinder;
 
     move-result-object v2
 
     :goto_0
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 282
+    .line 306
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x8
+    const/16 v3, 0x9
 
     const/4 v4, 0x0
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 283
+    .line 307
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 286
+    .line 310
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 287
+    .line 311
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 289
+    .line 313
     return-void
 
-    .line 281
+    .line 305
     :cond_0
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 286
+    .line 310
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 287
+    .line 311
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -139,31 +139,31 @@
     .end annotation
 
     .prologue
-    .line 161
+    .line 170
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 162
+    .line 171
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 164
+    .line 173
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 165
+    .line 174
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 166
+    .line 175
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 167
+    .line 176
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x1
@@ -172,27 +172,27 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 168
+    .line 177
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 171
+    .line 180
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 172
+    .line 181
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 174
+    .line 183
     return-void
 
-    .line 171
+    .line 180
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 172
+    .line 181
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -208,25 +208,25 @@
     .end annotation
 
     .prologue
-    .line 177
+    .line 186
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 178
+    .line 187
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 180
+    .line 189
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 181
+    .line 190
     if-eqz p1, :cond_0
 
     invoke-interface {p1}, Lcom/muzhiwan/sdk/service/IMzwLoginCallBack;->asBinder()Landroid/os/IBinder;
@@ -236,7 +236,7 @@
     :goto_0
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 182
+    .line 191
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x2
@@ -245,33 +245,33 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 183
+    .line 192
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 186
+    .line 195
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 187
+    .line 196
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 189
+    .line 198
     return-void
 
-    .line 181
+    .line 190
     :cond_0
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 186
+    .line 195
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 187
+    .line 196
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -286,25 +286,25 @@
     .end annotation
 
     .prologue
-    .line 192
+    .line 201
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 193
+    .line 202
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 195
+    .line 204
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 196
+    .line 205
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x3
@@ -313,27 +313,27 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 197
+    .line 206
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 200
+    .line 209
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 201
+    .line 210
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 203
+    .line 212
     return-void
 
-    .line 200
+    .line 209
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 201
+    .line 210
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -350,38 +350,38 @@
     .end annotation
 
     .prologue
-    .line 206
+    .line 215
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 207
+    .line 216
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 209
+    .line 218
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 210
+    .line 219
     if-eqz p1, :cond_0
 
-    .line 211
+    .line 220
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 212
+    .line 221
     const/4 v2, 0x0
 
     invoke-virtual {p1, v0, v2}, Lcom/muzhiwan/sdk/service/MzwOrder;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 217
+    .line 226
     :goto_0
     if-eqz p2, :cond_1
 
@@ -392,7 +392,7 @@
     :goto_1
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 218
+    .line 227
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x4
@@ -401,21 +401,21 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 219
+    .line 228
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 222
+    .line 231
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 223
+    .line 232
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 225
+    .line 234
     return-void
 
-    .line 215
+    .line 224
     :cond_0
     const/4 v2, 0x0
 
@@ -426,18 +426,18 @@
 
     goto :goto_0
 
-    .line 222
+    .line 231
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 223
+    .line 232
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
 
-    .line 217
+    .line 226
     :cond_1
     const/4 v2, 0x0
 
@@ -455,28 +455,28 @@
     .end annotation
 
     .prologue
-    .line 246
+    .line 255
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 247
+    .line 256
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 249
+    .line 258
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 250
+    .line 259
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 251
+    .line 260
     if-eqz p2, :cond_0
 
     invoke-interface {p2}, Lcom/muzhiwan/sdk/service/IMzwPostGiftCodeCallBack;->asBinder()Landroid/os/IBinder;
@@ -486,7 +486,7 @@
     :goto_0
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 252
+    .line 261
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x6
@@ -495,33 +495,106 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 253
+    .line 262
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 256
+    .line 265
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 257
+    .line 266
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 259
+    .line 268
     return-void
 
-    .line 251
+    .line 260
     :cond_0
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 256
+    .line 265
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 257
+    .line 266
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    throw v2
+.end method
+
+.method public doSetPopVisible(Z)V
+    .locals 5
+    .param p1, "popVisible"    # Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 286
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    .line 287
+    .local v0, "_data":Landroid/os/Parcel;
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v1
+
+    .line 289
+    .local v1, "_reply":Landroid/os/Parcel;
+    :try_start_0
+    const-string v3, "com.muzhiwan.sdk.service.IMzwService"
+
+    invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    .line 290
+    if-eqz p1, :cond_0
+
+    const/4 v2, 0x1
+
+    :cond_0
+    invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 291
+    iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+
+    const/16 v3, 0x8
+
+    const/4 v4, 0x0
+
+    invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+    .line 292
+    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 295
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    .line 296
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    .line 298
+    return-void
+
+    .line 295
+    :catchall_0
+    move-exception v2
+
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    .line 296
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -540,34 +613,34 @@
     .end annotation
 
     .prologue
-    .line 228
+    .line 237
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 229
+    .line 238
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 231
+    .line 240
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 232
+    .line 241
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 233
+    .line 242
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 234
+    .line 243
     invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 235
+    .line 244
     if-eqz p4, :cond_0
 
     invoke-interface {p4}, Lcom/muzhiwan/sdk/service/IMzwStaPayCallBack;->asBinder()Landroid/os/IBinder;
@@ -577,7 +650,7 @@
     :goto_0
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 236
+    .line 245
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x5
@@ -586,33 +659,33 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 237
+    .line 246
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 240
+    .line 249
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 241
+    .line 250
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 243
+    .line 252
     return-void
 
-    .line 235
+    .line 244
     :cond_0
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 240
+    .line 249
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 241
+    .line 250
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -628,57 +701,57 @@
     .end annotation
 
     .prologue
-    .line 292
+    .line 316
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 293
+    .line 317
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 295
+    .line 319
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 296
+    .line 320
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 297
+    .line 321
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x9
+    const/16 v3, 0xa
 
     const/4 v4, 0x0
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 298
+    .line 322
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 301
+    .line 325
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 302
+    .line 326
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 304
+    .line 328
     return-void
 
-    .line 301
+    .line 325
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 302
+    .line 326
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -694,28 +767,28 @@
     .end annotation
 
     .prologue
-    .line 262
+    .line 271
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 263
+    .line 272
     .local v0, "_data":Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 265
+    .line 274
     .local v1, "_reply":Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 266
+    .line 275
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 267
+    .line 276
     iget-object v2, p0, Lcom/muzhiwan/sdk/service/IMzwService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x7
@@ -724,27 +797,27 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 268
+    .line 277
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 271
+    .line 280
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 272
+    .line 281
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 274
+    .line 283
     return-void
 
-    .line 271
+    .line 280
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 272
+    .line 281
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -754,7 +827,7 @@
     .locals 1
 
     .prologue
-    .line 157
+    .line 166
     const-string v0, "com.muzhiwan.sdk.service.IMzwService"
 
     return-object v0

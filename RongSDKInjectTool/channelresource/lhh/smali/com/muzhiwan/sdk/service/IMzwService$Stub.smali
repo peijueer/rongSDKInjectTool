@@ -26,7 +26,7 @@
 # static fields
 .field private static final DESCRIPTOR:Ljava/lang/String; = "com.muzhiwan.sdk.service.IMzwService"
 
-.field static final TRANSACTION_doExitGame:I = 0x8
+.field static final TRANSACTION_doExitGame:I = 0x9
 
 .field static final TRANSACTION_doInit:I = 0x1
 
@@ -38,9 +38,11 @@
 
 .field static final TRANSACTION_doPostGiftCode:I = 0x6
 
+.field static final TRANSACTION_doSetPopVisible:I = 0x8
+
 .field static final TRANSACTION_doStaPay:I = 0x5
 
-.field static final TRANSACTION_doSubGameInfo:I = 0x9
+.field static final TRANSACTION_doSubGameInfo:I = 0xa
 
 .field static final TRANSACTION_doUpdateAuto:I = 0x7
 
@@ -136,7 +138,7 @@
     .line 38
     sparse-switch p1, :sswitch_data_0
 
-    .line 142
+    .line 151
     invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result v4
@@ -377,40 +379,72 @@
     invoke-virtual {p2, v5}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
     .line 127
-    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+    invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
-    move-result-object v5
+    move-result v5
 
-    invoke-static {v5}, Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack$Stub;->asInterface(Landroid/os/IBinder;)Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;
+    if-eqz v5, :cond_1
 
-    move-result-object v0
+    move v0, v4
 
     .line 128
-    .local v0, "_arg0":Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;
-    invoke-virtual {p0, v0}, Lcom/muzhiwan/sdk/service/IMzwService$Stub;->doExitGame(Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;)V
+    .local v0, "_arg0":Z
+    :goto_2
+    invoke-virtual {p0, v0}, Lcom/muzhiwan/sdk/service/IMzwService$Stub;->doSetPopVisible(Z)V
 
     .line 129
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
     goto/16 :goto_0
 
+    .line 127
+    .end local v0    # "_arg0":Z
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_2
+
     .line 134
-    .end local v0    # "_arg0":Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;
     :sswitch_9
     const-string v5, "com.muzhiwan.sdk.service.IMzwService"
 
     invoke-virtual {p2, v5}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
     .line 136
-    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack$Stub;->asInterface(Landroid/os/IBinder;)Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;
 
     move-result-object v0
 
     .line 137
+    .local v0, "_arg0":Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;
+    invoke-virtual {p0, v0}, Lcom/muzhiwan/sdk/service/IMzwService$Stub;->doExitGame(Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;)V
+
+    .line 138
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    goto/16 :goto_0
+
+    .line 143
+    .end local v0    # "_arg0":Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;
+    :sswitch_a
+    const-string v5, "com.muzhiwan.sdk.service.IMzwService"
+
+    invoke-virtual {p2, v5}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 145
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 146
     .local v0, "_arg0":Ljava/lang/String;
     invoke-virtual {p0, v0}, Lcom/muzhiwan/sdk/service/IMzwService$Stub;->doSubGameInfo(Ljava/lang/String;)V
 
-    .line 138
+    .line 147
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
     goto/16 :goto_0
@@ -429,6 +463,7 @@
         0x7 -> :sswitch_7
         0x8 -> :sswitch_8
         0x9 -> :sswitch_9
+        0xa -> :sswitch_a
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

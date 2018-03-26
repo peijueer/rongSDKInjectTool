@@ -60,6 +60,7 @@
     .line 65
     iget-object v0, p0, Lcom/lzy/okhttpserver/task/PriorityAsyncTask$1;->this$0:Lcom/lzy/okhttpserver/task/PriorityAsyncTask;
 
+    # getter for: Lcom/lzy/okhttpserver/task/PriorityAsyncTask;->mTaskInvoked:Ljava/util/concurrent/atomic/AtomicBoolean;
     invoke-static {v0}, Lcom/lzy/okhttpserver/task/PriorityAsyncTask;->access$200(Lcom/lzy/okhttpserver/task/PriorityAsyncTask;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
     move-result-object v0
@@ -84,6 +85,7 @@
 
     move-result-object v1
 
+    # invokes: Lcom/lzy/okhttpserver/task/PriorityAsyncTask;->postResult(Ljava/lang/Object;)Ljava/lang/Object;
     invoke-static {v0, v1}, Lcom/lzy/okhttpserver/task/PriorityAsyncTask;->access$300(Lcom/lzy/okhttpserver/task/PriorityAsyncTask;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0

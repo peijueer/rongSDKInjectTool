@@ -45,6 +45,7 @@
 
     const/4 v1, 0x0
 
+    # invokes: Landroid/support/v4/view/ViewPager;->setScrollState(I)V
     invoke-static {v0, v1}, Landroid/support/v4/view/ViewPager;->access$000(Landroid/support/v4/view/ViewPager;I)V
 
     .line 251

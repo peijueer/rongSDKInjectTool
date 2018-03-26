@@ -136,6 +136,7 @@
     iput-object v0, p0, Lokhttp3/OkHttpClient$Builder;->dispatcher:Lokhttp3/Dispatcher;
 
     .line 381
+    # getter for: Lokhttp3/OkHttpClient;->DEFAULT_PROTOCOLS:Ljava/util/List;
     invoke-static {}, Lokhttp3/OkHttpClient;->access$000()Ljava/util/List;
 
     move-result-object v0
@@ -143,6 +144,7 @@
     iput-object v0, p0, Lokhttp3/OkHttpClient$Builder;->protocols:Ljava/util/List;
 
     .line 382
+    # getter for: Lokhttp3/OkHttpClient;->DEFAULT_CONNECTION_SPECS:Ljava/util/List;
     invoke-static {}, Lokhttp3/OkHttpClient;->access$100()Ljava/util/List;
 
     move-result-object v0

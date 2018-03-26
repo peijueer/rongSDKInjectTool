@@ -62,6 +62,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache$3;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->lruEntries:Ljava/util/LinkedHashMap;
     invoke-static {v1}, Lokhttp3/internal/DiskLruCache;->access$2300(Lokhttp3/internal/DiskLruCache;)Ljava/util/LinkedHashMap;
 
     move-result-object v1
@@ -110,6 +111,7 @@
     :try_start_0
     iget-object v5, p0, Lokhttp3/internal/DiskLruCache$3;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->closed:Z
     invoke-static {v5}, Lokhttp3/internal/DiskLruCache;->access$100(Lokhttp3/internal/DiskLruCache;)Z
 
     move-result v5
@@ -255,6 +257,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache$3;->removeSnapshot:Lokhttp3/internal/DiskLruCache$Snapshot;
 
+    # getter for: Lokhttp3/internal/DiskLruCache$Snapshot;->key:Ljava/lang/String;
     invoke-static {v1}, Lokhttp3/internal/DiskLruCache$Snapshot;->access$2400(Lokhttp3/internal/DiskLruCache$Snapshot;)Ljava/lang/String;
 
     move-result-object v1

@@ -51,6 +51,7 @@
     .line 912
     iget-object v0, p0, Lokhttp3/internal/framed/FramedConnection$7;->this$0:Lokhttp3/internal/framed/FramedConnection;
 
+    # getter for: Lokhttp3/internal/framed/FramedConnection;->pushObserver:Lokhttp3/internal/framed/PushObserver;
     invoke-static {v0}, Lokhttp3/internal/framed/FramedConnection;->access$2700(Lokhttp3/internal/framed/FramedConnection;)Lokhttp3/internal/framed/PushObserver;
 
     move-result-object v0
@@ -70,6 +71,7 @@
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/framed/FramedConnection$7;->this$0:Lokhttp3/internal/framed/FramedConnection;
 
+    # getter for: Lokhttp3/internal/framed/FramedConnection;->currentPushRequests:Ljava/util/Set;
     invoke-static {v0}, Lokhttp3/internal/framed/FramedConnection;->access$2800(Lokhttp3/internal/framed/FramedConnection;)Ljava/util/Set;
 
     move-result-object v0

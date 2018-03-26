@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract doExitGame(Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;)V
+.method public abstract doExitGame(Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -56,6 +56,14 @@
 .end method
 
 .method public abstract doPostGiftCode(Ljava/lang/String;Lcom/muzhiwan/sdk/service/IMzwPostGiftCodeCallBack;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract doSetPopVisible(Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

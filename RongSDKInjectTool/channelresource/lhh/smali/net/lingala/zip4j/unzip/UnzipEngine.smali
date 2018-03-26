@@ -285,11 +285,12 @@
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 344
+    .line 355
     :cond_3
     :goto_1
     return v4
 
+    .line 344
     :cond_4
     const/4 v4, 0x1
 

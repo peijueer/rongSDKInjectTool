@@ -68,6 +68,7 @@
 
     iget-object v4, p0, Lokhttp3/internal/framed/FramedConnection$3;->val$ping:Lokhttp3/internal/framed/Ping;
 
+    # invokes: Lokhttp3/internal/framed/FramedConnection;->writePing(ZIILokhttp3/internal/framed/Ping;)V
     invoke-static {v0, v1, v2, v3, v4}, Lokhttp3/internal/framed/FramedConnection;->access$900(Lokhttp3/internal/framed/FramedConnection;ZIILokhttp3/internal/framed/Ping;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0

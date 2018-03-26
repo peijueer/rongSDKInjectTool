@@ -60,6 +60,7 @@
     .line 104
     iget-object v0, p0, Lcom/zqhy/sdk/ui/FloatActivity$3;->c:Lcom/zqhy/sdk/ui/FloatActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/FloatActivity;->aCache:Lcom/zqhy/sdk/model/a;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/FloatActivity;->access$400(Lcom/zqhy/sdk/ui/FloatActivity;)Lcom/zqhy/sdk/model/a;
 
     move-result-object v0

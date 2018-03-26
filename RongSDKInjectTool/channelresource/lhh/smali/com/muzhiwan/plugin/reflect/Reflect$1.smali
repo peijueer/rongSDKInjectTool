@@ -67,6 +67,7 @@
     :try_start_0
     iget-object v5, p0, Lcom/muzhiwan/plugin/reflect/Reflect$1;->this$0:Lcom/muzhiwan/plugin/reflect/Reflect;
 
+    # getter for: Lcom/muzhiwan/plugin/reflect/Reflect;->object:Ljava/lang/Object;
     invoke-static {v5}, Lcom/muzhiwan/plugin/reflect/Reflect;->access$000(Lcom/muzhiwan/plugin/reflect/Reflect;)Ljava/lang/Object;
 
     move-result-object v5
@@ -102,6 +103,7 @@
     .line 412
     iget-object v5, p0, Lcom/muzhiwan/plugin/reflect/Reflect$1;->this$0:Lcom/muzhiwan/plugin/reflect/Reflect;
 
+    # getter for: Lcom/muzhiwan/plugin/reflect/Reflect;->object:Ljava/lang/Object;
     invoke-static {v5}, Lcom/muzhiwan/plugin/reflect/Reflect;->access$000(Lcom/muzhiwan/plugin/reflect/Reflect;)Ljava/lang/Object;
 
     move-result-object v2
@@ -132,6 +134,7 @@
 
     move-result-object v4
 
+    # invokes: Lcom/muzhiwan/plugin/reflect/Reflect;->property(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v4}, Lcom/muzhiwan/plugin/reflect/Reflect;->access$100(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -169,6 +172,7 @@
 
     move-result-object v4
 
+    # invokes: Lcom/muzhiwan/plugin/reflect/Reflect;->property(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v4}, Lcom/muzhiwan/plugin/reflect/Reflect;->access$100(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -198,6 +202,7 @@
 
     move-result-object v5
 
+    # invokes: Lcom/muzhiwan/plugin/reflect/Reflect;->property(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {v5}, Lcom/muzhiwan/plugin/reflect/Reflect;->access$100(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5

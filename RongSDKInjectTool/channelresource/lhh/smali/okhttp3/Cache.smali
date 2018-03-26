@@ -629,6 +629,7 @@
 
     check-cast v4, Lokhttp3/Cache$CacheResponseBody;
 
+    # getter for: Lokhttp3/Cache$CacheResponseBody;->snapshot:Lokhttp3/internal/DiskLruCache$Snapshot;
     invoke-static {v4}, Lokhttp3/Cache$CacheResponseBody;->access$500(Lokhttp3/Cache$CacheResponseBody;)Lokhttp3/internal/DiskLruCache$Snapshot;
 
     move-result-object v3

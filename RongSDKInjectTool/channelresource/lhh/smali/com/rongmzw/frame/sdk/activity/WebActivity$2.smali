@@ -155,6 +155,7 @@
     .line 104
     iget-object v6, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$2;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->token:Ljava/lang/String;
     invoke-static {v6}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$300(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Ljava/lang/String;
 
     move-result-object v6

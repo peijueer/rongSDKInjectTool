@@ -164,6 +164,7 @@
     :cond_3
     iget-object v4, p0, Lokhttp3/internal/http/Http1xStream$UnknownLengthSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->source:Lokio/BufferedSource;
     invoke-static {v4}, Lokhttp3/internal/http/Http1xStream;->access$600(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSource;
 
     move-result-object v4

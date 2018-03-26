@@ -60,6 +60,7 @@
     .line 202
     iget-object v0, p0, Lcom/lzy/okhttpserver/download/DownloadManager$1;->this$0:Lcom/lzy/okhttpserver/download/DownloadManager;
 
+    # getter for: Lcom/lzy/okhttpserver/download/DownloadManager;->threadPool:Lcom/lzy/okhttpserver/download/DownloadThreadPool;
     invoke-static {v0}, Lcom/lzy/okhttpserver/download/DownloadManager;->access$000(Lcom/lzy/okhttpserver/download/DownloadManager;)Lcom/lzy/okhttpserver/download/DownloadThreadPool;
 
     move-result-object v0
@@ -99,6 +100,7 @@
 
     const/4 v5, 0x1
 
+    # invokes: Lcom/lzy/okhttpserver/download/DownloadManager;->addTask(Ljava/lang/String;Ljava/lang/String;Lcom/lzy/okhttputils/request/BaseRequest;Lcom/lzy/okhttpserver/listener/DownloadListener;Z)V
     invoke-static/range {v0 .. v5}, Lcom/lzy/okhttpserver/download/DownloadManager;->access$100(Lcom/lzy/okhttpserver/download/DownloadManager;Ljava/lang/String;Ljava/lang/String;Lcom/lzy/okhttputils/request/BaseRequest;Lcom/lzy/okhttpserver/listener/DownloadListener;Z)V
 
     .line 206

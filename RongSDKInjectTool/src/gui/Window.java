@@ -352,11 +352,9 @@ public class Window extends JFrame implements ActionListener, ItemListener {
 						System.out.println("完成文件签名...");
 					}
 
-					System.out.println("所有渠道包打包完成...");
+					System.out.println("所有渠道包打包完成...打包完成，用时:" + (System.currentTimeMillis() - startTime) / 1000L + "秒");
 					packButton.setEnabled(true);
 					try {
-						String alertStr = "打包完成，用时:" + (System.currentTimeMillis() - startTime) / 1000L + "秒";
-						JOptionPane.showMessageDialog(null, alertStr);
 						Desktop.getDesktop().open(new File(ConfigUtils.ROOTPATH + "/" + apkName));
 					} catch (IOException ex) {
 						ex.printStackTrace();

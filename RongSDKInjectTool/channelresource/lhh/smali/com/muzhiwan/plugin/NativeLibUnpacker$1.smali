@@ -61,6 +61,7 @@
 
     invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
+    # invokes: Lcom/muzhiwan/plugin/NativeLibUnpacker;->extractLibFile(Ljava/util/zip/ZipFile;Ljava/io/File;)Z
     invoke-static {v0, v3}, Lcom/muzhiwan/plugin/NativeLibUnpacker;->access$000(Ljava/util/zip/ZipFile;Ljava/io/File;)Z
 
     move-result v2

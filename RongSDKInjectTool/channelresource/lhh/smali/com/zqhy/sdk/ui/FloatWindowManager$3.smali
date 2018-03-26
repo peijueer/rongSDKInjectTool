@@ -43,6 +43,7 @@
     .line 308
     iget-object v0, p0, Lcom/zqhy/sdk/ui/FloatWindowManager$3;->a:Lcom/zqhy/sdk/ui/FloatWindowManager;
 
+    # invokes: Lcom/zqhy/sdk/ui/FloatWindowManager;->freshHalfGray()V
     invoke-static {v0}, Lcom/zqhy/sdk/ui/FloatWindowManager;->access$200(Lcom/zqhy/sdk/ui/FloatWindowManager;)V
 
     .line 309

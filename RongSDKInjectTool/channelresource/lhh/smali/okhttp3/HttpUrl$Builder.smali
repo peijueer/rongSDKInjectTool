@@ -2458,6 +2458,7 @@
 
     if-eqz p1, :cond_0
 
+    # getter for: Lokhttp3/HttpUrl;->scheme:Ljava/lang/String;
     invoke-static/range {p1 .. p1}, Lokhttp3/HttpUrl;->access$100(Lokhttp3/HttpUrl;)Ljava/lang/String;
 
     move-result-object v3
@@ -2626,6 +2627,7 @@
     if-eqz p1, :cond_4
 
     .line 1053
+    # getter for: Lokhttp3/HttpUrl;->scheme:Ljava/lang/String;
     invoke-static/range {p1 .. p1}, Lokhttp3/HttpUrl;->access$100(Lokhttp3/HttpUrl;)Ljava/lang/String;
 
     move-result-object v3
@@ -3024,6 +3026,7 @@
     iput-object v3, v0, Lokhttp3/HttpUrl$Builder;->encodedPassword:Ljava/lang/String;
 
     .line 1127
+    # getter for: Lokhttp3/HttpUrl;->host:Ljava/lang/String;
     invoke-static/range {p1 .. p1}, Lokhttp3/HttpUrl;->access$200(Lokhttp3/HttpUrl;)Ljava/lang/String;
 
     move-result-object v3
@@ -3033,6 +3036,7 @@
     iput-object v3, v0, Lokhttp3/HttpUrl$Builder;->host:Ljava/lang/String;
 
     .line 1128
+    # getter for: Lokhttp3/HttpUrl;->port:I
     invoke-static/range {p1 .. p1}, Lokhttp3/HttpUrl;->access$300(Lokhttp3/HttpUrl;)I
 
     move-result v3

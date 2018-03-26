@@ -47,6 +47,8 @@ public class Dom4jUtils {
 	public static final String DIMEN = "dimen";
 	public static final String XML = "xml";
 	public static final String CHANNELDEFAULT = ".mzw";
+	public static final String LHH_PROVIDER_AUTHORITIES = "authorities";
+	public static final String LHH_PROVIDER_AUTHORITIES_VALUE_ENDS = ".file.fileprovider";
 
 	/**
 	 * @Title: changePackageName
@@ -56,7 +58,7 @@ public class Dom4jUtils {
 	 * @return void 返回类型
 	 * @throws
 	 */
-	public static void changePackageName(String mainFestPath, ChannelBean channelBean) {
+	public static void changePackageNameAndProvider(String mainFestPath, ChannelBean channelBean) {
 		SAXReader reader = new SAXReader();
 		try {
 			Document document = reader.read(new File(mainFestPath));
@@ -65,7 +67,7 @@ public class Dom4jUtils {
 
 			String finalPackage = srcPackage;
 			if (srcPackage.endsWith(CHANNELDEFAULT)) {
-				finalPackage = srcPackage.substring(srcPackage.length() - 3) + channelBean.getChannelId();
+				finalPackage = srcPackage.substring(0, srcPackage.length() - 3) + channelBean.getChannelId();
 			} else if (srcPackage.endsWith("." + channelBean.getChannelId())) {
 				finalPackage = srcPackage;
 			} else {
@@ -89,6 +91,9 @@ public class Dom4jUtils {
 				for (Attribute attribute : childElementAttributes) {
 					if (NAME.equals(attribute.getName()) && attribute.getValue().startsWith(".")) {
 						String newValue = finalPackage + attribute.getValue();
+						attribute.setValue(newValue);
+					} else if (LHH_PROVIDER_AUTHORITIES.equals(attribute.getName())) {
+						String newValue = finalPackage + LHH_PROVIDER_AUTHORITIES_VALUE_ENDS;
 						attribute.setValue(newValue);
 					}
 				}

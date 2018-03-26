@@ -47,6 +47,7 @@
     .line 267
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$7;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -55,6 +56,7 @@
 
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$7;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -93,6 +95,7 @@
     .line 274
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$7;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -115,6 +118,7 @@
     .line 276
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$7;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -137,6 +141,7 @@
     .line 282
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$7;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -154,6 +159,7 @@
     :try_start_1
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$7;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0

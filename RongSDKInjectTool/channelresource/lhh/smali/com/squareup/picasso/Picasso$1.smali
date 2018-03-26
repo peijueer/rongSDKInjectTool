@@ -138,6 +138,7 @@
 
     move-result-object v0
 
+    # invokes: Lcom/squareup/picasso/Picasso;->cancelExistingRequest(Ljava/lang/Object;)V
     invoke-static {v1, v0}, Lcom/squareup/picasso/Picasso;->access$000(Lcom/squareup/picasso/Picasso;Ljava/lang/Object;)V
 
     .line 140

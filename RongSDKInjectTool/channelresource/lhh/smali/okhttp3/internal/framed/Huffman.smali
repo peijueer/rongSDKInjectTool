@@ -632,6 +632,7 @@
 
     .line 178
     .local v2, "i":I
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v0}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v6
@@ -649,6 +650,7 @@
 
     .line 181
     :cond_0
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v0}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v6
@@ -658,6 +660,7 @@
     if-nez v6, :cond_1
 
     .line 182
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v0}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v6
@@ -670,6 +673,7 @@
 
     .line 184
     :cond_1
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v0}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v6
@@ -707,6 +711,7 @@
     if-ge v2, v6, :cond_3
 
     .line 191
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v0}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v6
@@ -837,6 +842,7 @@
 
     .line 138
     .local v2, "c":I
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v7
@@ -844,6 +850,7 @@
     aget-object v6, v7, v2
 
     .line 139
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v7
@@ -851,6 +858,7 @@
     if-nez v7, :cond_0
 
     .line 141
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->symbol:I
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$100(Lokhttp3/internal/framed/Huffman$Node;)I
 
     move-result v7
@@ -858,6 +866,7 @@
     invoke-virtual {v1, v7}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
     .line 142
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->terminalBits:I
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$200(Lokhttp3/internal/framed/Huffman$Node;)I
 
     move-result v7
@@ -886,6 +895,7 @@
     .end local v0    # "b":I
     .restart local v2    # "c":I
     :cond_2
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->symbol:I
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$100(Lokhttp3/internal/framed/Huffman$Node;)I
 
     move-result v7
@@ -893,6 +903,7 @@
     invoke-virtual {v1, v7}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
     .line 158
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->terminalBits:I
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$200(Lokhttp3/internal/framed/Huffman$Node;)I
 
     move-result v7
@@ -916,6 +927,7 @@
 
     .line 153
     .restart local v2    # "c":I
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v7
@@ -923,12 +935,14 @@
     aget-object v6, v7, v2
 
     .line 154
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->children:[Lokhttp3/internal/framed/Huffman$Node;
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$000(Lokhttp3/internal/framed/Huffman$Node;)[Lokhttp3/internal/framed/Huffman$Node;
 
     move-result-object v7
 
     if-nez v7, :cond_4
 
+    # getter for: Lokhttp3/internal/framed/Huffman$Node;->terminalBits:I
     invoke-static {v6}, Lokhttp3/internal/framed/Huffman$Node;->access$200(Lokhttp3/internal/framed/Huffman$Node;)I
 
     move-result v7

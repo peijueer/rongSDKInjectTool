@@ -44,6 +44,7 @@
     .line 97
     iget-object v0, p0, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener$4;->this$0:Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;
 
+    # invokes: Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->showErrorDialog()V
     invoke-static {v0}, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->access$200(Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;)V
 
     .line 98

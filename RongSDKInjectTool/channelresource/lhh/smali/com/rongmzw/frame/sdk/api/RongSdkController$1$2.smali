@@ -42,7 +42,8 @@
     .param p1, "s"    # Ljava/lang/String;
 
     .prologue
-    .line 116
+    .line 115
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -67,7 +68,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 117
+    .line 116
     return-void
 .end method
 
@@ -76,6 +77,7 @@
 
     .prologue
     .line 108
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -92,6 +94,7 @@
     invoke-static {v0, v1}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->initCallBack(ILjava/lang/String;)V
 
     .line 110
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->lehihiGameSDKApi:Lcom/zqhy/sdk/platform/LehihiGameSDKApi;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$2200()Lcom/zqhy/sdk/platform/LehihiGameSDKApi;
 
     move-result-object v0
@@ -105,12 +108,5 @@
     invoke-virtual {v0, v1}, Lcom/zqhy/sdk/platform/LehihiGameSDKApi;->registerReLoginCallBack(Lcom/zqhy/sdk/callback/ReLoginCallBack;)V
 
     .line 111
-    iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1$2;->this$1:Lcom/rongmzw/frame/sdk/api/RongSdkController$1;
-
-    iget-object v0, v0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
-
-    invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$2300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)V
-
-    .line 112
     return-void
 .end method

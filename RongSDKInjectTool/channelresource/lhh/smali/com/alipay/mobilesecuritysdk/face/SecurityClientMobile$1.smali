@@ -76,6 +76,7 @@
     move-exception v0
 
     .line 74
+    # getter for: Lcom/alipay/mobilesecuritysdk/face/SecurityClientMobile;->isDebug:Z
     invoke-static {}, Lcom/alipay/mobilesecuritysdk/face/SecurityClientMobile;->access$0()Z
 
     move-result v1

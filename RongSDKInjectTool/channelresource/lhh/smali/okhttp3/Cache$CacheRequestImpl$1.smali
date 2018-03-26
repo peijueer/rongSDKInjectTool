@@ -63,6 +63,7 @@
     :try_start_0
     iget-object v0, p0, Lokhttp3/Cache$CacheRequestImpl$1;->this$1:Lokhttp3/Cache$CacheRequestImpl;
 
+    # getter for: Lokhttp3/Cache$CacheRequestImpl;->done:Z
     invoke-static {v0}, Lokhttp3/Cache$CacheRequestImpl;->access$700(Lokhttp3/Cache$CacheRequestImpl;)Z
 
     move-result v0
@@ -82,6 +83,7 @@
 
     const/4 v2, 0x1
 
+    # setter for: Lokhttp3/Cache$CacheRequestImpl;->done:Z
     invoke-static {v0, v2}, Lokhttp3/Cache$CacheRequestImpl;->access$702(Lokhttp3/Cache$CacheRequestImpl;Z)Z
 
     .line 444
@@ -89,6 +91,7 @@
 
     iget-object v0, v0, Lokhttp3/Cache$CacheRequestImpl;->this$0:Lokhttp3/Cache;
 
+    # operator++ for: Lokhttp3/Cache;->writeSuccessCount:I
     invoke-static {v0}, Lokhttp3/Cache;->access$808(Lokhttp3/Cache;)I
 
     .line 445

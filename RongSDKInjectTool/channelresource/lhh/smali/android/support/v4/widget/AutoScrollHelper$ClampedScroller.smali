@@ -127,6 +127,7 @@
 
     div-float/2addr v6, v7
 
+    # invokes: Landroid/support/v4/widget/AutoScrollHelper;->constrain(FFF)F
     invoke-static {v6, v4, v10}, Landroid/support/v4/widget/AutoScrollHelper;->access$900(FFF)F
 
     move-result v4
@@ -158,6 +159,7 @@
 
     div-float/2addr v7, v8
 
+    # invokes: Landroid/support/v4/widget/AutoScrollHelper;->constrain(FFF)F
     invoke-static {v7, v4, v10}, Landroid/support/v4/widget/AutoScrollHelper;->access$900(FFF)F
 
     move-result v4
@@ -393,6 +395,7 @@
 
     iget v4, p0, Landroid/support/v4/widget/AutoScrollHelper$ClampedScroller;->mRampDownDuration:I
 
+    # invokes: Landroid/support/v4/widget/AutoScrollHelper;->constrain(III)I
     invoke-static {v2, v3, v4}, Landroid/support/v4/widget/AutoScrollHelper;->access$800(III)I
 
     move-result v2

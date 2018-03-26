@@ -30,7 +30,7 @@
 
 .field public static final MZW_SPF_KEY_LASTPAY_NAME:Ljava/lang/String; = "mzw_lastpay_name"
 
-.field public static final MZW_SPF_KEY_SDKVERSION_DEFVALUE:I = 0xd35
+.field public static final MZW_SPF_KEY_SDKVERSION_DEFVALUE:I = 0xd36
 
 .field public static final MZW_SPF_NAME:Ljava/lang/String; = "mzw_spf"
 

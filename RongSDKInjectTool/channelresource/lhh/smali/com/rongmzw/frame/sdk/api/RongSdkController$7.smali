@@ -42,6 +42,7 @@
 
     .prologue
     .line 437
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -60,6 +61,7 @@
 
     .prologue
     .line 432
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -98,14 +100,17 @@
     .line 379
     iget-object v2, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$7;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
-    invoke-static {v2, p2}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$3502(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
+    # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->strUsername:Ljava/lang/String;
+    invoke-static {v2, p2}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$3402(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
 
     .line 380
     iget-object v2, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$7;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
-    invoke-static {v2, p3}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$3602(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
+    # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->strToken:Ljava/lang/String;
+    invoke-static {v2, p3}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$3502(Lcom/rongmzw/frame/sdk/api/RongSdkController;Ljava/lang/String;)Ljava/lang/String;
 
     .line 381
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v2
@@ -178,6 +183,7 @@
     .line 388
     iget-object v2, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$7;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$4000(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
 
     move-result-object v2
@@ -192,6 +198,7 @@
 
     iget-object v3, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$7;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gson:Lcom/google/gson/Gson;
     invoke-static {v3}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$4100(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/google/gson/Gson;
 
     move-result-object v3
@@ -218,6 +225,7 @@
 
     iget-object v3, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$7;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
     invoke-static {v3}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$4200(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
 
     move-result-object v3

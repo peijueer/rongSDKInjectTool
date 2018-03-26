@@ -225,6 +225,7 @@
     iput-object v0, p0, Lokhttp3/internal/framed/FramedConnection;->currentPushRequests:Ljava/util/Set;
 
     .line 131
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->protocol:Lokhttp3/Protocol;
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$000(Lokhttp3/internal/framed/FramedConnection$Builder;)Lokhttp3/Protocol;
 
     move-result-object v0
@@ -232,6 +233,7 @@
     iput-object v0, p0, Lokhttp3/internal/framed/FramedConnection;->protocol:Lokhttp3/Protocol;
 
     .line 132
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->pushObserver:Lokhttp3/internal/framed/PushObserver;
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$100(Lokhttp3/internal/framed/FramedConnection$Builder;)Lokhttp3/internal/framed/PushObserver;
 
     move-result-object v0
@@ -239,6 +241,7 @@
     iput-object v0, p0, Lokhttp3/internal/framed/FramedConnection;->pushObserver:Lokhttp3/internal/framed/PushObserver;
 
     .line 133
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->client:Z
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$200(Lokhttp3/internal/framed/FramedConnection$Builder;)Z
 
     move-result v0
@@ -246,6 +249,7 @@
     iput-boolean v0, p0, Lokhttp3/internal/framed/FramedConnection;->client:Z
 
     .line 134
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->listener:Lokhttp3/internal/framed/FramedConnection$Listener;
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$300(Lokhttp3/internal/framed/FramedConnection$Builder;)Lokhttp3/internal/framed/FramedConnection$Listener;
 
     move-result-object v0
@@ -253,6 +257,7 @@
     iput-object v0, p0, Lokhttp3/internal/framed/FramedConnection;->listener:Lokhttp3/internal/framed/FramedConnection$Listener;
 
     .line 136
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->client:Z
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$200(Lokhttp3/internal/framed/FramedConnection$Builder;)Z
 
     move-result v0
@@ -265,6 +270,7 @@
     iput v0, p0, Lokhttp3/internal/framed/FramedConnection;->nextStreamId:I
 
     .line 137
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->client:Z
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$200(Lokhttp3/internal/framed/FramedConnection$Builder;)Z
 
     move-result v0
@@ -286,6 +292,7 @@
 
     .line 141
     :cond_0
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->client:Z
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$200(Lokhttp3/internal/framed/FramedConnection$Builder;)Z
 
     move-result v0
@@ -298,6 +305,7 @@
     iput v1, p0, Lokhttp3/internal/framed/FramedConnection;->nextPingId:I
 
     .line 147
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->client:Z
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$200(Lokhttp3/internal/framed/FramedConnection$Builder;)Z
 
     move-result v0
@@ -313,6 +321,7 @@
 
     .line 151
     :cond_2
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->hostname:Ljava/lang/String;
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$400(Lokhttp3/internal/framed/FramedConnection$Builder;)Ljava/lang/String;
 
     move-result-object v0
@@ -396,6 +405,7 @@
     iput-wide v0, p0, Lokhttp3/internal/framed/FramedConnection;->bytesLeftInWriteWindow:J
 
     .line 169
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->socket:Ljava/net/Socket;
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$500(Lokhttp3/internal/framed/FramedConnection$Builder;)Ljava/net/Socket;
 
     move-result-object v0
@@ -405,6 +415,7 @@
     .line 170
     iget-object v0, p0, Lokhttp3/internal/framed/FramedConnection;->variant:Lokhttp3/internal/framed/Variant;
 
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->sink:Lokio/BufferedSink;
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$600(Lokhttp3/internal/framed/FramedConnection$Builder;)Lokio/BufferedSink;
 
     move-result-object v1
@@ -422,6 +433,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/framed/FramedConnection;->variant:Lokhttp3/internal/framed/Variant;
 
+    # getter for: Lokhttp3/internal/framed/FramedConnection$Builder;->source:Lokio/BufferedSource;
     invoke-static {p1}, Lokhttp3/internal/framed/FramedConnection$Builder;->access$700(Lokhttp3/internal/framed/FramedConnection$Builder;)Lokio/BufferedSource;
 
     move-result-object v2

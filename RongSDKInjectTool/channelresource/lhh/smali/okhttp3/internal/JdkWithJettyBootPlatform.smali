@@ -450,12 +450,14 @@
 
     .line 70
     .local v1, "provider":Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;
+    # getter for: Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;->unsupported:Z
     invoke-static {v1}, Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;->access$000(Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;)Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
+    # getter for: Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;->selected:Ljava/lang/String;
     invoke-static {v1}, Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;->access$100(Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;)Ljava/lang/String;
 
     move-result-object v3
@@ -481,12 +483,14 @@
     return-object v2
 
     :cond_1
+    # getter for: Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;->unsupported:Z
     invoke-static {v1}, Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;->access$000(Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
+    # getter for: Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;->selected:Ljava/lang/String;
     invoke-static {v1}, Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;->access$100(Lokhttp3/internal/JdkWithJettyBootPlatform$JettyNegoProvider;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1

@@ -126,6 +126,7 @@
     .line 458
     iget-object v0, p0, Lokhttp3/Cache$CacheRequestImpl;->this$0:Lokhttp3/Cache;
 
+    # operator++ for: Lokhttp3/Cache;->writeAbortCount:I
     invoke-static {v0}, Lokhttp3/Cache;->access$908(Lokhttp3/Cache;)I
 
     .line 459

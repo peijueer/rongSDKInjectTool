@@ -138,7 +138,7 @@
     .locals 4
 
     .prologue
-    .line 1075
+    .line 1076
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.CALL"
@@ -169,7 +169,7 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 1076
+    .line 1077
     return-void
 .end method
 
@@ -177,10 +177,10 @@
     .locals 0
 
     .prologue
-    .line 1037
+    .line 1038
     invoke-direct {p0, p1, p2}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->exitH5Activity(Ljava/lang/String;I)V
 
-    .line 1038
+    .line 1039
     return-void
 .end method
 
@@ -264,7 +264,7 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 1022
+    .line 1023
     :cond_0
     :goto_0
     return-void
@@ -316,18 +316,18 @@
     .line 971
     invoke-direct {p0, v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->map2Json(Ljava/util/Map;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
     .line 972
-    iget-object v2, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
+    iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
 
-    if-eqz v2, :cond_1
+    if-eqz v0, :cond_1
 
-    iget-object v2, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
+    iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
 
-    instance-of v2, v2, Lcom/zqhy/sdk/callback/PayCallBack;
+    instance-of v0, v0, Lcom/zqhy/sdk/callback/PayCallBack;
 
-    if-eqz v2, :cond_1
+    if-eqz v0, :cond_1
 
     .line 973
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
@@ -338,20 +338,23 @@
 
     invoke-interface {v0, v1}, Lcom/zqhy/sdk/callback/PayCallBack;->onPaySuccess(Ljava/lang/String;)V
 
+    .line 974
+    invoke-direct {p0, v2, v4}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->doCallback(Ljava/lang/String;I)V
+
     goto :goto_0
 
-    .line 975
-    :cond_1
-    const/4 v2, 0x1
-
-    if-ne v1, v2, :cond_3
-
     .line 976
-    iget-object v1, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
+    :cond_1
+    const/4 v0, 0x1
 
-    if-eqz v1, :cond_2
+    if-ne v1, v0, :cond_3
 
     .line 977
+    iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
+
+    if-eqz v0, :cond_2
+
+    .line 978
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
 
     check-cast v0, Lcom/zqhy/sdk/ui/H5WebActivity;
@@ -360,19 +363,19 @@
 
     goto :goto_0
 
-    .line 979
+    .line 980
     :cond_2
-    invoke-direct {p0, v0, v4}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->doCallback(Ljava/lang/String;I)V
+    invoke-direct {p0, v2, v4}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->doCallback(Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 982
+    .line 983
     :cond_3
-    invoke-direct {p0, v0, v4}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->doCallback(Ljava/lang/String;I)V
+    invoke-direct {p0, v2, v4}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->doCallback(Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 988
+    .line 989
     :cond_4
     const-string v0, "8000"
 
@@ -382,7 +385,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 989
+    .line 990
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
 
     const-string v1, "\u652f\u4ed8\u7ed3\u679c\u786e\u8ba4\u4e2d"
@@ -395,7 +398,7 @@
 
     goto :goto_0
 
-    .line 990
+    .line 991
     :cond_5
     const-string v0, "6001"
 
@@ -405,36 +408,36 @@
 
     if-eqz v0, :cond_6
 
-    .line 991
+    .line 992
     new-instance v0, Ljava/util/TreeMap;
 
     invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
 
-    .line 992
+    .line 993
     const-string v1, "state"
 
     const-string v2, "1099"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 993
+    .line 994
     const-string v1, "msg"
 
     const-string v2, "\u53d6\u6d88\u652f\u4ed8"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 994
+    .line 995
     const-string v1, "data"
 
     const-string v2, ""
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 996
+    .line 997
     invoke-direct {p0, v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->map2Json(Ljava/util/Map;)Ljava/lang/String;
 
-    .line 997
+    .line 998
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
 
     if-eqz v0, :cond_0
@@ -445,7 +448,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 998
+    .line 999
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
 
     check-cast v0, Lcom/zqhy/sdk/callback/PayCallBack;
@@ -454,37 +457,37 @@
 
     goto/16 :goto_0
 
-    .line 1002
+    .line 1003
     :cond_6
     new-instance v0, Ljava/util/TreeMap;
 
     invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
 
-    .line 1003
+    .line 1004
     const-string v1, "state"
 
     const-string v3, "-1"
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1004
+    .line 1005
     const-string v1, "msg"
 
     const-string v3, "\u652f\u4ed8\u5931\u8d25"
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1005
+    .line 1006
     const-string v1, "data"
 
     const-string v3, ""
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1006
+    .line 1007
     invoke-direct {p0, v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->map2Json(Ljava/util/Map;)Ljava/lang/String;
 
-    .line 1007
+    .line 1008
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
 
     if-eqz v0, :cond_0
@@ -495,7 +498,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1008
+    .line 1009
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
 
     check-cast v0, Lcom/zqhy/sdk/callback/PayCallBack;
@@ -522,7 +525,7 @@
 
     goto/16 :goto_0
 
-    .line 1016
+    .line 1017
     :pswitch_1
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
 
@@ -555,8 +558,6 @@
     goto/16 :goto_0
 
     .line 959
-    nop
-
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -568,12 +569,12 @@
     .locals 3
 
     .prologue
-    .line 1059
+    .line 1060
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 1060
+    .line 1061
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -598,7 +599,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 1063
+    .line 1064
     :try_start_0
     iget-object v1, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
 
@@ -606,18 +607,18 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1069
+    .line 1070
     :goto_0
     return-void
 
-    .line 1064
+    .line 1065
     :catch_0
     move-exception v0
 
-    .line 1066
+    .line 1067
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 1067
+    .line 1068
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
 
     const-string v1, "\u672a\u5b89\u88c5\u624bQ\u6216\u5b89\u88c5\u7684\u7248\u672c\u4e0d\u652f\u6301"
@@ -648,10 +649,10 @@
     .end annotation
 
     .prologue
-    .line 1025
+    .line 1026
     const-string v0, ""
 
-    .line 1026
+    .line 1027
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -670,7 +671,7 @@
 
     move-result-object v0
 
-    .line 1027
+    .line 1028
     invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v1
@@ -694,14 +695,14 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 1028
+    .line 1029
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
 
-    .line 1029
+    .line 1030
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -742,10 +743,10 @@
 
     move-object v2, v0
 
-    .line 1030
+    .line 1031
     goto :goto_0
 
-    .line 1031
+    .line 1032
     :cond_0
     const/4 v0, 0x0
 
@@ -759,7 +760,7 @@
 
     move-result-object v0
 
-    .line 1032
+    .line 1033
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -778,7 +779,7 @@
 
     move-result-object v0
 
-    .line 1033
+    .line 1034
     return-object v0
 .end method
 
@@ -786,7 +787,7 @@
     .locals 3
 
     .prologue
-    .line 1045
+    .line 1046
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -806,7 +807,7 @@
 
     move-result-object v0
 
-    .line 1046
+    .line 1047
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.VIEW"
@@ -817,30 +818,30 @@
 
     invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 1047
+    .line 1048
     const/high16 v0, 0x10000000
 
     invoke-virtual {v1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 1048
+    .line 1049
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1053
+    .line 1054
     :goto_0
     return-void
 
-    .line 1049
+    .line 1050
     :catch_0
     move-exception v0
 
-    .line 1050
+    .line 1051
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 1051
+    .line 1052
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
 
     const-string v1, "\u672a\u5b89\u88c5\u624bQ\u6216\u5b89\u88c5\u7684\u7248\u672c\u4e0d\u652f\u6301"
@@ -1238,7 +1239,7 @@
     .locals 4
 
     .prologue
-    .line 1085
+    .line 1086
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.DIAL"
@@ -1269,7 +1270,7 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 1086
+    .line 1087
     return-void
 .end method
 
@@ -1277,29 +1278,29 @@
     .locals 1
 
     .prologue
-    .line 1090
+    .line 1091
     :try_start_0
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->loadingAlertDialog:Lcom/zqhy/sdk/ui/c;
 
     if-eqz v0, :cond_0
 
-    .line 1091
+    .line 1092
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface;->loadingAlertDialog:Lcom/zqhy/sdk/ui/c;
 
     invoke-virtual {v0}, Lcom/zqhy/sdk/ui/c;->dismiss()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1096
+    .line 1097
     :cond_0
     :goto_0
     return-void
 
-    .line 1093
+    .line 1094
     :catch_0
     move-exception v0
 
-    .line 1094
+    .line 1095
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0

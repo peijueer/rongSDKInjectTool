@@ -54,6 +54,7 @@
 
     iget-object v0, p0, Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView$a;->a:Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;
 
+    # getter for: Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;->isExpandOne:Z
     invoke-static {v0}, Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;->access$000(Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;)Z
 
     move-result v0
@@ -109,6 +110,7 @@
 
     iget-object v2, p0, Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView$a;->a:Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;
 
+    # getter for: Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;->position:Ljava/lang/Integer;
     invoke-static {v2}, Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;->access$100(Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;)Ljava/lang/Integer;
 
     move-result-object v2
@@ -163,6 +165,7 @@
 
     iget-object v2, p0, Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView$a;->a:Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;
 
+    # getter for: Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;->position:Ljava/lang/Integer;
     invoke-static {v2}, Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;->access$100(Lcom/zqhy/sdk/ui/expand/ExpandableLayoutListView;)Ljava/lang/Integer;
 
     move-result-object v2

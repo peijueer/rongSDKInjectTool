@@ -60,6 +60,7 @@
 
     move-result-object v1
 
+    # invokes: Lcom/zhy/http/okhttp/https/HttpsUtils;->chooseTrustManager([Ljavax/net/ssl/TrustManager;)Ljavax/net/ssl/X509TrustManager;
     invoke-static {v1}, Lcom/zhy/http/okhttp/https/HttpsUtils;->access$100([Ljavax/net/ssl/TrustManager;)Ljavax/net/ssl/X509TrustManager;
 
     move-result-object v1

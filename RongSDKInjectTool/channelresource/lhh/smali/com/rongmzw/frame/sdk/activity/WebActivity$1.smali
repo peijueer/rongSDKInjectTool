@@ -46,12 +46,14 @@
     .line 60
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$1;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->webViewForBind:Landroid/webkit/WebView;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$200(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Landroid/webkit/WebView;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$1;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->url:Ljava/lang/String;
     invoke-static {v1}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$100(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Ljava/lang/String;
 
     move-result-object v1
@@ -77,6 +79,7 @@
     .local v1, "secret":Ljava/lang/String;
     iget-object v2, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$1;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->mzwId:Ljava/lang/String;
     invoke-static {v2}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$000(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Ljava/lang/String;
 
     move-result-object v2
@@ -100,6 +103,7 @@
 
     iget-object v3, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$1;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->mzwId:Ljava/lang/String;
     invoke-static {v3}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$000(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Ljava/lang/String;
 
     move-result-object v3
@@ -111,6 +115,7 @@
 
     iget-object v3, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$1;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->mzwId:Ljava/lang/String;
     invoke-static {v3}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$000(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Ljava/lang/String;
 
     move-result-object v3
@@ -129,6 +134,7 @@
 
     iget-object v4, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$1;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->url:Ljava/lang/String;
     invoke-static {v4}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$100(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Ljava/lang/String;
 
     move-result-object v4
@@ -149,6 +155,7 @@
 
     move-result-object v3
 
+    # setter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->url:Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$102(Lcom/rongmzw/frame/sdk/activity/WebActivity;Ljava/lang/String;)Ljava/lang/String;
 
     .line 55
@@ -156,12 +163,14 @@
     :cond_0
     iget-object v2, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$1;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->webViewForBind:Landroid/webkit/WebView;
     invoke-static {v2}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$200(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Landroid/webkit/WebView;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/rongmzw/frame/sdk/activity/WebActivity$1;->this$0:Lcom/rongmzw/frame/sdk/activity/WebActivity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/activity/WebActivity;->url:Ljava/lang/String;
     invoke-static {v3}, Lcom/rongmzw/frame/sdk/activity/WebActivity;->access$100(Lcom/rongmzw/frame/sdk/activity/WebActivity;)Ljava/lang/String;
 
     move-result-object v3

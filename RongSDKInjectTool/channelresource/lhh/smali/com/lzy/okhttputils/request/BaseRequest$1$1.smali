@@ -57,6 +57,7 @@
 
     iget-object v0, v0, Lcom/lzy/okhttputils/request/BaseRequest$1;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v0}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v0
@@ -67,6 +68,7 @@
 
     iget-object v0, v0, Lcom/lzy/okhttputils/request/BaseRequest$1;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v0}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v1

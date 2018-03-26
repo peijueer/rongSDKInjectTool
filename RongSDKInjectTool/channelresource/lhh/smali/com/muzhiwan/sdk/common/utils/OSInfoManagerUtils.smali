@@ -1306,7 +1306,6 @@
 
     move-result-object v0
 
-    .line 158
     return-object v0
 .end method
 

@@ -2842,10 +2842,11 @@
     .line 268
     const-wide/32 v2, 0x210000
 
-    .line 270
+    .line 272
     :goto_0
     return-wide v2
 
+    .line 270
     :cond_0
     add-int/lit16 v2, v1, -0x7bc
 
@@ -2907,7 +2908,6 @@
 
     int-to-long v2, v2
 
-    .line 270
     goto :goto_0
 .end method
 

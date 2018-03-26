@@ -52,6 +52,7 @@
 
     move-result-object v1
 
+    # invokes: Lcom/lzy/okhttpserver/task/PriorityAsyncTask;->postResultIfNotInvoked(Ljava/lang/Object;)V
     invoke-static {v0, v1}, Lcom/lzy/okhttpserver/task/PriorityAsyncTask;->access$400(Lcom/lzy/okhttpserver/task/PriorityAsyncTask;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
@@ -103,6 +104,7 @@
 
     const/4 v1, 0x0
 
+    # invokes: Lcom/lzy/okhttpserver/task/PriorityAsyncTask;->postResultIfNotInvoked(Ljava/lang/Object;)V
     invoke-static {v0, v1}, Lcom/lzy/okhttpserver/task/PriorityAsyncTask;->access$400(Lcom/lzy/okhttpserver/task/PriorityAsyncTask;Ljava/lang/Object;)V
 
     goto :goto_0

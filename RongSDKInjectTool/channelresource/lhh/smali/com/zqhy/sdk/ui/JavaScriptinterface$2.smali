@@ -118,6 +118,7 @@
     .line 636
     iget-object v2, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$2;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$100(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Landroid/app/Activity;
 
     move-result-object v2
@@ -127,6 +128,7 @@
     .line 637
     iget-object v2, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$2;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$100(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Landroid/app/Activity;
 
     move-result-object v2
@@ -142,6 +144,7 @@
     .line 638
     iget-object v2, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$2;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$100(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Landroid/app/Activity;
 
     move-result-object v2

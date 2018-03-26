@@ -50,9 +50,11 @@
 
     move-result-object v0
 
+    # setter for: Lcom/muzhiwan/sdk/core/InnerController;->mzwService:Lcom/muzhiwan/sdk/service/IMzwService;
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$302(Lcom/muzhiwan/sdk/service/IMzwService;)Lcom/muzhiwan/sdk/service/IMzwService;
 
     .line 112
+    # setter for: Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
     invoke-static {v3}, Lcom/muzhiwan/sdk/core/InnerController;->access$102(Z)Z
 
     .line 113
@@ -62,6 +64,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/muzhiwan/sdk/core/InnerController;->access$200()Ljava/lang/String;
 
     move-result-object v2
@@ -85,6 +88,7 @@
     .line 114
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->initJson:Ljava/lang/String;
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$400(Lcom/muzhiwan/sdk/core/InnerController;)Ljava/lang/String;
 
     move-result-object v0
@@ -98,6 +102,7 @@
     .line 115
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->initCallback:Lcom/muzhiwan/sdk/core/callback/MzwInitCallback;
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$500(Lcom/muzhiwan/sdk/core/InnerController;)Lcom/muzhiwan/sdk/core/callback/MzwInitCallback;
 
     move-result-object v0
@@ -107,6 +112,7 @@
     .line 116
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->initCallback:Lcom/muzhiwan/sdk/core/callback/MzwInitCallback;
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$500(Lcom/muzhiwan/sdk/core/InnerController;)Lcom/muzhiwan/sdk/core/callback/MzwInitCallback;
 
     move-result-object v0
@@ -126,6 +132,7 @@
     :cond_1
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$600(Lcom/muzhiwan/sdk/core/InnerController;)Landroid/app/Activity;
 
     move-result-object v0
@@ -136,6 +143,7 @@
 
     iget-object v1, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->initJson:Ljava/lang/String;
     invoke-static {v1}, Lcom/muzhiwan/sdk/core/InnerController;->access$400(Lcom/muzhiwan/sdk/core/InnerController;)Ljava/lang/String;
 
     move-result-object v1
@@ -154,6 +162,7 @@
     .line 123
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # invokes: Lcom/muzhiwan/sdk/core/InnerController;->doUpdateAuto()V
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$700(Lcom/muzhiwan/sdk/core/InnerController;)V
 
     goto :goto_0
@@ -162,11 +171,13 @@
     :cond_2
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # invokes: Lcom/muzhiwan/sdk/core/InnerController;->doInit()V
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$800(Lcom/muzhiwan/sdk/core/InnerController;)V
 
     .line 126
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->initCallback:Lcom/muzhiwan/sdk/core/callback/MzwInitCallback;
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$500(Lcom/muzhiwan/sdk/core/InnerController;)Lcom/muzhiwan/sdk/core/callback/MzwInitCallback;
 
     move-result-object v0
@@ -176,6 +187,7 @@
     .line 127
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController$1;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->initCallback:Lcom/muzhiwan/sdk/core/callback/MzwInitCallback;
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$500(Lcom/muzhiwan/sdk/core/InnerController;)Lcom/muzhiwan/sdk/core/callback/MzwInitCallback;
 
     move-result-object v0
@@ -195,6 +207,7 @@
     .line 105
     const/4 v0, 0x0
 
+    # setter for: Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
     invoke-static {v0}, Lcom/muzhiwan/sdk/core/InnerController;->access$102(Z)Z
 
     .line 106
@@ -204,6 +217,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/muzhiwan/sdk/core/InnerController;->access$200()Ljava/lang/String;
 
     move-result-object v2

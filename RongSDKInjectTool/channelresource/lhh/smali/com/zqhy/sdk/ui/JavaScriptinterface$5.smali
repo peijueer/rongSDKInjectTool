@@ -66,6 +66,7 @@
     :cond_0
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$5;->a:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # invokes: Lcom/zqhy/sdk/ui/JavaScriptinterface;->handlerAlipay(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$300(Lcom/zqhy/sdk/ui/JavaScriptinterface;Landroid/os/Message;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0

@@ -45,11 +45,13 @@
     .line 56
     iget-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar$2;->this$0:Landroid/support/v4/widget/ContentLoadingProgressBar;
 
+    # setter for: Landroid/support/v4/widget/ContentLoadingProgressBar;->mPostedShow:Z
     invoke-static {v0, v1}, Landroid/support/v4/widget/ContentLoadingProgressBar;->access$202(Landroid/support/v4/widget/ContentLoadingProgressBar;Z)Z
 
     .line 57
     iget-object v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar$2;->this$0:Landroid/support/v4/widget/ContentLoadingProgressBar;
 
+    # getter for: Landroid/support/v4/widget/ContentLoadingProgressBar;->mDismissed:Z
     invoke-static {v0}, Landroid/support/v4/widget/ContentLoadingProgressBar;->access$300(Landroid/support/v4/widget/ContentLoadingProgressBar;)Z
 
     move-result v0
@@ -63,6 +65,7 @@
 
     move-result-wide v2
 
+    # setter for: Landroid/support/v4/widget/ContentLoadingProgressBar;->mStartTime:J
     invoke-static {v0, v2, v3}, Landroid/support/v4/widget/ContentLoadingProgressBar;->access$102(Landroid/support/v4/widget/ContentLoadingProgressBar;J)J
 
     .line 59

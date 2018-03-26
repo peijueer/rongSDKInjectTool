@@ -51,10 +51,10 @@
     .param p2, "msg"    # Ljava/lang/String;
 
     .prologue
-    .line 127
+    .line 126
     invoke-static {p2}, Lcom/rongmzw/frame/sdk/callback/RongCallBackUtils;->initFailedCallBack(Ljava/lang/String;)V
 
-    .line 128
+    .line 127
     return-void
 .end method
 
@@ -69,6 +69,7 @@
 
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gson:Lcom/google/gson/Gson;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/google/gson/Gson;
 
     move-result-object v0
@@ -81,6 +82,7 @@
 
     check-cast v0, Lcom/rongmzw/frame/sdk/domain/http/InitResponse;
 
+    # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponse:Lcom/rongmzw/frame/sdk/domain/http/InitResponse;
     invoke-static {v1, v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$202(Lcom/rongmzw/frame/sdk/api/RongSdkController;Lcom/rongmzw/frame/sdk/domain/http/InitResponse;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse;
 
     .line 84
@@ -88,6 +90,7 @@
 
     iget-object v1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponse:Lcom/rongmzw/frame/sdk/domain/http/InitResponse;
     invoke-static {v1}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$500(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse;
 
     move-result-object v1
@@ -96,11 +99,13 @@
 
     move-result-object v1
 
+    # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
     invoke-static {v0, v1}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$402(Lcom/rongmzw/frame/sdk/api/RongSdkController;Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     .line 85
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$600(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     move-result-object v0
@@ -110,6 +115,7 @@
     .line 86
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$700(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     move-result-object v0
@@ -124,6 +130,7 @@
 
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$800(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     move-result-object v0
@@ -138,6 +145,7 @@
 
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$900(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     move-result-object v0
@@ -150,6 +158,7 @@
 
     .line 87
     :cond_0
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -161,6 +170,7 @@
     .line 88
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->mzwSdkController:Lcom/muzhiwan/sdk/core/MzwSdkController;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1100(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/muzhiwan/sdk/core/MzwSdkController;
 
     move-result-object v0
@@ -175,12 +185,13 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/muzhiwan/sdk/core/MzwSdkController;->init(Landroid/app/Activity;ILcom/muzhiwan/sdk/core/callback/MzwInitCallback;)V
 
-    .line 123
+    .line 122
     :goto_0
     return-void
 
     .line 95
     :cond_1
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -194,6 +205,7 @@
 
     iget-object v1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
     invoke-static {v1}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean;
 
     move-result-object v1
@@ -202,11 +214,13 @@
 
     move-result-object v1
 
+    # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataParamsBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;
     invoke-static {v0, v1}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1202(Lcom/rongmzw/frame/sdk/api/RongSdkController;Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;
 
     .line 97
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataParamsBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1400(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;
 
     move-result-object v0
@@ -218,6 +232,7 @@
 
     iget-object v1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataParamsBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;
     invoke-static {v1}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1600(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;
 
     move-result-object v1
@@ -226,11 +241,13 @@
 
     move-result-object v1
 
+    # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataParamsExtraBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean$ExtraBean;
     invoke-static {v0, v1}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1502(Lcom/rongmzw/frame/sdk/api/RongSdkController;Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean$ExtraBean;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean$ExtraBean;
 
     .line 99
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataParamsExtraBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean$ExtraBean;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1700(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean$ExtraBean;
 
     move-result-object v0
@@ -240,6 +257,7 @@
     .line 100
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataParamsExtraBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean$ExtraBean;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1900(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean$ExtraBean;
 
     move-result-object v0
@@ -248,12 +266,14 @@
 
     move-result v0
 
+    # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->strPid:I
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1802(I)I
 
     .line 102
     :cond_2
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->initResponseDataParamsBean:Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$2100(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Lcom/rongmzw/frame/sdk/domain/http/InitResponse$DataBean$ParamsBean;
 
     move-result-object v0
@@ -262,20 +282,24 @@
 
     move-result-object v0
 
+    # setter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->strAppkey:Ljava/lang/String;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$2002(Ljava/lang/String;)Ljava/lang/String;
 
     .line 105
     :cond_3
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->lehihiGameSDKApi:Lcom/zqhy/sdk/platform/LehihiGameSDKApi;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$2200()Lcom/zqhy/sdk/platform/LehihiGameSDKApi;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$1;->val$gameActivity:Landroid/app/Activity;
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->strPid:I
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1800()I
 
     move-result v2
 
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->strAppkey:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$2000()Ljava/lang/String;
 
     move-result-object v3
@@ -288,7 +312,7 @@
 
     goto :goto_0
 
-    .line 121
+    .line 120
     :cond_4
     const-string v0, "init failed, server data error..."
 

@@ -100,7 +100,7 @@
 .end method
 
 .method private vibrate()V
-    .locals 3
+    .locals 4
 
     .prologue
     .line 125
@@ -112,29 +112,13 @@
 
     check-cast v0, Landroid/os/Vibrator;
 
-    .line 126
-    const/4 v1, 0x2
+    .line 129
+    const-wide/16 v2, 0x12c
 
-    new-array v1, v1, [J
+    invoke-virtual {v0, v2, v3}, Landroid/os/Vibrator;->vibrate(J)V
 
-    fill-array-data v1, :array_0
-
-    .line 127
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v1, v2}, Landroid/os/Vibrator;->vibrate([JI)V
-
-    .line 128
+    .line 130
     return-void
-
-    .line 126
-    nop
-
-    :array_0
-    .array-data 8
-        0x0
-        0x12c
-    .end array-data
 .end method
 
 
@@ -240,13 +224,13 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 132
+    .line 134
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 133
+    .line 135
     invoke-virtual {p0, v0, v0}, Lcom/zqhy/sdk/ui/FloatActivity;->overridePendingTransition(II)V
 
-    .line 134
+    .line 136
     return-void
 .end method
 

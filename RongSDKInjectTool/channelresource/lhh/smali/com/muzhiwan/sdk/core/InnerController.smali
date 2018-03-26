@@ -239,18 +239,18 @@
     .locals 6
 
     .prologue
-    .line 392
+    .line 401
     new-instance v3, Landroid/content/Intent;
 
     invoke-direct {v3}, Landroid/content/Intent;-><init>()V
 
-    .line 393
+    .line 402
     .local v3, "intent":Landroid/content/Intent;
     const-string v0, "com.muzhiwan.sdk.service.MzwService"
 
     invoke-virtual {v3, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 394
+    .line 403
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
@@ -259,7 +259,7 @@
 
     invoke-virtual {v3, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 396
+    .line 405
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
@@ -276,7 +276,7 @@
 
     invoke-static/range {v0 .. v5}, Lcom/muzhiwan/plugin/LPluginOpener;->bindService(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;Landroid/content/ServiceConnection;I)V
 
-    .line 397
+    .line 406
     return-void
 .end method
 
@@ -407,6 +407,7 @@
 
     .prologue
     .line 199
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController$InnerControllerHolder;->INSTANCE:Lcom/muzhiwan/sdk/core/InnerController;
     invoke-static {}, Lcom/muzhiwan/sdk/core/InnerController$InnerControllerHolder;->access$900()Lcom/muzhiwan/sdk/core/InnerController;
 
     move-result-object v0
@@ -419,23 +420,23 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 380
+    .line 389
     const-string v2, "connectivity"
 
-    .line 381
+    .line 390
     invoke-virtual {p0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 382
+    .line 391
     .local v0, "cm":Landroid/net/ConnectivityManager;
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v1
 
-    .line 383
+    .line 392
     .local v1, "info":Landroid/net/NetworkInfo;
     if-eqz v1, :cond_0
 
@@ -447,10 +448,10 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 384
+    .line 393
     const/4 v2, 0x1
 
-    .line 385
+    .line 394
     :goto_0
     return v2
 
@@ -464,24 +465,24 @@
     .locals 2
 
     .prologue
-    .line 403
+    .line 412
     sget-boolean v0, Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
 
     if-eqz v0, :cond_0
 
-    .line 404
+    .line 413
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
 
     iget-object v1, p0, Lcom/muzhiwan/sdk/core/InnerController;->serviceConnection:Landroid/content/ServiceConnection;
 
     invoke-static {v0, v1}, Lcom/muzhiwan/plugin/LPluginOpener;->unBindService(Landroid/content/Context;Landroid/content/ServiceConnection;)V
 
-    .line 405
+    .line 414
     const/4 v0, 0x0
 
     sput-boolean v0, Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
 
-    .line 407
+    .line 416
     :cond_0
     return-void
 .end method
@@ -492,20 +493,20 @@
     .locals 5
 
     .prologue
-    .line 411
+    .line 420
     iget-object v4, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
 
     invoke-static {v4}, Lcom/muzhiwan/sdk/dynamic/utils/IOUtils;->getDestPath(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 412
+    .line 421
     .local v0, "dest":Ljava/lang/String;
     new-instance v3, Ljava/io/File;
 
     invoke-direct {v3, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 413
+    .line 422
     .local v3, "sdkPlugin":Ljava/io/File;
     iget-object v4, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
 
@@ -513,7 +514,7 @@
 
     move-result v1
 
-    .line 414
+    .line 423
     .local v1, "gameSDKVersion":I
     iget-object v4, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
 
@@ -521,7 +522,7 @@
 
     move-result v2
 
-    .line 415
+    .line 424
     .local v2, "localSDKVersion":I
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
@@ -531,17 +532,17 @@
 
     if-le v1, v2, :cond_1
 
-    .line 416
+    .line 425
     :cond_0
     iget-object v4, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
 
     invoke-static {v4}, Lcom/muzhiwan/sdk/dynamic/utils/IOUtils;->copyCore(Landroid/app/Activity;)V
 
-    .line 419
+    .line 428
     :cond_1
     invoke-direct {p0}, Lcom/muzhiwan/sdk/core/InnerController;->bindService()V
 
-    .line 420
+    .line 429
     return-void
 .end method
 
@@ -549,41 +550,41 @@
     .locals 0
 
     .prologue
-    .line 370
+    .line 379
     invoke-direct {p0}, Lcom/muzhiwan/sdk/core/InnerController;->unBindService()V
 
-    .line 371
+    .line 380
     return-void
 .end method
 
-.method public doExitGame(Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;)V
+.method public doExitGame(Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;)V
     .locals 4
-    .param p1, "exitGameCallBack"    # Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;
+    .param p1, "exitGameCallBack"    # Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;
 
     .prologue
-    .line 344
+    .line 355
     sget-boolean v1, Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
 
     if-eqz v1, :cond_0
 
-    .line 346
+    .line 357
     :try_start_0
     sget-object v1, Lcom/muzhiwan/sdk/core/InnerController;->mzwService:Lcom/muzhiwan/sdk/service/IMzwService;
 
-    invoke-interface {v1, p1}, Lcom/muzhiwan/sdk/service/IMzwService;->doExitGame(Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;)V
+    invoke-interface {v1, p1}, Lcom/muzhiwan/sdk/service/IMzwService;->doExitGame(Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 352
+    .line 363
     :cond_0
     :goto_0
     return-void
 
-    .line 347
+    .line 358
     :catch_0
     move-exception v0
 
-    .line 348
+    .line 359
     .local v0, "e":Landroid/os/RemoteException;
     const-string v1, "MZW_LOG_TAG"
 
@@ -609,7 +610,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 349
+    .line 360
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 
     goto :goto_0
@@ -798,12 +799,12 @@
     .param p2, "callBack"    # Lcom/muzhiwan/sdk/core/callback/MzwPostGiftCodeCallback;
 
     .prologue
-    .line 328
+    .line 325
     sget-boolean v1, Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
 
     if-eqz v1, :cond_0
 
-    .line 330
+    .line 327
     :try_start_0
     sget-object v1, Lcom/muzhiwan/sdk/core/InnerController;->mzwService:Lcom/muzhiwan/sdk/service/IMzwService;
 
@@ -811,16 +812,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 336
+    .line 333
     :cond_0
     :goto_0
     return-void
 
-    .line 331
+    .line 328
     :catch_0
     move-exception v0
 
-    .line 332
+    .line 329
     .local v0, "e":Landroid/os/RemoteException;
     const-string v1, "MZW_LOG_TAG"
 
@@ -846,102 +847,40 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 333
+    .line 330
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 
     goto :goto_0
 .end method
 
-.method public doStaPay(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/muzhiwan/sdk/core/callback/MzwStaPayCallback;)V
+.method public doSetPopVisible(Z)V
     .locals 4
-    .param p1, "videoappid"    # Ljava/lang/String;
-    .param p2, "videoid"    # Ljava/lang/String;
-    .param p3, "staProductInfo"    # Ljava/lang/String;
-    .param p4, "callback"    # Lcom/muzhiwan/sdk/core/callback/MzwStaPayCallback;
+    .param p1, "popVisible"    # Z
 
     .prologue
-    .line 311
+    .line 340
     sget-boolean v1, Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
 
     if-eqz v1, :cond_0
 
-    .line 313
+    .line 342
     :try_start_0
     sget-object v1, Lcom/muzhiwan/sdk/core/InnerController;->mzwService:Lcom/muzhiwan/sdk/service/IMzwService;
 
-    invoke-interface {v1, p1, p2, p3, p4}, Lcom/muzhiwan/sdk/service/IMzwService;->doStaPay(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/muzhiwan/sdk/service/IMzwStaPayCallBack;)V
+    invoke-interface {v1, p1}, Lcom/muzhiwan/sdk/service/IMzwService;->doSetPopVisible(Z)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 319
+    .line 348
     :cond_0
     :goto_0
     return-void
 
-    .line 314
+    .line 343
     :catch_0
     move-exception v0
 
-    .line 315
-    .local v0, "e":Landroid/os/RemoteException;
-    const-string v1, "MZW_LOG_TAG"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v3, Lcom/muzhiwan/sdk/core/InnerController;->TAG:Ljava/lang/String;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, " mzw doStaPay exception..."
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 316
-    invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
-
-    goto :goto_0
-.end method
-
-.method public doSubGameInfo(Ljava/lang/String;)V
-    .locals 4
-    .param p1, "info"    # Ljava/lang/String;
-
-    .prologue
-    .line 355
-    sget-boolean v1, Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
-
-    if-eqz v1, :cond_0
-
-    .line 357
-    :try_start_0
-    sget-object v1, Lcom/muzhiwan/sdk/core/InnerController;->mzwService:Lcom/muzhiwan/sdk/service/IMzwService;
-
-    invoke-interface {v1, p1}, Lcom/muzhiwan/sdk/service/IMzwService;->doSubGameInfo(Ljava/lang/String;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 363
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 358
-    :catch_0
-    move-exception v0
-
-    .line 359
+    .line 344
     .local v0, "e":Landroid/os/RemoteException;
     const-string v1, "MZW_LOG_TAG"
 
@@ -967,7 +906,128 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 360
+    .line 345
+    invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
+
+    goto :goto_0
+.end method
+
+.method public doStaPay(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/muzhiwan/sdk/core/callback/MzwStaPayCallback;)V
+    .locals 4
+    .param p1, "videoappid"    # Ljava/lang/String;
+    .param p2, "videoid"    # Ljava/lang/String;
+    .param p3, "staProductInfo"    # Ljava/lang/String;
+    .param p4, "callback"    # Lcom/muzhiwan/sdk/core/callback/MzwStaPayCallback;
+
+    .prologue
+    .line 309
+    sget-boolean v1, Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
+
+    if-eqz v1, :cond_0
+
+    .line 311
+    :try_start_0
+    sget-object v1, Lcom/muzhiwan/sdk/core/InnerController;->mzwService:Lcom/muzhiwan/sdk/service/IMzwService;
+
+    invoke-interface {v1, p1, p2, p3, p4}, Lcom/muzhiwan/sdk/service/IMzwService;->doStaPay(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/muzhiwan/sdk/service/IMzwStaPayCallBack;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 317
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 312
+    :catch_0
+    move-exception v0
+
+    .line 313
+    .local v0, "e":Landroid/os/RemoteException;
+    const-string v1, "MZW_LOG_TAG"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/muzhiwan/sdk/core/InnerController;->TAG:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " mzw doStaPay exception..."
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 314
+    invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
+
+    goto :goto_0
+.end method
+
+.method public doSubGameInfo(Ljava/lang/String;)V
+    .locals 4
+    .param p1, "info"    # Ljava/lang/String;
+
+    .prologue
+    .line 365
+    sget-boolean v1, Lcom/muzhiwan/sdk/core/InnerController;->isInit:Z
+
+    if-eqz v1, :cond_0
+
+    .line 367
+    :try_start_0
+    sget-object v1, Lcom/muzhiwan/sdk/core/InnerController;->mzwService:Lcom/muzhiwan/sdk/service/IMzwService;
+
+    invoke-interface {v1, p1}, Lcom/muzhiwan/sdk/service/IMzwService;->doSubGameInfo(Ljava/lang/String;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 373
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 368
+    :catch_0
+    move-exception v0
+
+    .line 369
+    .local v0, "e":Landroid/os/RemoteException;
+    const-string v1, "MZW_LOG_TAG"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v3, Lcom/muzhiwan/sdk/core/InnerController;->TAG:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " mzw doSetPopVisible exception..."
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 370
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 
     goto :goto_0
@@ -1269,7 +1329,7 @@
     .locals 3
 
     .prologue
-    .line 425
+    .line 434
     new-instance v0, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;
 
     iget-object v1, p0, Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
@@ -1282,6 +1342,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/muzhiwan/sdk/dynamic/utils/HttpUtils;->downloadPluginFile(Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;Landroid/app/Activity;Ljava/lang/String;)V
 
-    .line 426
+    .line 435
     return-void
 .end method

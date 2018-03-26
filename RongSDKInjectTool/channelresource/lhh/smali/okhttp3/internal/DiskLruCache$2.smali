@@ -95,6 +95,7 @@
 
     const/4 v1, 0x1
 
+    # setter for: Lokhttp3/internal/DiskLruCache;->hasJournalErrors:Z
     invoke-static {v0, v1}, Lokhttp3/internal/DiskLruCache;->access$1002(Lokhttp3/internal/DiskLruCache;Z)Z
 
     .line 313

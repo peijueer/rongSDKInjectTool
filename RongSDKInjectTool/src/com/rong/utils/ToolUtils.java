@@ -181,7 +181,7 @@ public class ToolUtils {
 		String destFilePath = smaliTempPath + "_" + channelBean.getChannelId() + "/" + SPLASH_DEST;
 		System.out.println("srcFilePath-->" + srcFilePath + ";destFilePath-->" + destFilePath);
 		String oldSplashPath = smaliTempPath + "_" + channelBean.getChannelId() + "/" + SPLASH_OLD;
-		if(new File(srcFilePath).exists()){
+		if (new File(srcFilePath).exists()) {
 			FileUtils.rmdir(oldSplashPath);
 			FileUtils.fileCopy(srcFilePath, destFilePath);
 		}
@@ -268,13 +268,13 @@ public class ToolUtils {
 	}
 
 	public static void modifyAndroidManifest(ChannelBean channelBean) {
-		changePackageName(channelBean);
 		addPermission(channelBean);
 		addComponents(channelBean);
+		changePackageName(channelBean);
 	}
 
 	public static void changePackageName(ChannelBean channelBean) {
-		Dom4jUtils.changePackageName(smaliTempPath + "_" + channelBean.getChannelId() + "/" + ANDROIDMANIFEST, channelBean);
+		Dom4jUtils.changePackageNameAndProvider(smaliTempPath + "_" + channelBean.getChannelId() + "/" + ANDROIDMANIFEST, channelBean);
 	}
 
 	public static void addPermission(ChannelBean channelBean) {

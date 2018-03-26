@@ -65,6 +65,7 @@
     .line 327
     iget-object v0, p0, Lokhttp3/Cache$2;->this$0:Lokhttp3/Cache;
 
+    # getter for: Lokhttp3/Cache;->cache:Lokhttp3/internal/DiskLruCache;
     invoke-static {v0}, Lokhttp3/Cache;->access$600(Lokhttp3/Cache;)Lokhttp3/internal/DiskLruCache;
 
     move-result-object v0

@@ -1,5 +1,5 @@
 .class public abstract Lcom/muzhiwan/sdk/core/callback/MzwExitGameCallBack;
-.super Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack$Stub;
+.super Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack$Stub;
 .source "MzwExitGameCallBack.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 5
-    invoke-direct {p0}, Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack$Stub;-><init>()V
+    invoke-direct {p0}, Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack$Stub;-><init>()V
 
     return-void
 .end method

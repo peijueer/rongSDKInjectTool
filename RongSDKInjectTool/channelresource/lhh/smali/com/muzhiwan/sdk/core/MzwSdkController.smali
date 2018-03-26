@@ -74,6 +74,7 @@
 
     .prologue
     .line 45
+    # getter for: Lcom/muzhiwan/sdk/core/MzwSdkController$MzwSdkControllerHolder;->INSTANCE:Lcom/muzhiwan/sdk/core/MzwSdkController;
     invoke-static {}, Lcom/muzhiwan/sdk/core/MzwSdkController$MzwSdkControllerHolder;->access$100()Lcom/muzhiwan/sdk/core/MzwSdkController;
 
     move-result-object v0
@@ -320,12 +321,12 @@
     return-void
 .end method
 
-.method public exitGame(Lcom/muzhiwan/sdk/core/callback/MzwExitGameCallBack;)V
+.method public exitGame(Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;)V
     .locals 3
-    .param p1, "exitGameCallBack"    # Lcom/muzhiwan/sdk/core/callback/MzwExitGameCallBack;
+    .param p1, "exitGameCallBack"    # Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;
 
     .prologue
-    .line 125
+    .line 135
     const-string v0, "MZW_LOG_TAG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -350,12 +351,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 126
+    .line 136
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/MzwSdkController;->mzwSdkControllerInner:Lcom/muzhiwan/sdk/core/InnerController;
 
-    invoke-virtual {v0, p1}, Lcom/muzhiwan/sdk/core/InnerController;->doExitGame(Lcom/muzhiwan/sdk/service/IMzwExitGameCallBack;)V
+    invoke-virtual {v0, p1}, Lcom/muzhiwan/sdk/core/InnerController;->doExitGame(Lcom/muzhiwan/sdk/service/RongMzwExitGameCallBack;)V
 
-    .line 127
+    .line 137
     return-void
 .end method
 
@@ -400,12 +401,51 @@
     return-void
 .end method
 
+.method public setPopVisible(Z)V
+    .locals 3
+    .param p1, "popVisible"    # Z
+
+    .prologue
+    .line 125
+    const-string v0, "MZW_LOG_TAG"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v2, Lcom/muzhiwan/sdk/core/MzwSdkController;->TAG:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, " start doSetPopVisible..."
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 126
+    iget-object v0, p0, Lcom/muzhiwan/sdk/core/MzwSdkController;->mzwSdkControllerInner:Lcom/muzhiwan/sdk/core/InnerController;
+
+    invoke-virtual {v0, p1}, Lcom/muzhiwan/sdk/core/InnerController;->doSetPopVisible(Z)V
+
+    .line 127
+    return-void
+.end method
+
 .method public subGameInfo(Ljava/lang/String;)V
     .locals 3
     .param p1, "info"    # Ljava/lang/String;
 
     .prologue
-    .line 134
+    .line 144
     const-string v0, "MZW_LOG_TAG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -430,11 +470,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 135
+    .line 145
     iget-object v0, p0, Lcom/muzhiwan/sdk/core/MzwSdkController;->mzwSdkControllerInner:Lcom/muzhiwan/sdk/core/InnerController;
 
     invoke-virtual {v0, p1}, Lcom/muzhiwan/sdk/core/InnerController;->doSubGameInfo(Ljava/lang/String;)V
 
-    .line 136
+    .line 146
     return-void
 .end method

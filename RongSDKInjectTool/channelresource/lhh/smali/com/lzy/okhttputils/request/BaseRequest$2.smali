@@ -47,6 +47,7 @@
     .line 465
     iget-object v0, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v0}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v0
@@ -69,6 +70,7 @@
 
     iget-object v2, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v2}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v5
@@ -77,6 +79,7 @@
 
     move-object v4, p2
 
+    # invokes: Lcom/lzy/okhttputils/request/BaseRequest;->sendFailResultCallback(ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
     invoke-static/range {v0 .. v5}, Lcom/lzy/okhttputils/request/BaseRequest;->access$100(Lcom/lzy/okhttputils/request/BaseRequest;ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
 
     .line 470
@@ -131,6 +134,7 @@
 
     iget-object v2, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v2}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v5
@@ -139,6 +143,7 @@
 
     move-object v3, p2
 
+    # invokes: Lcom/lzy/okhttputils/request/BaseRequest;->sendFailResultCallback(ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
     invoke-static/range {v0 .. v5}, Lcom/lzy/okhttputils/request/BaseRequest;->access$100(Lcom/lzy/okhttputils/request/BaseRequest;ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
 
     .line 507
@@ -177,6 +182,7 @@
 
     iget-object v2, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v2}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v5
@@ -185,6 +191,7 @@
 
     move-object v3, p2
 
+    # invokes: Lcom/lzy/okhttputils/request/BaseRequest;->sendFailResultCallback(ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
     invoke-static/range {v0 .. v5}, Lcom/lzy/okhttputils/request/BaseRequest;->access$100(Lcom/lzy/okhttputils/request/BaseRequest;ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
 
     goto :goto_0
@@ -195,6 +202,7 @@
 
     iget-object v3, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v3}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v5
@@ -203,6 +211,7 @@
 
     move-object v4, p2
 
+    # invokes: Lcom/lzy/okhttputils/request/BaseRequest;->sendSuccessResultCallback(ZLjava/lang/Object;Lokhttp3/Call;Lokhttp3/Response;Lcom/lzy/okhttputils/callback/AbsCallback;)V
     invoke-static/range {v0 .. v5}, Lcom/lzy/okhttputils/request/BaseRequest;->access$200(Lcom/lzy/okhttputils/request/BaseRequest;ZLjava/lang/Object;Lokhttp3/Call;Lokhttp3/Response;Lcom/lzy/okhttputils/callback/AbsCallback;)V
 
     goto :goto_0
@@ -229,6 +238,7 @@
 
     iget-object v1, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v1}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v5
@@ -239,6 +249,7 @@
 
     move-object v3, p2
 
+    # invokes: Lcom/lzy/okhttputils/request/BaseRequest;->sendFailResultCallback(ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
     invoke-static/range {v0 .. v5}, Lcom/lzy/okhttputils/request/BaseRequest;->access$100(Lcom/lzy/okhttputils/request/BaseRequest;ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
 
     goto :goto_0
@@ -248,6 +259,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v0}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v0
@@ -263,6 +275,7 @@
 
     move-result-object v1
 
+    # invokes: Lcom/lzy/okhttputils/request/BaseRequest;->handleCache(Lokhttp3/Headers;Ljava/lang/Object;)V
     invoke-static {v0, v1, v2}, Lcom/lzy/okhttputils/request/BaseRequest;->access$300(Lcom/lzy/okhttputils/request/BaseRequest;Lokhttp3/Headers;Ljava/lang/Object;)V
 
     .line 502
@@ -272,6 +285,7 @@
 
     iget-object v3, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v3}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v5
@@ -280,6 +294,7 @@
 
     move-object v4, p2
 
+    # invokes: Lcom/lzy/okhttputils/request/BaseRequest;->sendSuccessResultCallback(ZLjava/lang/Object;Lokhttp3/Call;Lokhttp3/Response;Lcom/lzy/okhttputils/callback/AbsCallback;)V
     invoke-static/range {v0 .. v5}, Lcom/lzy/okhttputils/request/BaseRequest;->access$200(Lcom/lzy/okhttputils/request/BaseRequest;ZLjava/lang/Object;Lokhttp3/Call;Lokhttp3/Response;Lcom/lzy/okhttputils/callback/AbsCallback;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -295,6 +310,7 @@
 
     iget-object v1, p0, Lcom/lzy/okhttputils/request/BaseRequest$2;->this$0:Lcom/lzy/okhttputils/request/BaseRequest;
 
+    # getter for: Lcom/lzy/okhttputils/request/BaseRequest;->mCallback:Lcom/lzy/okhttputils/callback/AbsCallback;
     invoke-static {v1}, Lcom/lzy/okhttputils/request/BaseRequest;->access$000(Lcom/lzy/okhttputils/request/BaseRequest;)Lcom/lzy/okhttputils/callback/AbsCallback;
 
     move-result-object v5
@@ -305,6 +321,7 @@
 
     move-object v3, p2
 
+    # invokes: Lcom/lzy/okhttputils/request/BaseRequest;->sendFailResultCallback(ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
     invoke-static/range {v0 .. v5}, Lcom/lzy/okhttputils/request/BaseRequest;->access$100(Lcom/lzy/okhttputils/request/BaseRequest;ZLokhttp3/Call;Lokhttp3/Response;Ljava/lang/Exception;Lcom/lzy/okhttputils/callback/AbsCallback;)V
 
     goto/16 :goto_0

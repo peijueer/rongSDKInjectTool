@@ -923,7 +923,7 @@
     .end local v1    # "e":Ljava/lang/Throwable;
     :cond_1
     :goto_3
-    const/16 v9, 0xd35
+    const/16 v9, 0xd36
 
     goto :goto_1
 
@@ -1129,7 +1129,7 @@
     if-nez v2, :cond_0
 
     .line 99
-    const/16 v2, 0xd35
+    const/16 v2, 0xd36
 
     .line 101
     :goto_0

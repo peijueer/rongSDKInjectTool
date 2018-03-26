@@ -51,6 +51,7 @@
     .line 55
     iget-object v4, p0, Lokhttp3/internal/framed/NameValueBlockReader$1;->this$0:Lokhttp3/internal/framed/NameValueBlockReader;
 
+    # getter for: Lokhttp3/internal/framed/NameValueBlockReader;->compressedLimit:I
     invoke-static {v4}, Lokhttp3/internal/framed/NameValueBlockReader;->access$000(Lokhttp3/internal/framed/NameValueBlockReader;)I
 
     move-result v4
@@ -67,6 +68,7 @@
     :cond_0
     iget-object v4, p0, Lokhttp3/internal/framed/NameValueBlockReader$1;->this$0:Lokhttp3/internal/framed/NameValueBlockReader;
 
+    # getter for: Lokhttp3/internal/framed/NameValueBlockReader;->compressedLimit:I
     invoke-static {v4}, Lokhttp3/internal/framed/NameValueBlockReader;->access$000(Lokhttp3/internal/framed/NameValueBlockReader;)I
 
     move-result v4
@@ -97,6 +99,7 @@
 
     iget-object v3, p0, Lokhttp3/internal/framed/NameValueBlockReader$1;->this$0:Lokhttp3/internal/framed/NameValueBlockReader;
 
+    # getter for: Lokhttp3/internal/framed/NameValueBlockReader;->compressedLimit:I
     invoke-static {v3}, Lokhttp3/internal/framed/NameValueBlockReader;->access$000(Lokhttp3/internal/framed/NameValueBlockReader;)I
 
     move-result v3
@@ -107,6 +110,7 @@
 
     long-to-int v3, v4
 
+    # setter for: Lokhttp3/internal/framed/NameValueBlockReader;->compressedLimit:I
     invoke-static {v2, v3}, Lokhttp3/internal/framed/NameValueBlockReader;->access$002(Lokhttp3/internal/framed/NameValueBlockReader;I)I
 
     goto :goto_0

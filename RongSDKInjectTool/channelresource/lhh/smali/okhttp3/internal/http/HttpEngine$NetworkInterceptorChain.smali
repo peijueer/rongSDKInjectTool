@@ -373,6 +373,7 @@
     :cond_4
     iget-object v9, p0, Lokhttp3/internal/http/HttpEngine$NetworkInterceptorChain;->this$0:Lokhttp3/internal/http/HttpEngine;
 
+    # getter for: Lokhttp3/internal/http/HttpEngine;->httpStream:Lokhttp3/internal/http/HttpStream;
     invoke-static {v9}, Lokhttp3/internal/http/HttpEngine;->access$000(Lokhttp3/internal/http/HttpEngine;)Lokhttp3/internal/http/HttpStream;
 
     move-result-object v9
@@ -382,6 +383,7 @@
     .line 751
     iget-object v9, p0, Lokhttp3/internal/http/HttpEngine$NetworkInterceptorChain;->this$0:Lokhttp3/internal/http/HttpEngine;
 
+    # setter for: Lokhttp3/internal/http/HttpEngine;->networkRequest:Lokhttp3/Request;
     invoke-static {v9, p1}, Lokhttp3/internal/http/HttpEngine;->access$102(Lokhttp3/internal/http/HttpEngine;Lokhttp3/Request;)Lokhttp3/Request;
 
     .line 753
@@ -402,6 +404,7 @@
     .line 754
     iget-object v9, p0, Lokhttp3/internal/http/HttpEngine$NetworkInterceptorChain;->this$0:Lokhttp3/internal/http/HttpEngine;
 
+    # getter for: Lokhttp3/internal/http/HttpEngine;->httpStream:Lokhttp3/internal/http/HttpStream;
     invoke-static {v9}, Lokhttp3/internal/http/HttpEngine;->access$000(Lokhttp3/internal/http/HttpEngine;)Lokhttp3/internal/http/HttpStream;
 
     move-result-object v9
@@ -441,6 +444,7 @@
     :cond_5
     iget-object v9, p0, Lokhttp3/internal/http/HttpEngine$NetworkInterceptorChain;->this$0:Lokhttp3/internal/http/HttpEngine;
 
+    # invokes: Lokhttp3/internal/http/HttpEngine;->readNetworkResponse()Lokhttp3/Response;
     invoke-static {v9}, Lokhttp3/internal/http/HttpEngine;->access$200(Lokhttp3/internal/http/HttpEngine;)Lokhttp3/Response;
 
     move-result-object v8

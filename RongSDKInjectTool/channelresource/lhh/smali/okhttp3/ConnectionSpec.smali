@@ -217,6 +217,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 86
+    # getter for: Lokhttp3/ConnectionSpec$Builder;->tls:Z
     invoke-static {p1}, Lokhttp3/ConnectionSpec$Builder;->access$000(Lokhttp3/ConnectionSpec$Builder;)Z
 
     move-result v0
@@ -224,6 +225,7 @@
     iput-boolean v0, p0, Lokhttp3/ConnectionSpec;->tls:Z
 
     .line 87
+    # getter for: Lokhttp3/ConnectionSpec$Builder;->cipherSuites:[Ljava/lang/String;
     invoke-static {p1}, Lokhttp3/ConnectionSpec$Builder;->access$100(Lokhttp3/ConnectionSpec$Builder;)[Ljava/lang/String;
 
     move-result-object v0
@@ -231,6 +233,7 @@
     iput-object v0, p0, Lokhttp3/ConnectionSpec;->cipherSuites:[Ljava/lang/String;
 
     .line 88
+    # getter for: Lokhttp3/ConnectionSpec$Builder;->tlsVersions:[Ljava/lang/String;
     invoke-static {p1}, Lokhttp3/ConnectionSpec$Builder;->access$200(Lokhttp3/ConnectionSpec$Builder;)[Ljava/lang/String;
 
     move-result-object v0
@@ -238,6 +241,7 @@
     iput-object v0, p0, Lokhttp3/ConnectionSpec;->tlsVersions:[Ljava/lang/String;
 
     .line 89
+    # getter for: Lokhttp3/ConnectionSpec$Builder;->supportsTlsExtensions:Z
     invoke-static {p1}, Lokhttp3/ConnectionSpec$Builder;->access$300(Lokhttp3/ConnectionSpec$Builder;)Z
 
     move-result v0

@@ -313,6 +313,7 @@
     .line 396
     :cond_1
     :try_start_2
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v0
@@ -326,6 +327,7 @@
     if-eqz v0, :cond_2
 
     .line 397
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v0
@@ -338,6 +340,7 @@
 
     const/4 v3, 0x0
 
+    # getter for: Lokhttp3/internal/framed/Http2;->CONNECTION_PREFACE:Lokio/ByteString;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$000()Lokio/ByteString;
 
     move-result-object v4
@@ -358,6 +361,7 @@
     :cond_2
     iget-object v0, p0, Lokhttp3/internal/framed/Http2$Writer;->sink:Lokio/BufferedSink;
 
+    # getter for: Lokhttp3/internal/framed/Http2;->CONNECTION_PREFACE:Lokio/ByteString;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$000()Lokio/ByteString;
 
     move-result-object v1
@@ -543,6 +547,7 @@
     const/4 v3, 0x0
 
     .line 568
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v0
@@ -555,6 +560,7 @@
 
     if-eqz v0, :cond_0
 
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v0
@@ -592,6 +598,7 @@
 
     aput-object v2, v1, v4
 
+    # invokes: Lokhttp3/internal/framed/Http2;->illegalArgument(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
     invoke-static {v0, v1}, Lokhttp3/internal/framed/Http2;->access$500(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
 
     move-result-object v0
@@ -616,6 +623,7 @@
 
     aput-object v2, v1, v3
 
+    # invokes: Lokhttp3/internal/framed/Http2;->illegalArgument(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
     invoke-static {v0, v1}, Lokhttp3/internal/framed/Http2;->access$500(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
 
     move-result-object v0
@@ -626,6 +634,7 @@
     :cond_2
     iget-object v0, p0, Lokhttp3/internal/framed/Http2$Writer;->sink:Lokio/BufferedSink;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->writeMedium(Lokio/BufferedSink;I)V
     invoke-static {v0, p2}, Lokhttp3/internal/framed/Http2;->access$600(Lokio/BufferedSink;I)V
 
     .line 574
@@ -707,6 +716,7 @@
 
     new-array v5, v5, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->illegalArgument(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
     invoke-static {v4, v5}, Lokhttp3/internal/framed/Http2;->access$500(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
 
     move-result-object v4
@@ -1625,6 +1635,7 @@
     aput-object v6, v4, v5
 
     .line 551
+    # invokes: Lokhttp3/internal/framed/Http2;->illegalArgument(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
     invoke-static {v3, v4}, Lokhttp3/internal/framed/Http2;->access$500(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
 
     move-result-object v3

@@ -66,6 +66,7 @@
 
     .line 2085
     .local v0, "child":Landroid/view/View;
+    # invokes: Landroid/support/v4/widget/DrawerLayout;->includeChildForAccessibility(Landroid/view/View;)Z
     invoke-static {v0}, Landroid/support/v4/widget/DrawerLayout;->access$400(Landroid/view/View;)Z
 
     move-result v3
@@ -223,6 +224,7 @@
     .local v1, "eventText":Ljava/util/List;, "Ljava/util/List<Ljava/lang/CharSequence;>;"
     iget-object v4, p0, Landroid/support/v4/widget/DrawerLayout$AccessibilityDelegate;->this$0:Landroid/support/v4/widget/DrawerLayout;
 
+    # invokes: Landroid/support/v4/widget/DrawerLayout;->findVisibleDrawer()Landroid/view/View;
     invoke-static {v4}, Landroid/support/v4/widget/DrawerLayout;->access$300(Landroid/support/v4/widget/DrawerLayout;)Landroid/view/View;
 
     move-result-object v3
@@ -304,6 +306,7 @@
     const/4 v3, 0x0
 
     .line 2010
+    # getter for: Landroid/support/v4/widget/DrawerLayout;->CAN_HIDE_DESCENDANTS:Z
     invoke-static {}, Landroid/support/v4/widget/DrawerLayout;->access$200()Z
 
     move-result v2
@@ -398,12 +401,14 @@
 
     .prologue
     .line 2075
+    # getter for: Landroid/support/v4/widget/DrawerLayout;->CAN_HIDE_DESCENDANTS:Z
     invoke-static {}, Landroid/support/v4/widget/DrawerLayout;->access$200()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
+    # invokes: Landroid/support/v4/widget/DrawerLayout;->includeChildForAccessibility(Landroid/view/View;)Z
     invoke-static {p2}, Landroid/support/v4/widget/DrawerLayout;->access$400(Landroid/view/View;)Z
 
     move-result v0

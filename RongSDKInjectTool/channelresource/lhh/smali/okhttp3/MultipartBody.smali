@@ -375,12 +375,14 @@
 
     .line 132
     .local v13, "part":Lokhttp3/MultipartBody$Part;
+    # getter for: Lokhttp3/MultipartBody$Part;->headers:Lokhttp3/Headers;
     invoke-static {v13}, Lokhttp3/MultipartBody$Part;->access$000(Lokhttp3/MultipartBody$Part;)Lokhttp3/Headers;
 
     move-result-object v11
 
     .line 133
     .local v11, "headers":Lokhttp3/Headers;
+    # getter for: Lokhttp3/MultipartBody$Part;->body:Lokhttp3/RequestBody;
     invoke-static {v13}, Lokhttp3/MultipartBody$Part;->access$100(Lokhttp3/MultipartBody$Part;)Lokhttp3/RequestBody;
 
     move-result-object v2

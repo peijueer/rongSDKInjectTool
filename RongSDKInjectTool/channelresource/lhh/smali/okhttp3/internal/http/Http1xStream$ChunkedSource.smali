@@ -86,6 +86,7 @@
     .line 438
     iget-object v2, p0, Lokhttp3/internal/http/Http1xStream$ChunkedSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->source:Lokio/BufferedSource;
     invoke-static {v2}, Lokhttp3/internal/http/Http1xStream;->access$600(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSource;
 
     move-result-object v2
@@ -97,6 +98,7 @@
     :try_start_0
     iget-object v2, p0, Lokhttp3/internal/http/Http1xStream$ChunkedSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->source:Lokio/BufferedSource;
     invoke-static {v2}, Lokhttp3/internal/http/Http1xStream;->access$600(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSource;
 
     move-result-object v2
@@ -110,6 +112,7 @@
     .line 442
     iget-object v2, p0, Lokhttp3/internal/http/Http1xStream$ChunkedSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->source:Lokio/BufferedSource;
     invoke-static {v2}, Lokhttp3/internal/http/Http1xStream;->access$600(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSource;
 
     move-result-object v2
@@ -388,6 +391,7 @@
     :cond_4
     iget-object v4, p0, Lokhttp3/internal/http/Http1xStream$ChunkedSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->source:Lokio/BufferedSource;
     invoke-static {v4}, Lokhttp3/internal/http/Http1xStream;->access$600(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSource;
 
     move-result-object v4

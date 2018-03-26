@@ -107,6 +107,7 @@
 
     new-array v4, v2, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v3, v4}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v3
@@ -148,6 +149,7 @@
     .line 224
     .local v2, "padding":S
     :cond_3
+    # invokes: Lokhttp3/internal/framed/Http2;->lengthWithoutPadding(IBS)I
     invoke-static {p2, p3, v2}, Lokhttp3/internal/framed/Http2;->access$400(IBS)I
 
     move-result p2
@@ -200,6 +202,7 @@
 
     aput-object v7, v6, v8
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v5, v6}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v5
@@ -214,6 +217,7 @@
 
     new-array v6, v8, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v5, v6}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v5
@@ -261,6 +265,7 @@
 
     aput-object v7, v6, v8
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v5, v6}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v5
@@ -376,6 +381,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v0, v1}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v0
@@ -422,6 +428,7 @@
 
     .line 194
     :cond_1
+    # invokes: Lokhttp3/internal/framed/Http2;->lengthWithoutPadding(IBS)I
     invoke-static {p2, p3, v7}, Lokhttp3/internal/framed/Http2;->access$400(IBS)I
 
     move-result p2
@@ -495,6 +502,7 @@
 
     aput-object v6, v5, v3
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v4, v5}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v3
@@ -509,6 +517,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v4, v3}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v3
@@ -649,6 +658,7 @@
 
     aput-object v2, v1, v3
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v0, v1}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v0
@@ -663,6 +673,7 @@
 
     new-array v1, v3, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v0, v1}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v0
@@ -700,6 +711,7 @@
 
     new-array v4, v1, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v3, v4}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v3
@@ -740,6 +752,7 @@
     add-int/lit8 p2, p2, -0x4
 
     .line 315
+    # invokes: Lokhttp3/internal/framed/Http2;->lengthWithoutPadding(IBS)I
     invoke-static {p2, p3, v1}, Lokhttp3/internal/framed/Http2;->access$400(IBS)I
 
     move-result p2
@@ -789,6 +802,7 @@
 
     aput-object v4, v3, v5
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v2, v3}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v2
@@ -803,6 +817,7 @@
 
     new-array v3, v5, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v2, v3}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v2
@@ -838,6 +853,7 @@
 
     aput-object v4, v3, v5
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v2, v3}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v2
@@ -876,6 +892,7 @@
 
     new-array v5, v7, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v4, v5}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v4
@@ -895,6 +912,7 @@
 
     new-array v5, v7, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v4, v5}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v4
@@ -926,6 +944,7 @@
 
     aput-object v6, v5, v7
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v4, v5}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v4
@@ -987,6 +1006,7 @@
 
     new-array v5, v7, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v4, v5}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v4
@@ -1012,6 +1032,7 @@
 
     new-array v5, v7, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v4, v5}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v4
@@ -1040,6 +1061,7 @@
 
     aput-object v6, v5, v7
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v4, v5}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v4
@@ -1114,6 +1136,7 @@
 
     aput-object v4, v3, v6
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v2, v3}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v2
@@ -1152,6 +1175,7 @@
 
     aput-object v4, v3, v6
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v2, v3}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v2
@@ -1213,6 +1237,7 @@
     .line 128
     iget-object v7, p0, Lokhttp3/internal/framed/Http2$Reader;->source:Lokio/BufferedSource;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->readMedium(Lokio/BufferedSource;)I
     invoke-static {v7}, Lokhttp3/internal/framed/Http2;->access$300(Lokio/BufferedSource;)I
 
     move-result v2
@@ -1237,6 +1262,7 @@
 
     aput-object v8, v5, v6
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v7, v5}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v5
@@ -1295,6 +1321,7 @@
 
     .line 135
     .local v3, "streamId":I
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v6
@@ -1307,6 +1334,7 @@
 
     if-eqz v6, :cond_2
 
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v6
@@ -1427,6 +1455,7 @@
     :cond_1
     iget-object v1, p0, Lokhttp3/internal/framed/Http2$Reader;->source:Lokio/BufferedSource;
 
+    # getter for: Lokhttp3/internal/framed/Http2;->CONNECTION_PREFACE:Lokio/ByteString;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$000()Lokio/ByteString;
 
     move-result-object v2
@@ -1443,6 +1472,7 @@
 
     .line 103
     .local v0, "connectionPreface":Lokio/ByteString;
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v1
@@ -1455,6 +1485,7 @@
 
     if-eqz v1, :cond_2
 
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v1
@@ -1477,6 +1508,7 @@
 
     .line 104
     :cond_2
+    # getter for: Lokhttp3/internal/framed/Http2;->CONNECTION_PREFACE:Lokio/ByteString;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$000()Lokio/ByteString;
 
     move-result-object v1
@@ -1498,6 +1530,7 @@
 
     aput-object v3, v2, v5
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v1, v2}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v1

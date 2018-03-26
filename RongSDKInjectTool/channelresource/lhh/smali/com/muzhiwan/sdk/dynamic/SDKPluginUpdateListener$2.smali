@@ -48,6 +48,7 @@
 
     const/4 v2, 0x0
 
+    # invokes: Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->showProgressDialog(Ljava/lang/String;I)V
     invoke-static {v0, v1, v2}, Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;->access$100(Lcom/muzhiwan/sdk/dynamic/SDKPluginUpdateListener;Ljava/lang/String;I)V
 
     .line 75

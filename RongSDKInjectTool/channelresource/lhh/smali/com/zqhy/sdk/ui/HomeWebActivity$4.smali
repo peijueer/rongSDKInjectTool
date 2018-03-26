@@ -48,6 +48,7 @@
     .line 407
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$4;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->webView:Landroid/webkit/WebView;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$000(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/webkit/WebView;
 
     move-result-object v0
@@ -57,6 +58,7 @@
     .line 409
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$4;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->headerView:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$200(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -66,6 +68,7 @@
     .line 410
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$4;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->headerView:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$200(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -78,6 +81,7 @@
     :cond_0
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$4;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->flErrorPage:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$300(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -87,6 +91,7 @@
     .line 412
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$4;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->flErrorPage:Landroid/widget/FrameLayout;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$300(Lcom/zqhy/sdk/ui/HomeWebActivity;)Landroid/widget/FrameLayout;
 
     move-result-object v0
@@ -99,6 +104,7 @@
     :cond_1
     iget-object v0, p0, Lcom/zqhy/sdk/ui/HomeWebActivity$4;->a:Lcom/zqhy/sdk/ui/HomeWebActivity;
 
+    # getter for: Lcom/zqhy/sdk/ui/HomeWebActivity;->isDestroyWebView:Z
     invoke-static {v0}, Lcom/zqhy/sdk/ui/HomeWebActivity;->access$400(Lcom/zqhy/sdk/ui/HomeWebActivity;)Z
 
     move-result v0

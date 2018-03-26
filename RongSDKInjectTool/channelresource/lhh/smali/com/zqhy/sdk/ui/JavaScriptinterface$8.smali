@@ -49,6 +49,7 @@
     .line 300
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$8;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -57,6 +58,7 @@
 
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$8;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -122,6 +124,7 @@
     .line 310
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$8;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -137,6 +140,7 @@
 
     const v2, 0x9003
 
+    # invokes: Lcom/zqhy/sdk/ui/JavaScriptinterface;->exitH5Activity(Ljava/lang/String;I)V
     invoke-static {v0, v1, v2}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$200(Lcom/zqhy/sdk/ui/JavaScriptinterface;Ljava/lang/String;I)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -153,6 +157,7 @@
     .line 318
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$8;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -168,6 +173,7 @@
 
     iget-object v1, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$8;->a:Ljava/lang/String;
 
+    # invokes: Lcom/zqhy/sdk/ui/JavaScriptinterface;->exitH5Activity(Ljava/lang/String;I)V
     invoke-static {v0, v1, v4}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$200(Lcom/zqhy/sdk/ui/JavaScriptinterface;Ljava/lang/String;I)V
 
     goto :goto_0
@@ -177,6 +183,7 @@
     :try_start_1
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$8;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -192,6 +199,7 @@
 
     const v2, 0x9003
 
+    # invokes: Lcom/zqhy/sdk/ui/JavaScriptinterface;->exitH5Activity(Ljava/lang/String;I)V
     invoke-static {v0, v1, v2}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$200(Lcom/zqhy/sdk/ui/JavaScriptinterface;Ljava/lang/String;I)V
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0

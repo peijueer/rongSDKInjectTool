@@ -180,6 +180,7 @@
 
     .line 538
     .local v17, "varyHeadersBuilder":Lokhttp3/Headers$Builder;
+    # invokes: Lokhttp3/Cache;->readInt(Lokio/BufferedSource;)I
     invoke-static {v14}, Lokhttp3/Cache;->access$1000(Lokio/BufferedSource;)I
 
     move-result v18
@@ -272,6 +273,7 @@
 
     .line 549
     .local v12, "responseHeadersBuilder":Lokhttp3/Headers$Builder;
+    # invokes: Lokhttp3/Cache;->readInt(Lokio/BufferedSource;)I
     invoke-static {v14}, Lokhttp3/Cache;->access$1000(Lokio/BufferedSource;)I
 
     move-result v11
@@ -615,6 +617,7 @@
 
     .prologue
     .line 654
+    # invokes: Lokhttp3/Cache;->readInt(Lokio/BufferedSource;)I
     invoke-static {p1}, Lokhttp3/Cache;->access$1000(Lokio/BufferedSource;)I
 
     move-result v4

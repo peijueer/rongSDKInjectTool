@@ -119,6 +119,7 @@
 
     iget-object v3, p0, Lcom/zqhy/sdk/platform/ZqSDKApi$4;->val$initCallBack:Lcom/zqhy/sdk/callback/InitCallBack;
 
+    # invokes: Lcom/zqhy/sdk/platform/ZqSDKApi;->handleSDKInfo(Ljava/lang/String;ILandroid/app/Activity;Lcom/zqhy/sdk/callback/InitCallBack;)V
     invoke-static {v0, p1, v1, v2, v3}, Lcom/zqhy/sdk/platform/ZqSDKApi;->access$000(Lcom/zqhy/sdk/platform/ZqSDKApi;Ljava/lang/String;ILandroid/app/Activity;Lcom/zqhy/sdk/callback/InitCallBack;)V
 
     .line 217

@@ -2790,11 +2790,11 @@
     move-result-object v9
 
     .line 794
-    invoke-virtual/range {p2 .. p2}, Lcom/zqhy/sdk/model/GameDataParams;->getRole_id()I
+    invoke-virtual/range {p2 .. p2}, Lcom/zqhy/sdk/model/GameDataParams;->getRole_id()J
 
-    move-result v10
+    move-result-wide v10
 
-    invoke-static {v10}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-static {v10, v11}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v10
 

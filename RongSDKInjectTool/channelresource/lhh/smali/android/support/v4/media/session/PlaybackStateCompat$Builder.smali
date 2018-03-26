@@ -90,6 +90,7 @@
     iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActiveItemId:J
 
     .line 785
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mState:I
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$300(Landroid/support/v4/media/session/PlaybackStateCompat;)I
 
     move-result v0
@@ -97,6 +98,7 @@
     iput v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mState:I
 
     .line 786
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mPosition:J
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$400(Landroid/support/v4/media/session/PlaybackStateCompat;)J
 
     move-result-wide v0
@@ -104,6 +106,7 @@
     iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mPosition:J
 
     .line 787
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mSpeed:F
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$500(Landroid/support/v4/media/session/PlaybackStateCompat;)F
 
     move-result v0
@@ -111,6 +114,7 @@
     iput v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mRate:F
 
     .line 788
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mUpdateTime:J
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$600(Landroid/support/v4/media/session/PlaybackStateCompat;)J
 
     move-result-wide v0
@@ -118,6 +122,7 @@
     iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mUpdateTime:J
 
     .line 789
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mBufferedPosition:J
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$700(Landroid/support/v4/media/session/PlaybackStateCompat;)J
 
     move-result-wide v0
@@ -125,6 +130,7 @@
     iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mBufferedPosition:J
 
     .line 790
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mActions:J
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$800(Landroid/support/v4/media/session/PlaybackStateCompat;)J
 
     move-result-wide v0
@@ -132,6 +138,7 @@
     iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActions:J
 
     .line 791
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mErrorMessage:Ljava/lang/CharSequence;
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$900(Landroid/support/v4/media/session/PlaybackStateCompat;)Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -139,6 +146,7 @@
     iput-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mErrorMessage:Ljava/lang/CharSequence;
 
     .line 792
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mCustomActions:Ljava/util/List;
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$1000(Landroid/support/v4/media/session/PlaybackStateCompat;)Ljava/util/List;
 
     move-result-object v0
@@ -148,6 +156,7 @@
     .line 793
     iget-object v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mCustomActions:Ljava/util/List;
 
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mCustomActions:Ljava/util/List;
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$1000(Landroid/support/v4/media/session/PlaybackStateCompat;)Ljava/util/List;
 
     move-result-object v1
@@ -156,6 +165,7 @@
 
     .line 795
     :cond_0
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mActiveItemId:J
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$1100(Landroid/support/v4/media/session/PlaybackStateCompat;)J
 
     move-result-wide v0
@@ -163,6 +173,7 @@
     iput-wide v0, p0, Landroid/support/v4/media/session/PlaybackStateCompat$Builder;->mActiveItemId:J
 
     .line 796
+    # getter for: Landroid/support/v4/media/session/PlaybackStateCompat;->mExtras:Landroid/os/Bundle;
     invoke-static {p1}, Landroid/support/v4/media/session/PlaybackStateCompat;->access$1200(Landroid/support/v4/media/session/PlaybackStateCompat;)Landroid/os/Bundle;
 
     move-result-object v0

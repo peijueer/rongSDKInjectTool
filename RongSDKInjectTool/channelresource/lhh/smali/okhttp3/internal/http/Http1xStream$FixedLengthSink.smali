@@ -43,6 +43,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/http/Http1xStream$FixedLengthSink;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->sink:Lokio/BufferedSink;
     invoke-static {v1}, Lokhttp3/internal/http/Http1xStream;->access$300(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSink;
 
     move-result-object v1
@@ -124,6 +125,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/http/Http1xStream$FixedLengthSink;->timeout:Lokio/ForwardingTimeout;
 
+    # invokes: Lokhttp3/internal/http/Http1xStream;->detachTimeout(Lokio/ForwardingTimeout;)V
     invoke-static {v0, v1}, Lokhttp3/internal/http/Http1xStream;->access$400(Lokhttp3/internal/http/Http1xStream;Lokio/ForwardingTimeout;)V
 
     .line 300
@@ -131,6 +133,7 @@
 
     const/4 v1, 0x3
 
+    # setter for: Lokhttp3/internal/http/Http1xStream;->state:I
     invoke-static {v0, v1}, Lokhttp3/internal/http/Http1xStream;->access$502(Lokhttp3/internal/http/Http1xStream;I)I
 
     goto :goto_0
@@ -158,6 +161,7 @@
     :cond_0
     iget-object v0, p0, Lokhttp3/internal/http/Http1xStream$FixedLengthSink;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->sink:Lokio/BufferedSink;
     invoke-static {v0}, Lokhttp3/internal/http/Http1xStream;->access$300(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSink;
 
     move-result-object v0
@@ -261,6 +265,7 @@
     :cond_1
     iget-object v0, p0, Lokhttp3/internal/http/Http1xStream$FixedLengthSink;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->sink:Lokio/BufferedSink;
     invoke-static {v0}, Lokhttp3/internal/http/Http1xStream;->access$300(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSink;
 
     move-result-object v0

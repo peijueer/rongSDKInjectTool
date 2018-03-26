@@ -71,6 +71,7 @@
 
     move-result-object v0
 
+    # setter for: Lcom/rongmzw/frame/sdk/utils/HttpUtils;->secretkey:Ljava/lang/String;
     invoke-static {v0}, Lcom/rongmzw/frame/sdk/utils/HttpUtils;->access$502(Ljava/lang/String;)Ljava/lang/String;
 
     .line 235
@@ -92,6 +93,7 @@
 
     const-string v1, "getsecret"
 
+    # getter for: Lcom/rongmzw/frame/sdk/utils/HttpUtils;->secretkey:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/utils/HttpUtils;->access$500()Ljava/lang/String;
 
     move-result-object v2

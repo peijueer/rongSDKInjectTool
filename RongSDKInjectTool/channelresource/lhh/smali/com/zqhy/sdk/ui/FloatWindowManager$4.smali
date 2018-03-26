@@ -59,6 +59,7 @@
 
     iget-object v1, p0, Lcom/zqhy/sdk/ui/FloatWindowManager$4;->a:Lcom/zqhy/sdk/ui/FloatWindowManager;
 
+    # getter for: Lcom/zqhy/sdk/ui/FloatWindowManager;->grayRunnable:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/zqhy/sdk/ui/FloatWindowManager;->access$300(Lcom/zqhy/sdk/ui/FloatWindowManager;)Ljava/lang/Runnable;
 
     move-result-object v1
@@ -77,6 +78,7 @@
 
     iget-object v1, p0, Lcom/zqhy/sdk/ui/FloatWindowManager$4;->a:Lcom/zqhy/sdk/ui/FloatWindowManager;
 
+    # getter for: Lcom/zqhy/sdk/ui/FloatWindowManager;->halfRunnable:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/zqhy/sdk/ui/FloatWindowManager;->access$400(Lcom/zqhy/sdk/ui/FloatWindowManager;)Ljava/lang/Runnable;
 
     move-result-object v1
@@ -93,6 +95,7 @@
 
     iget-object v1, p0, Lcom/zqhy/sdk/ui/FloatWindowManager$4;->a:Lcom/zqhy/sdk/ui/FloatWindowManager;
 
+    # getter for: Lcom/zqhy/sdk/ui/FloatWindowManager;->halfGrayRunnable:Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/zqhy/sdk/ui/FloatWindowManager;->access$500(Lcom/zqhy/sdk/ui/FloatWindowManager;)Ljava/lang/Runnable;
 
     move-result-object v1

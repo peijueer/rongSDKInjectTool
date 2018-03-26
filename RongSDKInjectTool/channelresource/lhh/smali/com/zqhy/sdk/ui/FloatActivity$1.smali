@@ -53,6 +53,7 @@
 
     move-result v1
 
+    # setter for: Lcom/zqhy/sdk/ui/FloatActivity;->startX:I
     invoke-static {v0, v1}, Lcom/zqhy/sdk/ui/FloatActivity;->access$002(Lcom/zqhy/sdk/ui/FloatActivity;I)I
 
     .line 55
@@ -64,6 +65,7 @@
 
     move-result v1
 
+    # setter for: Lcom/zqhy/sdk/ui/FloatActivity;->endX:I
     invoke-static {v0, v1}, Lcom/zqhy/sdk/ui/FloatActivity;->access$102(Lcom/zqhy/sdk/ui/FloatActivity;I)I
 
     .line 56
@@ -75,6 +77,7 @@
 
     move-result v1
 
+    # setter for: Lcom/zqhy/sdk/ui/FloatActivity;->startY:I
     invoke-static {v0, v1}, Lcom/zqhy/sdk/ui/FloatActivity;->access$202(Lcom/zqhy/sdk/ui/FloatActivity;I)I
 
     .line 57
@@ -86,6 +89,7 @@
 
     move-result v1
 
+    # setter for: Lcom/zqhy/sdk/ui/FloatActivity;->endY:I
     invoke-static {v0, v1}, Lcom/zqhy/sdk/ui/FloatActivity;->access$302(Lcom/zqhy/sdk/ui/FloatActivity;I)I
 
     .line 58

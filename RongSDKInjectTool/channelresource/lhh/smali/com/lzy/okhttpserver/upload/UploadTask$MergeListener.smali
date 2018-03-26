@@ -121,6 +121,7 @@
     :cond_0
     iget-object v0, p0, Lcom/lzy/okhttpserver/upload/UploadTask$MergeListener;->this$0:Lcom/lzy/okhttpserver/upload/UploadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/upload/UploadTask;->mUploadInfo:Lcom/lzy/okhttpserver/upload/UploadInfo;
     invoke-static {v0}, Lcom/lzy/okhttpserver/upload/UploadTask;->access$000(Lcom/lzy/okhttpserver/upload/UploadTask;)Lcom/lzy/okhttpserver/upload/UploadInfo;
 
     move-result-object v0
@@ -132,6 +133,7 @@
     .line 106
     iget-object v0, p0, Lcom/lzy/okhttpserver/upload/UploadTask$MergeListener;->this$0:Lcom/lzy/okhttpserver/upload/UploadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/upload/UploadTask;->mUploadInfo:Lcom/lzy/okhttpserver/upload/UploadInfo;
     invoke-static {v0}, Lcom/lzy/okhttpserver/upload/UploadTask;->access$000(Lcom/lzy/okhttpserver/upload/UploadTask;)Lcom/lzy/okhttpserver/upload/UploadInfo;
 
     move-result-object v0
@@ -141,6 +143,7 @@
     .line 107
     iget-object v0, p0, Lcom/lzy/okhttpserver/upload/UploadTask$MergeListener;->this$0:Lcom/lzy/okhttpserver/upload/UploadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/upload/UploadTask;->mUploadInfo:Lcom/lzy/okhttpserver/upload/UploadInfo;
     invoke-static {v0}, Lcom/lzy/okhttpserver/upload/UploadTask;->access$000(Lcom/lzy/okhttpserver/upload/UploadTask;)Lcom/lzy/okhttpserver/upload/UploadInfo;
 
     move-result-object v0
@@ -150,6 +153,7 @@
     .line 108
     iget-object v0, p0, Lcom/lzy/okhttpserver/upload/UploadTask$MergeListener;->this$0:Lcom/lzy/okhttpserver/upload/UploadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/upload/UploadTask;->mUploadInfo:Lcom/lzy/okhttpserver/upload/UploadInfo;
     invoke-static {v0}, Lcom/lzy/okhttpserver/upload/UploadTask;->access$000(Lcom/lzy/okhttpserver/upload/UploadTask;)Lcom/lzy/okhttpserver/upload/UploadInfo;
 
     move-result-object v0
@@ -159,6 +163,7 @@
     .line 109
     iget-object v0, p0, Lcom/lzy/okhttpserver/upload/UploadTask$MergeListener;->this$0:Lcom/lzy/okhttpserver/upload/UploadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/upload/UploadTask;->mUploadInfo:Lcom/lzy/okhttpserver/upload/UploadInfo;
     invoke-static {v0}, Lcom/lzy/okhttpserver/upload/UploadTask;->access$000(Lcom/lzy/okhttpserver/upload/UploadTask;)Lcom/lzy/okhttpserver/upload/UploadInfo;
 
     move-result-object v0
@@ -168,6 +173,7 @@
     .line 110
     iget-object v0, p0, Lcom/lzy/okhttpserver/upload/UploadTask$MergeListener;->this$0:Lcom/lzy/okhttpserver/upload/UploadTask;
 
+    # invokes: Lcom/lzy/okhttpserver/upload/UploadTask;->postMessage(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Exception;)V
     invoke-static {v0, v4, v4, v4}, Lcom/lzy/okhttpserver/upload/UploadTask;->access$100(Lcom/lzy/okhttpserver/upload/UploadTask;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Exception;)V
 
     .line 111

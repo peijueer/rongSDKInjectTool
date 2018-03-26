@@ -68,6 +68,7 @@
 
     move-result-object v1
 
+    # setter for: Lcom/zqhy/sdk/ui/expand/ExpandableLayoutItem;->isOpened:Ljava/lang/Boolean;
     invoke-static {v0, v1}, Lcom/zqhy/sdk/ui/expand/ExpandableLayoutItem;->access$102(Lcom/zqhy/sdk/ui/expand/ExpandableLayoutItem;Ljava/lang/Boolean;)Ljava/lang/Boolean;
 
     .line 143

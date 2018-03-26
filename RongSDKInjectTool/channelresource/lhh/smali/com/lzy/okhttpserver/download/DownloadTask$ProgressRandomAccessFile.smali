@@ -102,6 +102,7 @@
     .line 254
     iget-object v0, p0, Lcom/lzy/okhttpserver/download/DownloadTask$ProgressRandomAccessFile;->this$0:Lcom/lzy/okhttpserver/download/DownloadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/download/DownloadTask;->mDownloadInfo:Lcom/lzy/okhttpserver/download/DownloadInfo;
     invoke-static {v0}, Lcom/lzy/okhttpserver/download/DownloadTask;->access$000(Lcom/lzy/okhttpserver/download/DownloadTask;)Lcom/lzy/okhttpserver/download/DownloadInfo;
 
     move-result-object v0
@@ -115,6 +116,7 @@
 
     iget-object v4, p0, Lcom/lzy/okhttpserver/download/DownloadTask$ProgressRandomAccessFile;->this$0:Lcom/lzy/okhttpserver/download/DownloadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/download/DownloadTask;->mPreviousTime:J
     invoke-static {v4}, Lcom/lzy/okhttpserver/download/DownloadTask;->access$100(Lcom/lzy/okhttpserver/download/DownloadTask;)J
 
     move-result-wide v4
@@ -146,6 +148,7 @@
     .line 262
     iget-object v4, p0, Lcom/lzy/okhttpserver/download/DownloadTask$ProgressRandomAccessFile;->this$0:Lcom/lzy/okhttpserver/download/DownloadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/download/DownloadTask;->mDownloadInfo:Lcom/lzy/okhttpserver/download/DownloadInfo;
     invoke-static {v4}, Lcom/lzy/okhttpserver/download/DownloadTask;->access$000(Lcom/lzy/okhttpserver/download/DownloadTask;)Lcom/lzy/okhttpserver/download/DownloadInfo;
 
     move-result-object v4
@@ -159,6 +162,7 @@
 
     iget-object v1, p0, Lcom/lzy/okhttpserver/download/DownloadTask$ProgressRandomAccessFile;->this$0:Lcom/lzy/okhttpserver/download/DownloadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/download/DownloadTask;->mDownloadInfo:Lcom/lzy/okhttpserver/download/DownloadInfo;
     invoke-static {v1}, Lcom/lzy/okhttpserver/download/DownloadTask;->access$000(Lcom/lzy/okhttpserver/download/DownloadTask;)Lcom/lzy/okhttpserver/download/DownloadInfo;
 
     move-result-object v1
@@ -174,6 +178,7 @@
     .line 266
     iget-object v1, p0, Lcom/lzy/okhttpserver/download/DownloadTask$ProgressRandomAccessFile;->this$0:Lcom/lzy/okhttpserver/download/DownloadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/download/DownloadTask;->mDownloadInfo:Lcom/lzy/okhttpserver/download/DownloadInfo;
     invoke-static {v1}, Lcom/lzy/okhttpserver/download/DownloadTask;->access$000(Lcom/lzy/okhttpserver/download/DownloadTask;)Lcom/lzy/okhttpserver/download/DownloadInfo;
 
     move-result-object v1
@@ -194,6 +199,7 @@
 
     iget-object v5, p0, Lcom/lzy/okhttpserver/download/DownloadTask$ProgressRandomAccessFile;->this$0:Lcom/lzy/okhttpserver/download/DownloadTask;
 
+    # getter for: Lcom/lzy/okhttpserver/download/DownloadTask;->mDownloadInfo:Lcom/lzy/okhttpserver/download/DownloadInfo;
     invoke-static {v5}, Lcom/lzy/okhttpserver/download/DownloadTask;->access$000(Lcom/lzy/okhttpserver/download/DownloadTask;)Lcom/lzy/okhttpserver/download/DownloadInfo;
 
     move-result-object v5
@@ -241,6 +247,7 @@
     :cond_1
     iget-object v0, p0, Lcom/lzy/okhttpserver/download/DownloadTask$ProgressRandomAccessFile;->this$0:Lcom/lzy/okhttpserver/download/DownloadTask;
 
+    # invokes: Lcom/lzy/okhttpserver/download/DownloadTask;->postMessage(Ljava/lang/String;Ljava/lang/Exception;)V
     invoke-static {v0, v9, v9}, Lcom/lzy/okhttpserver/download/DownloadTask;->access$200(Lcom/lzy/okhttpserver/download/DownloadTask;Ljava/lang/String;Ljava/lang/Exception;)V
 
     .line 273

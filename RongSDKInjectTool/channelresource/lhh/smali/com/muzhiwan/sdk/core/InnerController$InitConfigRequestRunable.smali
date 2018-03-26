@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 428
+    .line 437
     iput-object p1, p0, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/muzhiwan/sdk/core/InnerController$1;
 
     .prologue
-    .line 428
+    .line 437
     invoke-direct {p0, p1}, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;-><init>(Lcom/muzhiwan/sdk/core/InnerController;)V
 
     return-void
@@ -52,16 +52,17 @@
     .locals 4
 
     .prologue
-    .line 432
+    .line 441
     iget-object v2, p0, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/muzhiwan/sdk/core/InnerController;->access$600(Lcom/muzhiwan/sdk/core/InnerController;)Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-static {v2}, Lcom/muzhiwan/sdk/dynamic/utils/HttpUtils;->requestConfig(Landroid/app/Activity;)V
 
-    .line 434
+    .line 443
     iget-object v2, p0, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
     invoke-virtual {v2}, Lcom/muzhiwan/sdk/core/InnerController;->isRollback()Z
@@ -70,9 +71,10 @@
 
     if-eqz v2, :cond_0
 
-    .line 435
+    .line 444
     iget-object v2, p0, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->gameMainActivity:Landroid/app/Activity;
     invoke-static {v2}, Lcom/muzhiwan/sdk/core/InnerController;->access$600(Lcom/muzhiwan/sdk/core/InnerController;)Landroid/app/Activity;
 
     move-result-object v2
@@ -81,29 +83,31 @@
 
     move-result-object v0
 
-    .line 436
+    .line 445
     .local v0, "dest":Ljava/lang/String;
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 437
+    .line 446
     .local v1, "file":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 438
+    .line 447
     iget-object v2, p0, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
     const-string v3, ""
 
+    # setter for: Lcom/muzhiwan/sdk/core/InnerController;->updatePath:Ljava/lang/String;
     invoke-static {v2, v3}, Lcom/muzhiwan/sdk/core/InnerController;->access$1102(Lcom/muzhiwan/sdk/core/InnerController;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 442
+    .line 451
     .end local v0    # "dest":Ljava/lang/String;
     .end local v1    # "file":Ljava/io/File;
     :cond_0
     iget-object v2, p0, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
+    # getter for: Lcom/muzhiwan/sdk/core/InnerController;->updatePath:Ljava/lang/String;
     invoke-static {v2}, Lcom/muzhiwan/sdk/core/InnerController;->access$1100(Lcom/muzhiwan/sdk/core/InnerController;)Ljava/lang/String;
 
     move-result-object v2
@@ -114,16 +118,16 @@
 
     if-nez v2, :cond_1
 
-    .line 443
+    .line 452
     iget-object v2, p0, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 
     invoke-virtual {v2}, Lcom/muzhiwan/sdk/core/InnerController;->updateSDKPlugin()V
 
-    .line 447
+    .line 456
     :goto_0
     return-void
 
-    .line 445
+    .line 454
     :cond_1
     iget-object v2, p0, Lcom/muzhiwan/sdk/core/InnerController$InitConfigRequestRunable;->this$0:Lcom/muzhiwan/sdk/core/InnerController;
 

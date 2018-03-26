@@ -40,6 +40,7 @@
 
     iget-object v1, p0, Lokhttp3/internal/http/Http1xStream$AbstractSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->source:Lokio/BufferedSource;
     invoke-static {v1}, Lokhttp3/internal/http/Http1xStream;->access$600(Lokhttp3/internal/http/Http1xStream;)Lokio/BufferedSource;
 
     move-result-object v1
@@ -84,6 +85,7 @@
     .line 353
     iget-object v0, p0, Lokhttp3/internal/http/Http1xStream$AbstractSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->state:I
     invoke-static {v0}, Lokhttp3/internal/http/Http1xStream;->access$500(Lokhttp3/internal/http/Http1xStream;)I
 
     move-result v0
@@ -99,6 +101,7 @@
     :cond_1
     iget-object v0, p0, Lokhttp3/internal/http/Http1xStream$AbstractSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->state:I
     invoke-static {v0}, Lokhttp3/internal/http/Http1xStream;->access$500(Lokhttp3/internal/http/Http1xStream;)I
 
     move-result v0
@@ -121,6 +124,7 @@
 
     iget-object v2, p0, Lokhttp3/internal/http/Http1xStream$AbstractSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->state:I
     invoke-static {v2}, Lokhttp3/internal/http/Http1xStream;->access$500(Lokhttp3/internal/http/Http1xStream;)I
 
     move-result v2
@@ -143,16 +147,19 @@
 
     iget-object v1, p0, Lokhttp3/internal/http/Http1xStream$AbstractSource;->timeout:Lokio/ForwardingTimeout;
 
+    # invokes: Lokhttp3/internal/http/Http1xStream;->detachTimeout(Lokio/ForwardingTimeout;)V
     invoke-static {v0, v1}, Lokhttp3/internal/http/Http1xStream;->access$400(Lokhttp3/internal/http/Http1xStream;Lokio/ForwardingTimeout;)V
 
     .line 358
     iget-object v0, p0, Lokhttp3/internal/http/Http1xStream$AbstractSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # setter for: Lokhttp3/internal/http/Http1xStream;->state:I
     invoke-static {v0, v2}, Lokhttp3/internal/http/Http1xStream;->access$502(Lokhttp3/internal/http/Http1xStream;I)I
 
     .line 359
     iget-object v0, p0, Lokhttp3/internal/http/Http1xStream$AbstractSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->streamAllocation:Lokhttp3/internal/http/StreamAllocation;
     invoke-static {v0}, Lokhttp3/internal/http/Http1xStream;->access$700(Lokhttp3/internal/http/Http1xStream;)Lokhttp3/internal/http/StreamAllocation;
 
     move-result-object v0
@@ -162,6 +169,7 @@
     .line 360
     iget-object v0, p0, Lokhttp3/internal/http/Http1xStream$AbstractSource;->this$0:Lokhttp3/internal/http/Http1xStream;
 
+    # getter for: Lokhttp3/internal/http/Http1xStream;->streamAllocation:Lokhttp3/internal/http/StreamAllocation;
     invoke-static {v0}, Lokhttp3/internal/http/Http1xStream;->access$700(Lokhttp3/internal/http/Http1xStream;)Lokhttp3/internal/http/StreamAllocation;
 
     move-result-object v1

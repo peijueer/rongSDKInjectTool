@@ -47,6 +47,7 @@
     iput-object p2, p0, Lokhttp3/internal/DiskLruCache$Entry;->key:Ljava/lang/String;
 
     .line 986
+    # getter for: Lokhttp3/internal/DiskLruCache;->valueCount:I
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache;->access$2600(Lokhttp3/internal/DiskLruCache;)I
 
     move-result v3
@@ -56,6 +57,7 @@
     iput-object v3, p0, Lokhttp3/internal/DiskLruCache$Entry;->lengths:[J
 
     .line 987
+    # getter for: Lokhttp3/internal/DiskLruCache;->valueCount:I
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache;->access$2600(Lokhttp3/internal/DiskLruCache;)I
 
     move-result v3
@@ -65,6 +67,7 @@
     iput-object v3, p0, Lokhttp3/internal/DiskLruCache$Entry;->cleanFiles:[Ljava/io/File;
 
     .line 988
+    # getter for: Lokhttp3/internal/DiskLruCache;->valueCount:I
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache;->access$2600(Lokhttp3/internal/DiskLruCache;)I
 
     move-result v3
@@ -96,6 +99,7 @@
 
     .local v1, "i":I
     :goto_0
+    # getter for: Lokhttp3/internal/DiskLruCache;->valueCount:I
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache;->access$2600(Lokhttp3/internal/DiskLruCache;)I
 
     move-result v3
@@ -110,6 +114,7 @@
 
     new-instance v4, Ljava/io/File;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->directory:Ljava/io/File;
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache;->access$2900(Lokhttp3/internal/DiskLruCache;)Ljava/io/File;
 
     move-result-object v5
@@ -132,6 +137,7 @@
 
     new-instance v4, Ljava/io/File;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->directory:Ljava/io/File;
     invoke-static {p1}, Lokhttp3/internal/DiskLruCache;->access$2900(Lokhttp3/internal/DiskLruCache;)Ljava/io/File;
 
     move-result-object v5
@@ -355,6 +361,7 @@
 
     iget-object v3, p0, Lokhttp3/internal/DiskLruCache$Entry;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->valueCount:I
     invoke-static {v3}, Lokhttp3/internal/DiskLruCache;->access$2600(Lokhttp3/internal/DiskLruCache;)I
 
     move-result v3
@@ -442,6 +449,7 @@
     :cond_0
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache$Entry;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->valueCount:I
     invoke-static {v1}, Lokhttp3/internal/DiskLruCache;->access$2600(Lokhttp3/internal/DiskLruCache;)I
 
     move-result v1
@@ -467,6 +475,7 @@
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache$Entry;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->valueCount:I
     invoke-static {v1}, Lokhttp3/internal/DiskLruCache;->access$2600(Lokhttp3/internal/DiskLruCache;)I
 
     move-result v1
@@ -476,6 +485,7 @@
     .line 1040
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache$Entry;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->fileSystem:Lokhttp3/internal/io/FileSystem;
     invoke-static {v1}, Lokhttp3/internal/DiskLruCache;->access$2700(Lokhttp3/internal/DiskLruCache;)Lokhttp3/internal/io/FileSystem;
 
     move-result-object v1
@@ -526,6 +536,7 @@
     :goto_2
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache$Entry;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # getter for: Lokhttp3/internal/DiskLruCache;->valueCount:I
     invoke-static {v1}, Lokhttp3/internal/DiskLruCache;->access$2600(Lokhttp3/internal/DiskLruCache;)I
 
     move-result v1
@@ -552,6 +563,7 @@
     :try_start_1
     iget-object v1, p0, Lokhttp3/internal/DiskLruCache$Entry;->this$0:Lokhttp3/internal/DiskLruCache;
 
+    # invokes: Lokhttp3/internal/DiskLruCache;->removeEntry(Lokhttp3/internal/DiskLruCache$Entry;)Z
     invoke-static {v1, p0}, Lokhttp3/internal/DiskLruCache;->access$3100(Lokhttp3/internal/DiskLruCache;Lokhttp3/internal/DiskLruCache$Entry;)Z
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1

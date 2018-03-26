@@ -42,6 +42,7 @@
 
     .prologue
     .line 357
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -59,6 +60,7 @@
 
     .prologue
     .line 352
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -76,6 +78,7 @@
 
     .prologue
     .line 345
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$1000()Ljava/lang/String;
 
     move-result-object v0
@@ -87,7 +90,8 @@
     .line 346
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$5;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
-    invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$3900(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
+    # getter for: Lcom/rongmzw/frame/sdk/api/RongSdkController;->gameActivity:Landroid/app/Activity;
+    invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$3800(Lcom/rongmzw/frame/sdk/api/RongSdkController;)Landroid/app/Activity;
 
     move-result-object v0
 

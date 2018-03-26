@@ -67,6 +67,7 @@
     .local v0, "previousStreamId":I
     iget-object v2, p0, Lokhttp3/internal/framed/Http2$ContinuationSource;->source:Lokio/BufferedSource;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->readMedium(Lokio/BufferedSource;)I
     invoke-static {v2}, Lokhttp3/internal/framed/Http2;->access$300(Lokio/BufferedSource;)I
 
     move-result v2
@@ -101,6 +102,7 @@
     iput-byte v2, p0, Lokhttp3/internal/framed/Http2$ContinuationSource;->flags:B
 
     .line 634
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v2
@@ -113,6 +115,7 @@
 
     if-eqz v2, :cond_0
 
+    # getter for: Lokhttp3/internal/framed/Http2;->logger:Ljava/util/logging/Logger;
     invoke-static {}, Lokhttp3/internal/framed/Http2;->access$100()Ljava/util/logging/Logger;
 
     move-result-object v2
@@ -158,6 +161,7 @@
 
     aput-object v4, v3, v6
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v2, v3}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v2
@@ -174,6 +178,7 @@
 
     new-array v3, v6, [Ljava/lang/Object;
 
+    # invokes: Lokhttp3/internal/framed/Http2;->ioException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
     invoke-static {v2, v3}, Lokhttp3/internal/framed/Http2;->access$200(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/IOException;
 
     move-result-object v2

@@ -44,7 +44,8 @@
     .line 371
     iget-object v0, p0, Lcom/rongmzw/frame/sdk/api/RongSdkController$6;->this$0:Lcom/rongmzw/frame/sdk/api/RongSdkController;
 
-    invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$2300(Lcom/rongmzw/frame/sdk/api/RongSdkController;)V
+    # invokes: Lcom/rongmzw/frame/sdk/api/RongSdkController;->login()V
+    invoke-static {v0}, Lcom/rongmzw/frame/sdk/api/RongSdkController;->access$3900(Lcom/rongmzw/frame/sdk/api/RongSdkController;)V
 
     .line 372
     return-void

@@ -47,6 +47,7 @@
     .line 208
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$6;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -55,6 +56,7 @@
 
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$6;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -98,6 +100,7 @@
     .line 216
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$6;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -132,6 +135,7 @@
 
     iget-object v1, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$6;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
     invoke-static {v1}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$100(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Landroid/app/Activity;
 
     move-result-object v1
@@ -157,6 +161,7 @@
     .line 250
     iget-object v1, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$6;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
     invoke-static {v1}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$100(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Landroid/app/Activity;
 
     move-result-object v1
@@ -168,6 +173,7 @@
     .line 251
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$6;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->mActivity:Landroid/app/Activity;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$100(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Landroid/app/Activity;
 
     move-result-object v0
@@ -189,6 +195,7 @@
     .line 221
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$6;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
@@ -211,6 +218,7 @@
     .line 225
     iget-object v0, p0, Lcom/zqhy/sdk/ui/JavaScriptinterface$6;->b:Lcom/zqhy/sdk/ui/JavaScriptinterface;
 
+    # getter for: Lcom/zqhy/sdk/ui/JavaScriptinterface;->sdkCallBack:Lcom/zqhy/sdk/callback/SDKCallBack;
     invoke-static {v0}, Lcom/zqhy/sdk/ui/JavaScriptinterface;->access$000(Lcom/zqhy/sdk/ui/JavaScriptinterface;)Lcom/zqhy/sdk/callback/SDKCallBack;
 
     move-result-object v0
